@@ -1,0 +1,110 @@
+﻿using System;
+
+class Calculadora
+{
+    static void Main()
+    {
+        int opcion;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("=== CALCULADORA ===");
+            Console.WriteLine("1. Suma");
+            Console.WriteLine("2. Resta");
+            Console.WriteLine("3. Multiplicación");
+            Console.WriteLine("4. División");
+            Console.WriteLine("5. Potencia");
+            Console.WriteLine("6. Raíz cuadrada");
+            Console.WriteLine("0. Salir");
+            Console.Write("Elige una opción: ");
+            opcion = int.Parse(Console.ReadLine());
+
+            double num1, num2, resultado;
+
+            switch (opcion)
+            {
+                case 1:
+                    Console.Write("Ingresa el primer número: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    Console.Write("Ingresa el segundo número: ");
+                    num2 = double.Parse(Console.ReadLine());
+                    resultado = num1 + num2;
+                    Console.WriteLine($"Resultado: {resultado}");
+                    break;
+
+                case 2:
+                    Console.Write("Ingresa el primer número: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    Console.Write("Ingresa el segundo número: ");
+                    num2 = double.Parse(Console.ReadLine());
+                    resultado = num1 - num2;
+                    Console.WriteLine($"Resultado: {resultado}");
+                    break;
+
+                case 3:
+                    Console.Write("Ingresa el primer número: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    Console.Write("Ingresa el segundo número: ");
+                    num2 = double.Parse(Console.ReadLine());
+                    resultado = num1 * num2;
+                    Console.WriteLine($"Resultado: {resultado}");
+                    break;
+
+                case 4:
+                    Console.Write("Ingresa el dividendo: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    Console.Write("Ingresa el divisor: ");
+                    num2 = double.Parse(Console.ReadLine());
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                        Console.WriteLine($"Resultado: {resultado}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: no se puede dividir entre 0.");
+                    }
+                    break;
+
+                case 5:
+                    Console.Write("Ingresa la base: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    Console.Write("Ingresa el exponente: ");
+                    num2 = double.Parse(Console.ReadLine());
+                    resultado = Math.Pow(num1, num2);
+                    Console.WriteLine($"Resultado: {resultado}");
+                    break;
+
+                case 6:
+                    Console.Write("Ingresa el número: ");
+                    num1 = double.Parse(Console.ReadLine());
+                    if (num1 >= 0)
+                    {
+                        resultado = Math.Sqrt(num1);
+                        Console.WriteLine($"Resultado: {resultado}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: no se puede calcular la raíz cuadrada de un número negativo.");
+                    }
+                    break;
+
+                case 0:
+                    Console.WriteLine("Saliendo...");
+                    break;
+
+                default:
+                    Console.WriteLine("Opción inválida.");
+                    break;
+            }
+
+            if (opcion != 0)
+            {
+                Console.WriteLine("\nPresiona una tecla para continuar...");
+                Console.ReadKey();
+            }
+
+        } while (opcion != 0);
+    }
+}
+
