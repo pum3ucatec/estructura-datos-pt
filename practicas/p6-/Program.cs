@@ -14,7 +14,7 @@ class Program
 
             if (numero <= 0)
             {
-                Console.WriteLine("Error: El número debe ser mayor que 0.");
+                Console.WriteLine("Error: el número debe ser mayor que 0.");
             }
 
         } while (numero <= 0);
