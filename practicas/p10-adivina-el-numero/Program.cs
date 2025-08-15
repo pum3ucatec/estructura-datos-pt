@@ -16,7 +16,7 @@ class Program
 
             if (numero > 100 || numero < 1)
             {
-                Console.WriteLine("Numero no valido, ¡¡intanta de nuevo!!");
+                Console.WriteLine("Numero no valido, ¡¡intenta de nuevo!!");
             }
             else
             {

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ingrese un numero para ver si es primo:");
+            Console.WriteLine("Ingrese un numero para verificar si es primo:");
             int numero = Convert.ToInt32(Console.ReadLine());
             for (int i = 2; i <= numero; i++)
             {
