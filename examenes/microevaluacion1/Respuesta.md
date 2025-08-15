@@ -1,4 +1,4 @@
-# GUIA: ENTORNO DE DESARROLLO
+# GUIA: ENTORNO DE DESARROLLO PARA ESTRUCTURA DE DATOS I
 
 ## VS Code, Git, GitHub, C#
 
@@ -21,7 +21,9 @@
 
 ---
 
-<pre> git --version </pre>
+```bash
+git --version
+```
 
 ---
 
@@ -33,7 +35,9 @@
 
 ---
 
-<pre> dotnet --version</pre>
+```bash
+ dotnet --version
+```
 
 ---
 
@@ -43,9 +47,11 @@
 
 ---
 
-<pre>git config --global user.name "Tu nombre"
+```bash
+git config --global user.name "Tu nombre"
 
-git config --global user.email "tu_correo@example.com"</pre>
+git config --global user.email "tu_correo@example.com"
+```
 
 ---
 
@@ -59,8 +65,9 @@ Usa el mismo correo que tienes en **[GitHub](https://github.com/login)**
 
 ---
 
-<pre>ssh-keygen -t ed25519 -C "tu_correo_de_github@hotmail.com"
-</pre>
+```bash
+ssh-keygen -t ed25519 -C "tu_correo_de_github@gmail.com"
+```
 
 ---
 
@@ -68,9 +75,10 @@ Usa el mismo correo que tienes en **[GitHub](https://github.com/login)**
 
 ---
 
-<pre>eval "$(ssh-agent -s)"
+```bash
+eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
-</pre>
+```
 
 ---
 
@@ -78,7 +86,9 @@ ssh-add ~/.ssh/id_ed25519
 
 ---
 
-<pre>cat ~/.ssh/id_ed25519.pub</pre>
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
 
 ---
 
@@ -97,10 +107,10 @@ ssh-add ~/.ssh/id_ed25519
 
 ---
 
-<pre>
+```bash
 mkdir "nombre_de_tu_carpeta"
 cd nombre_de_tu_carpeta
-</pre>
+```
 
 ---
 
@@ -108,9 +118,11 @@ cd nombre_de_tu_carpeta
 
 ---
 
-<pre>git clone git@github.com:usuario/repositorio.git
+```bash
+git clone git@github.com:usuario/repositorio.git
 
-cd repositorio</pre>
+cd repositorio
+```
 
 ---
 
@@ -118,15 +130,20 @@ cd repositorio</pre>
 
 - Crear una rama
   ***
-  <pre>git branch nombre_de_la_rama
-  </pre>
-  ***
+
+```bash
+ git branch nombre_de_la_rama
+```
+
+---
+
 - Crear una rama y cambiarte a ella
 
 ---
 
- <pre>git checkout -b nombre_rama
-</pre>
+```bash
+git checkout -b nombre_rama
+```
 
 ---
 
@@ -134,8 +151,9 @@ cd repositorio</pre>
 
 ---
 
- <pre>git checkout nombre_rama
-</pre>
+```bash
+git checkout nombre_rama
+```
 
 ---
 
@@ -157,21 +175,25 @@ cd repositorio</pre>
 
 ---
 
-<pre>git status</pre>
+```bash
+git status
+```
 
 - Agregar todos los cambios
 
 ---
 
-<pre>git add .</pre>
+```bash
+git add .
+```
 
 - Crear un commit
 
 ---
 
-<pre>
+```bash
 git commit -m "mensaje con los cambios realizados"
-</pre>
+```
 
 ---
 
@@ -179,8 +201,8 @@ git commit -m "mensaje con los cambios realizados"
 
 ---
 
-<pre>
+```bash
 git push
-</pre>
+```
 
 ---
