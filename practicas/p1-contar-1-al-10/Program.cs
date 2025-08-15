@@ -1,9 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
 
-using System;
 
-namespace HelloWorld
-{
     class Program
     {
         static void Main(string[] args)
@@ -19,8 +16,8 @@ namespace HelloWorld
                 for (int i = 1; i <= 10; i++)
                 {
                     Console.WriteLine($"{i}");
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
         }
     }
-}
