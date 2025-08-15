@@ -14,14 +14,12 @@
 - **Mascotas:** 
 	- **Bruno:** Perro Mestizo, cruce de dalmata y pastor aleman, adptado en un refugio, 13 años.
 	- **Ralf:** Perro Mestizo, cruce de cocker y chapi, comprado en una feria, 11 años.
+
 	<img src="imagenes/Bruno-y-Ralf.jpg" alt="Foto de Bruno y Ralf" width="150">
-
 	- **Chester:** Perro Mestizo, cruce de husky... regalado por un amigo, 2 años.
+	
 	<img src="imagenes/Chester.jpg" alt="Foto de Chester" width="150">
-	- **Gustabo(Gus):** Gato Angora, comprado en una feria, 6 años.
-
-	<img src="imagenes/Gus.jpg" alt="Foto de Gus" width="150">
-
+	
 
 ## Educación
 1.  **Colegio:** Bachiller 2023, del colegio Nuestra Señora de la Merced "A".
@@ -50,15 +48,16 @@
 
 
 ## Imágen Personal
+
 - **Foto Principal:** 
 
-	<img src="imagenes/foto.jpg" alt="Foto de Jenny" width="150">
+<img src="imagenes/foto.jpg" alt="Foto de Jenny" width="150">
 
 - **Jenni Colegio:**
 
-	<img src="imagenes/Cole.jpg" alt="Foto de Jenny Cole" width="150">
+<img src="imagenes/Cole.jpg" alt="Foto de Jenny Cole" width="150">
 
 - **Jenni Universidad:**
 
-	<img src="imagenes/actual.jpg" alt="Foto de Jenny now" width="150">
+<img src="imagenes/actual.jpg" alt="Foto de Jenny now" width="150">
 
