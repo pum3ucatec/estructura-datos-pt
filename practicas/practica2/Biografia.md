@@ -1,10 +1,13 @@
 # Biografía de [Alan Ponce De León Terrazas]
 
+### Este soy yo... Alan
+![Foto de Alan](imagensi/alan.png)
+
 ## Esta es mi Información Personal
 
 - **Nombre completo:** [Alan Dayler Ponce De León Terrazas]
 - **Edad:** 19 años
-- **Fecha de nacimiento:** 4 de noviembre
+- **Fecha de nacimiento:** 4 de noviembre de 2005
 - **Lugar de nacimiento:** Cochabamba, Bolivia
 - **Colegio:** Estudie en el colegio Instituto Americano (Amerinst) Cochabamba, promoción 2023
 - **Carrera:** Estudio la carrera de Ingeniería de Sistemas
