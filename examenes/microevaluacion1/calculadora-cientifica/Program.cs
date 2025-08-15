@@ -19,38 +19,56 @@
             Console.WriteLine("0.Salir");
             Console.WriteLine("Seleccione una opcion:");
             opcion = Convert.ToInt16(Console.ReadLine());
-            double num1, num2, resultado;
+            int num1, num2;
+            double num3, num4, resultado;
             switch (opcion)
             {
                 case 1:
-                    Console.WriteLine("Ingrese el primer numero:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Ingrese el segundo numero:");
-                    num2 = Convert.ToDouble(Console.ReadLine());
-                    resultado = num1 + num2;
+                    Console.WriteLine("¿Cuantos numeros desea sumar?:");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    resultado = 0; 
+                    for (int i = 1; i <= num1; i++)
+                    {
+                        Console.WriteLine($"Ingrese el numero {i}:");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        resultado += num2;
+                    }
                     Console.WriteLine($"Resultado: {resultado}");
                     break;
                 case 2:
+                   Console.WriteLine("¿Cuantos numeros desea restar?:");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    resultado = 0;
                     Console.WriteLine("Ingrese el primer numero:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Ingrese el segundo numero:");
-                    num2 = Convert.ToDouble(Console.ReadLine());
-                    resultado = num1 - num2;
+                    num2 = Convert.ToInt32(Console.ReadLine());
+                    resultado = num2;
+                    int con = 2;
+                    for (int i = 1; i < num1; i++)
+                    {
+                        Console.WriteLine($"Ingrese el numero {con}:");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        resultado -= num2;
+                        con++;
+                    }
                     Console.WriteLine($"Resultado: {resultado}");
                     break;
                 case 3:
-                    Console.WriteLine("Ingrese el primer numero:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Ingrese el segundo numero:");
-                    num2 = Convert.ToDouble(Console.ReadLine());
-                    resultado = num1 * num2;
+                    Console.WriteLine("¿Cuantos numeros desea multiplicarr?:");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    resultado = 1;
+                    for (int i = 1; i <= num1; i++)
+                    {
+                        Console.WriteLine($"Ingrese el numero {i}:");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        resultado *= num2;
+                    }
                     Console.WriteLine($"Resultado: {resultado}");
                     break;
                 case 4:
                     Console.WriteLine("Ingrese el primer numero:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
+                    num1 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Ingrese el segundo numero:");
-                    num2 = Convert.ToDouble(Console.ReadLine());
+                    num2 = Convert.ToInt32(Console.ReadLine());
                     if (num2 == 0)
                     {
                         Console.WriteLine("Error: Complex Infinity");
@@ -58,36 +76,36 @@
                     else
                     {
 
-                        resultado = num1 / num2;
+                        resultado = (double)num1 / num2;
                         Console.WriteLine($"Resultado: {resultado}");
                     }
                     break;
                 case 5:
                     Console.WriteLine("Ingrese un numero para calcular su raiz cuadrada:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
-                    if (num1 < 0)
+                    num3 = Convert.ToDouble(Console.ReadLine());
+                    if (num3 < 0)
                     {
-                        Console.WriteLine("Error: No se puede calcular la raíz cuadrada de un número negativo.");
+                        Console.WriteLine("Error: Math");
                     }
                     else
                     {
-                        resultado = Math.Sqrt(num1);
+                        resultado = Math.Sqrt(num3);
                         Console.WriteLine($"Raíz cuadrada: {resultado}");
                     }
                     break;
                 case 6:
                     Console.WriteLine("Ingrese un número base:");
-                    num1 = Convert.ToDouble(Console.ReadLine());
+                    num3 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Ingrese el exponente:");
-                    num2 = Convert.ToDouble(Console.ReadLine());
-                    resultado = Math.Pow(num1, num2);
-                    Console.WriteLine($"Resultado de {num1} elevado a {num2}: {resultado}");
+                    num4 = Convert.ToDouble(Console.ReadLine());
+                    resultado = Math.Pow(num3, num4);
+                    Console.WriteLine($"Resultado de {num3} elevado a {num4}: {resultado}");
                     break;
                 case 7:
                     Console.WriteLine("Ingrese un ángulo en grados para calcular su seno:");
-                    double anguloSeno = Convert.ToDouble(Console.ReadLine());
-                    double seno = Math.Sin(anguloSeno * Math.PI / 180);
-                    Console.WriteLine($"Seno: {seno}");
+                    num3 = Convert.ToDouble(Console.ReadLine());
+                    resultado = Math.Sin(num3 * Math.PI / 180);
+                    Console.WriteLine($"Seno: {resultado}");
                     break;
                 case 0:
                     Console.WriteLine("Saliendo...");
