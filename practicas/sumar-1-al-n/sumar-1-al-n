@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese un número N: ");
+        int N = int.Parse(Console.ReadLine());
+        int suma = 0, contador = 1;
+
+        while (contador <= N)
+        {
+            suma += contador;
+            contador++;
+        }
+
+        Console.WriteLine("Suma = " + suma);
+    }
+}
