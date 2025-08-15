@@ -105,7 +105,7 @@ class Program
                     break;
 
                 case 0:
-                    Console.WriteLine("Saliendo de la calculadora...");
+                    Console.WriteLine("******** Saliste de la calculadora ********");
                     break;
 
                 default:
