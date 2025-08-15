@@ -1,0 +1,15 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\bin\Debug\net9.0\CalculadoraCientifica.exe
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\bin\Debug\net9.0\CalculadoraCientifica.deps.json
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\bin\Debug\net9.0\CalculadoraCientifica.runtimeconfig.json
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\bin\Debug\net9.0\CalculadoraCientifica.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\bin\Debug\net9.0\CalculadoraCientifica.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.sourcelink.json
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\refint\CalculadoraCientifica.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\CalculadoraCientifica.genruntimeconfig.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos\Microevaluacion1\CalculadoraCientifica\obj\Debug\net9.0\ref\CalculadoraCientifica.dll
