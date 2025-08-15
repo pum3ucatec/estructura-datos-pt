@@ -20,7 +20,7 @@
 	<img src="imagenes/Chester.jpg" alt="Foto de Chester" width="150">
 	- **Gustabo(Gus):** Gato Angora, comprado en una feria, 6 años.
 
-		<img src="imagenes/Gus.jpg" alt="Foto de Gus" width="150">
+	<img src="imagenes/Gus.jpg" alt="Foto de Gus" width="150">
 
 
 ## Educación
