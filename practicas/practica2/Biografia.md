@@ -1,7 +1,7 @@
 # Biografía de [Alan Ponce De León Terrazas]
 
 ### Este soy yo... Alan
-![Foto de Alan](imagensi/alan.png)
+![Foto de Alan](imagensi/alan.PNG)
 
 ## Esta es mi Información Personal
 
