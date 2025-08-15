@@ -1,0 +1,15 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\bin\Debug\net8.0\e1-mayor-dos-numeros.exe
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\bin\Debug\net8.0\e1-mayor-dos-numeros.deps.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\bin\Debug\net8.0\e1-mayor-dos-numeros.runtimeconfig.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\bin\Debug\net8.0\e1-mayor-dos-numeros.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\bin\Debug\net8.0\e1-mayor-dos-numeros.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.sourcelink.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\refint\e1-mayor-dos-numeros.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\e1-mayor-dos-numeros.genruntimeconfig.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\ejemplos\e1-mayor-dos-numeros\obj\Debug\net8.0\ref\e1-mayor-dos-numeros.dll

@@ -1,0 +1,5 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\obj\Debug\net9.0\estructura-datos-pt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\obj\Debug\net9.0\estructura-datos-pt.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\obj\Debug\net9.0\estructura-datos-pt.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\obj\Debug\net9.0\estructura-datos-pt.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\obj\Debug\net9.0\estructura-datos-pt.sourcelink.json
