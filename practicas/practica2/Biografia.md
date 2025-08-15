@@ -14,11 +14,13 @@
 - **Mascotas:** 
 	- **Bruno:** Perro Mestizo, cruce de dalmata y pastor aleman, adptado en un refugio, 13 años.
 	- **Ralf:** Perro Mestizo, cruce de cocker y chapi, comprado en una feria, 11 años.
-	![Foto de Jenny](imagenes/Bruno-y-Ralf.jpg)
+	<img src="imagenes/Bruno-y-Ralf.jpg" alt="Foto de Bruno y Ralf" width="150">
+
 	- **Chester:** Perro Mestizo, cruce de husky... regalado por un amigo, 2 años.
-	![Foto de Jenny](imagenes/Chester.jpg)
+	<img src="imagenes/Chester.jpg" alt="Foto de Chester" width="150">
 	- **Gustabo(Gus):** Gato Angora, comprado en una feria, 6 años.
-	![Foto de Jenny](imagenes/Gus.jpg)
+
+		<img src="imagenes/Gus.jpg" alt="Foto de Gus" width="150">
 
 
 ## Educación
@@ -49,11 +51,14 @@
 
 ## Imágen Personal
 - **Foto Principal:** 
-![Foto de Jenny](imagenes/foto.jpg)
+
+	<img src="imagenes/foto.jpg" alt="Foto de Jenny" width="150">
 
 - **Jenni Colegio:**
-![Foto de Jenny](imagenes/Cole.jpg)
+
+	<img src="imagenes/Cole.jpg" alt="Foto de Jenny Cole" width="150">
 
 - **Jenni Universidad:**
-![Foto de Jenny](imagenes/actual.jpg)
+
+	<img src="imagenes/actual.jpg" alt="Foto de Jenny now" width="150">
 
