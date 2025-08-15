@@ -16,6 +16,8 @@
             Console.WriteLine("5.Raíz cuadrada");
             Console.WriteLine("6.Elevado");
             Console.WriteLine("7.Seno");
+            Console.WriteLine("8.Coseno");
+            Console.WriteLine("9.Logaritmo");
             Console.WriteLine("0.Salir");
             Console.WriteLine("Seleccione una opcion:");
             opcion = Convert.ToInt16(Console.ReadLine());
@@ -90,11 +92,11 @@
                     else
                     {
                         resultado = Math.Sqrt(num3);
-                        Console.WriteLine($"Raíz cuadrada: {resultado}");
+                        Console.WriteLine($"Raiz cuadrada: {resultado}");
                     }
                     break;
                 case 6:
-                    Console.WriteLine("Ingrese un número base:");
+                    Console.WriteLine("Ingrese un numero base:");
                     num3 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Ingrese el exponente:");
                     num4 = Convert.ToDouble(Console.ReadLine());
@@ -102,10 +104,31 @@
                     Console.WriteLine($"Resultado de {num3} elevado a {num4}: {resultado}");
                     break;
                 case 7:
-                    Console.WriteLine("Ingrese un ángulo en grados para calcular su seno:");
+                    Console.WriteLine("Ingrese un angulo en grados para calcular su seno:");
                     num3 = Convert.ToDouble(Console.ReadLine());
                     resultado = Math.Sin(num3 * Math.PI / 180);
                     Console.WriteLine($"Seno: {resultado}");
+                    break;
+                case 8:
+                    Console.WriteLine("Ingrese un angulo en grados para calcular su coseno:");
+                    num3 = Convert.ToDouble(Console.ReadLine());
+                    resultado = Math.Cos(num3 * Math.PI / 180);
+                    Console.WriteLine($"Coseno: {resultado}");
+                    break;
+                case 9:
+                    Console.WriteLine("Ingrese un numero positivo para calcular su logaritmo natural y en base 10:");
+                    num3 = Convert.ToDouble(Console.ReadLine());
+                    if (num3 <= 0)
+                    {
+                        Console.WriteLine("Error: Math");
+                    }
+                    else
+                    {
+                        resultado = Math.Log(num3); 
+                        Console.WriteLine($"Logaritmo natural (ln): {resultado}");
+                        resultado = Math.Log10(num3);
+                        Console.WriteLine($"Logaritmo base 10: {resultado}");
+                    }
                     break;
                 case 0:
                     Console.WriteLine("Saliendo...");
