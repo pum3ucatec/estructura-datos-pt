@@ -9,7 +9,8 @@
 - Descarga Git: **[Download Git](https://git-scm.com/downloads)**
 
   - *Descargalo para Windows*
-- Instalar con la configuracion predeterminada
+- Acepta todos los terminos
+- Realiza la instalación
 - Abre git bash y verifica la instalación
   
 
@@ -25,7 +26,8 @@
 
 - Descarga VS Code: **[Download VS Code](https://code.visualstudio.com/download)**
 
-- Instalar con la configuracion predeterminada
+- Acepta todos los terminos 
+- Realiza la instalción
 - Verifica la instalción en git bash:
 ---
 
@@ -43,14 +45,15 @@
 ### 4. Instalacion Dotnet
 
 - Descargar Dotnet: **[Download Dotnet](https://dotnet.microsoft.com/en-us/download)**
-- Instalar con la configuracion predeterminada
+- Acepta todos los terminos
+- Realiza la instalación
 - Versiones disponibles:
 
-  - .NET 9.0 → Compatible solo con ciertas versiones de VS Code.
-  - NET 8.0 → Recomendado por ser más estable.
+  - .NET 9.0 → Este es compatible solo con ciertas versiones de VS Code.
+  - NET 8.0 → Se recomienda este por ser más estable.
 - Elije el que mejor se adapte a ti.
 
-
+- En git bash verifica la instalacion:
   
 ---
 
@@ -58,25 +61,54 @@
 
 ---
 
+## Pasos para crear tu carpeta y repositorio local
 
-
-### 4. Configuracion Git y clave SSH
-
-- Configuracion inicial Git
+#### 1. Abre Git Bash y crea la carpeta del proyecto:
 
 ---
 
-<pre>git config --global user.name "Tu nombre"
+<pre>mkdir tu_proyecto
 
-git config --global user.email "tu_correo@example.com"</pre>
-
----
-
-Usa el mismo correo que tienes en **[GitHub](https://github.com/login)**
+cd tu_proyecto</pre>
 
 ---
+#### 2. Inicia git
+---
+<pre>git init</pre>
+---
 
-#### 4.1. Generar y agragar clave SSH a GitHub
+#### 3. Configura tu nombre y correo este debe coincidir con el de tu cuenta de GitHub:
+---
+<pre>git config user.name "TuNombre"
+git config user.email "tucorreo@ejemplo.com"</pre>
+---
+#### 4. Crea un archivo Inicial
+---
+<pre>echo "# Mi primer proyecto" > README.md</pre>
+---
+
+#### 5. Guarda los cambios en Git
+---
+<pre>git add README.md
+git commit -m "Primer commit"
+</pre>
+---
+
+#### 6. Verfica el estado 
+---
+<pre>git status</pre>
+---
+
+## Crear repositorio remoto en GitHub
+
+- En GitHub, haz clic en New Repository.
+
+- Nómbralo igual que tu carpeta local (opcional).
+
+- No marques la opción Add a README file.
+
+- Clic en Create Repository.
+## Generar y agragar clave SSH a GitHub
 
 - Generar clave SSH
 
@@ -105,64 +137,80 @@ ssh-add ~/.ssh/id_ed25519
 
 ---
 
-**_¡¡¡Copia su contenido!!!_**
+**_¡¡¡Copia todo el texto!!!_**
 
 ---
 
-- Agregar la clave a GitHub
+## Agregar la clave a GitHub
 
-  - Ir a **[GitHub → Settings → SSH and GPG keys](https://github.com/settings/keys)**
+  - Ve a **[GitHub → Settings → SSH and GPG keys](https://github.com/settings/keys)**
   - Click en **New SSH key** y pega el contenido y guardalo
 
-### 5. Clonar un repositorio de GitHub
+## Pasos para clonar un repositorio existente
 
-- Crea una carpeta para clonar ahi tu repositorio
+#### 1. Copiar la URL desde GitHub (Code → SSH o HTTPS).
+
+#### 2. En la carpeta donde lo guardarás:
+#### 3. Ejecutar
+
 
 ---
 
-<pre>
-mkdir "nombre_de_tu_carpeta"
-cd nombre_de_tu_carpeta
+<pre>git clone URL-de-la-repo
+</pre>
+
+---
+#### 4. Entra a la carpeta
+---
+
+<pre>cd nombre-repo
 </pre>
 
 ---
 
-- Clonar un repositorio
+## Crear y usar  ramas
+#### 1. Ver ramas existentes
+---
+
+<pre>git branch
+</pre>
 
 ---
 
-<pre>git clone git@github.com:usuario/repositorio.git
-
-cd repositorio</pre>
-
----
-
-### 6. Crear y cambiar de rama
-
-- Crear una rama
+#### 2. Crear una rama
   ***
   <pre>git branch nombre_de_la_rama
   </pre>
-  ***
-- Crear una rama y cambiarte a ella
+
+#### 3. Cambiar a la nueva rama
 
 ---
 
- <pre>git checkout -b nombre_rama
+ <pre>git checkout  nombre_rama
 </pre>
 
 ---
 
-- Cambiarte a la nueva rama
+#### 4. Hacer cambios y confirmarlos
 
 ---
 
- <pre>git checkout nombre_rama
+ <pre>ggit add .
+git commit -m "Mensaje describiendo cambios"
 </pre>
 
 ---
 
-### 7. Crear y ejecutar un proyecto en C#
+#### 5. Subir la rama a GITGUB
+
+---
+
+ <pre>git push -u origin nombre-de-la-rama
+</pre>
+
+---
+
+## Crear y ejecutar un proyecto en C#
 
 - Crear una carpeta que vaya a contener el proyecto
 - Abre desde la terminal
@@ -174,7 +222,7 @@ cd repositorio</pre>
 
   - `dotnet run`
 
-### 8. Subir cambios a GitHub
+## Subir cambios a GitHub
 
 - Ver estado
 
