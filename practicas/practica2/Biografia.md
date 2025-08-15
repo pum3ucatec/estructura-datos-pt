@@ -9,7 +9,10 @@
 - *Colegio:* Mariano Ricardo Terrazas, promoción 2023
 - *Carrera:* Ingeniería de Sistemas
 - *Distinciones:* Reconocido como mejor alumno de su clase
-![](yo.jpg)
+
+*Fotos Mías*
+![Foto mia antigua](imagenes/yo.jpg)
+![Foto mia actual](imagenes/yo2.jpg)
 ## Mi Familia
 
 ### Padres
@@ -22,22 +25,28 @@
 - Alondra Cossette Condarco Gonzales  
 - Liam Jhosh Condarco Gonzales  
 - Ethan Daniel Condarco Gonzales
-![](hermanito.jpg)
+
+*Foto de mi hermanito Ethan*
+![Foto de mi hermanito](imagenes/hermanito.jpg)
 ## Mis Mascotas 🐱
 
 Tengo dos gatos llenos de personalidad:
 
 1. **Zafiro** – tranquila y observadora  
 2. **Fígaro** – curioso y juguetón
-![](gato.jpg)
+
+*Foto de mi gato Fígaro*
+![Foto de Fígaro](imagenes/gato.jpg)
 ## Mis Pasatiempos
 
 - Ir al gimnasio o al dojo 🥋  
 - Practicar artes marciales (boxeo, kickboxing —cinta marrón—, MMA, jiu jitsu) 🥊  
 - Escuchar música de todo tipo y género 🎶  
 - Leer poesía 📖  
-- Aprender sobre nuevas tecnologías 💻  
-![](dojo.jpg)
+- Aprender sobre nuevas tecnologías 💻
+
+*Foto de mi dojo*
+![Foto de mi dojo](imagenes/dojo.jpg)
 ## Datos Curiosos
 
 - He practicado múltiples disciplinas de combate, lo que me ha enseñado disciplina, autocontrol y constancia.  
