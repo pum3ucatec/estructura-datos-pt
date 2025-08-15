@@ -13,9 +13,9 @@
 
 - **Mascotas:** 
 	- **Rubí** Gato (lol), 6 años.
-![alt text](foto2.jpeg)
+    ![alt text](foto2.jpeg)
 	- **Donny** Perrito mestizo blanco de 3 meses.
-       ![alt text](foto1.jpeg)
+    ![alt text](foto1.jpeg)
     - **Sabi:** Gata gris atigrada de 7 años.
   ![alt text](foto3.jpeg)
 
