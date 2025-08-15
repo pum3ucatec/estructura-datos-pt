@@ -16,6 +16,7 @@
 	- **Ralf:** Perro Mestizo, cruce de cocker y chapi, comprado en una feria, 11 años.
 
 	<img src="imagenes/Bruno-y-Ralf.jpg" alt="Foto de Bruno y Ralf" width="150">
+	
 	- **Chester:** Perro Mestizo, cruce de husky... regalado por un amigo, 2 años.
 	
 	<img src="imagenes/Chester.jpg" alt="Foto de Chester" width="150">
