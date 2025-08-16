@@ -1,7 +1,3 @@
-2. Crear el archivo `Biografia.md` que contenga, headings, enlaces, imagenes, vinetas y listas ordenadas
-
-Nota. las imagenes deben estar dentro la carpeta `practica2`
-
 # MI BIOGRAFIA
 
 <img src="imagenes/fotopao.jpeg" alt="Paola Laurel Velasquez" align="right" width="100">
