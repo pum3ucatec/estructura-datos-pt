@@ -51,6 +51,8 @@
 - Ir a **[GitHub → Settings → SSH and GPG keys](https://github.com/settings/keys)**
   - Click en el boton **New SSH key**, pega el contenido, dale el nombre de tu dispositivo y guardalo.
 
+---
+
 ## 3. Clonar el repositorio de la materia de GitHub
 
 - Desde tu terminal crea y entra a la carpeta en la que vas a trabajar:
@@ -71,65 +73,46 @@
 
 Usa el mismo nombre de usuario y correo que tienes en **[GitHub](https://github.com/login)**
 
+---
+
 ## 4. Crear y cambiar de rama
-
-- Crear una rama
-  <pre>git branch nombre_de_la_rama
-  </pre>
-
 - Crear una rama y cambiarte a ella
- <pre>git checkout -b nombre_rama
-</pre>
-
-- Cambiarte a la nueva rama
-
- <pre>git checkout nombre_rama
+    <pre>git checkout -b NombreRama
 </pre>
 
 ---
 
 ## 5. Crear y ejecutar un proyecto en C#
 
-- Crear una carpeta que vaya a contener el proyecto
-- Abre desde la terminal
-- En la terminal:
+Una vez dentro de la carpeta y rama en la que se va a trabajar
+- Abre VS Code desde Git Bash
+    <pre>code . </pre>
+- Crea una nueva carpeta para trabajar *Ej: "ejercicio1"*
+- Haz click derecho sobre el nombre de la carpeta y haz click en *"Open in Integrated Terminal"* o *"Abrir Terminal Integrada"*
+- Asegurate que esta dentro de la carpeta creada *Ej: ucatec/estructura-datos/ejercicio1* 
+    - Si no estas, entra usando el comando <pre>cd </pre> 
+- Ahora crea una aplicación de consola con el siguiente comando:
+  <pre>dotnet new console</pre>
 
-  - `dotnet new console`
+- Para ejecutar usa este comando:
 
-- Para ejecutar:
-
-  - `dotnet run`
-
-### 8. Subir cambios a GitHub
-
-- Ver estado
-
----
-
-<pre>git status</pre>
-
-- Agregar todos los cambios
+  <pre>dotnet run</pre>
 
 ---
 
-<pre>git add .</pre>
+## 6. Subir cambios a GitHub
 
-- Crear un commit
+- Ver estado:
+    <pre>git status</pre>
 
----
+- Agregar todos los cambios:
+    <pre>git add .</pre>
 
-<pre>
-git commit -m "mensaje con los cambios realizados"
-</pre>
+- Crear un commit:
+    <pre>git commit -m "descripcion de los cambios realizados"</pre>
 
----
+- Subir los cambios a GitHub:
+    <pre>git push</pre>
+    - La primera vez te puede salir un error, copia el texto que te da y ejecutalo:
+        <pre>--set-upstream origin NombreRama</pre>
 
-- Subir los cambios a GitHub
-
----
-
-<pre>
-git push
-</pre>
-
----
