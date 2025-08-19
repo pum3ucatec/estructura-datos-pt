@@ -1,0 +1,13 @@
+﻿// See https://aka.ms/new-console-template for more information
+int[] notas = { 80, 70, 90, 60, 100 };
+int suma = 0;
+
+for (int i = 0; i < notas.Length; i++)
+{
+    suma += notas[i];
+}
+
+double promedio = (double)suma / notas.Length;
+
+Console.WriteLine("Notas: [" + string.Join(", ", notas) + "]");
+Console.WriteLine("Promedio: " + promedio);
