@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\bin\Debug\net9.0\p8-detectar-numero-primo.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\bin\Debug\net9.0\p8-detectar-numero-primo.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\bin\Debug\net9.0\p8-detectar-numero-primo.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\bin\Debug\net9.0\p8-detectar-numero-primo.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\bin\Debug\net9.0\p8-detectar-numero-primo.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\refint\p8-detectar-numero-primo.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\p8-detectar-numero-primo.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p8-detectar-numero-primo\obj\Debug\net9.0\ref\p8-detectar-numero-primo.dll

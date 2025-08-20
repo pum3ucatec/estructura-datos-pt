@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\bin\Debug\net9.0\p3-tablas-de-multiplicar.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\bin\Debug\net9.0\p3-tablas-de-multiplicar.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\bin\Debug\net9.0\p3-tablas-de-multiplicar.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\bin\Debug\net9.0\p3-tablas-de-multiplicar.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\bin\Debug\net9.0\p3-tablas-de-multiplicar.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\refint\p3-tablas-de-multiplicar.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\p3-tablas-de-multiplicar.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p3-tablas-de-multiplicar\obj\Debug\net9.0\ref\p3-tablas-de-multiplicar.dll

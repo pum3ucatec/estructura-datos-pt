@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\bin\Debug\net9.0\p2-sumar-numeros.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\bin\Debug\net9.0\p2-sumar-numeros.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\bin\Debug\net9.0\p2-sumar-numeros.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\bin\Debug\net9.0\p2-sumar-numeros.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\bin\Debug\net9.0\p2-sumar-numeros.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\refint\p2-sumar-numeros.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\p2-sumar-numeros.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\p2-sumar-numeros\obj\Debug\net9.0\ref\p2-sumar-numeros.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "p7-suma-de-5-numeros/1.0.0": {
+        "runtime": {
+          "p7-suma-de-5-numeros.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "p7-suma-de-5-numeros/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
