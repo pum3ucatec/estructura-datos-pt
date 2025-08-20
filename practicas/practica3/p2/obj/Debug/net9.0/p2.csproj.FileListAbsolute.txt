@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\bin\Debug\net9.0\p2.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\bin\Debug\net9.0\p2.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\bin\Debug\net9.0\p2.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\bin\Debug\net9.0\p2.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\bin\Debug\net9.0\p2.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\refint\p2.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\p2.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\practicas\practica3\p2\obj\Debug\net9.0\ref\p2.dll
