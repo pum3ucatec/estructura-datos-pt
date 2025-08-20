@@ -58,7 +58,7 @@ class Pila
     {
         if (IsEmpty())
         {
-            Console.WriteLine("La pila está vacía.");
+            Console.WriteLine("La pila está completamente vacía.");
             return;
         }
 
