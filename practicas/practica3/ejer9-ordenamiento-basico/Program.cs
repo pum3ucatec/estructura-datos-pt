@@ -10,12 +10,12 @@ class Ejercicio9
         Console.WriteLine("Arreglo desordenado:");
         MostrarArreglo(numeros);
 
-        // Algoritmo de burbuja
-        for (int i = 0; i < numeros.Length - 1; i++) // Recorre todas las posiciones
+       
+        for (int i = 0; i < numeros.Length - 1; i++) 
         {
-            for (int j = 0; j < numeros.Length - 1 - i; j++) // Recorre los elementos adyacentes
+            for (int j = 0; j < numeros.Length - 1 - i; j++) 
             {
-                if (numeros[j] > numeros[j + 1]) // Si el actual es mayor que el siguiente, se intercambian
+                if (numeros[j] > numeros[j + 1]) 
                 {
                     int temp = numeros[j];
                     numeros[j] = numeros[j + 1];
@@ -27,8 +27,6 @@ class Ejercicio9
         Console.WriteLine("\nArreglo ordenado:");
         MostrarArreglo(numeros);
     }
-
-    // Método para imprimir el arreglo
     static void MostrarArreglo(int[] arr)
     {
         foreach (int num in arr)
