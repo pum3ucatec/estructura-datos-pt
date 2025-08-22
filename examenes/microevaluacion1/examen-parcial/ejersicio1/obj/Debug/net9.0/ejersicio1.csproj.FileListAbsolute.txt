@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\bin\Debug\net9.0\ejersicio1.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\bin\Debug\net9.0\ejersicio1.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\bin\Debug\net9.0\ejersicio1.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\bin\Debug\net9.0\ejersicio1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\bin\Debug\net9.0\ejersicio1.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\refint\ejersicio1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ejersicio1.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\examen-parcial\ejersicio1\obj\Debug\net9.0\ref\ejersicio1.dll

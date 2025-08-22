@@ -1,0 +1,15 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\bin\Debug\net9.0\microevaluacion1.exe
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\bin\Debug\net9.0\microevaluacion1.deps.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\bin\Debug\net9.0\microevaluacion1.runtimeconfig.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\bin\Debug\net9.0\microevaluacion1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\bin\Debug\net9.0\microevaluacion1.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.sourcelink.json
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\refint\microevaluacion1.dll
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.pdb
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\microevaluacion1.genruntimeconfig.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\microevaluacion1\obj\Debug\net9.0\ref\microevaluacion1.dll
