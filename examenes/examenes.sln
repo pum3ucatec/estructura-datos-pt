@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArandiaJoshua", "ArandiaJoshua", "{7FD6395B-F4E5-65DE-8EDB-9601F31EA3F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroEvaluacion-ejer1", "ArandiaJoshua\MicroEvaluacion-ejer1\MicroEvaluacion-ejer1.csproj", "{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DC69F8B-28AB-BEEF-B6A2-39E01C1276FE} = {7FD6395B-F4E5-65DE-8EDB-9601F31EA3F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD88BC8D-F0A3-48E9-8C6D-591B9332D703}
+	EndGlobalSection
+EndGlobal
