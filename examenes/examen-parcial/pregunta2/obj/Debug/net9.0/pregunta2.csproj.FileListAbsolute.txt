@@ -1,0 +1,15 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\bin\Debug\net9.0\pregunta2.exe
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\bin\Debug\net9.0\pregunta2.deps.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\bin\Debug\net9.0\pregunta2.runtimeconfig.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\bin\Debug\net9.0\pregunta2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\bin\Debug\net9.0\pregunta2.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.sourcelink.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\refint\pregunta2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\pregunta2.genruntimeconfig.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\examen\pregunta2\obj\Debug\net9.0\ref\pregunta2.dll
