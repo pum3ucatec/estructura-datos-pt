@@ -70,9 +70,9 @@ git checkout ChilenoJennifer/ExamenParcial
 ```
 
 
-3. Abre el VSCode y compila el archivo en la terminal o consola de Visual Studio:
+4. Abre el VSCode y compila el archivo en la terminal o consola de Visual Studio:
 
-	- Para eso se debe de tener de ante mano el VSCode instalado, al igual que git y .NET 
+	- Para eso se debe de tener de antemano el VSCode instalado, al igual que git y .NET 
 
 	- Para abrir el Visual Studio Code se debe realiar este comando en el git bash
 
@@ -80,7 +80,7 @@ git checkout ChilenoJennifer/ExamenParcial
 code .
 ```
 
-- Poner ete comando en la terminal integrado del VScode (Asegurate de estar en el archivo correcto).
+- Poner ete comando en la terminal integrado del VScode (Asegurate de estar en el archivo correcto en este caso Pregunta1 (Program.cs)).
 
 ```bash
 dotnet run

@@ -11,50 +11,50 @@ class Pregunta2
             {7, 8, 9}
         };
 
-        List<int> result = SpiralOrder(matrix);
+        List<int> result = OrdenEspiral(matrix);
 
         Console.WriteLine("Recorrido en espiral:");
         Console.WriteLine(string.Join(", ", result));
     }
 
-    static List<int> SpiralOrder(int[,] matrix)
+    static List<int> OrdenEspiral (int[,] matrix)
     {
         List<int> result = new List<int>();
 
         if (matrix == null || matrix.Length == 0)
             return result;
 
-        int top = 0;
-        int bottom = matrix.GetLength(0) - 1;
-        int left = 0;
-        int right = matrix.GetLength(1) - 1;
+        int arriba = 0;
+        int abajo = matrix.GetLength(0) - 1;
+        int izq = 0;
+        int der = matrix.GetLength(1) - 1;
 
-        while (top <= bottom && left <= right)
+        while (arriba <= abajo && izq <= der)
         {
             // Recorre de izquierda a derecha
-            for (int i = left; i <= right; i++)
-                result.Add(matrix[top, i]);
-            top++;
+            for (int i = izq; i <= der; i++)
+                result.Add(matrix[arriba, i]);
+            arriba++;
 
             // Recorre de arriba hacia abajo
-            for (int i = top; i <= bottom; i++)
-                result.Add(matrix[i, right]);
-            right--;
+            for (int i = arriba; i <= abajo; i++)
+                result.Add(matrix[i, der]);
+            der--;
 
             // Recorre de derecha a izquierda (si queda fila)
-            if (top <= bottom)
+            if (arriba <= abajo)
             {
-                for (int i = right; i >= left; i--)
-                    result.Add(matrix[bottom, i]);
-                bottom--;
+                for (int i = der; i >= izq; i--)
+                    result.Add(matrix[abajo, i]);
+                abajo--;
             }
 
             // Recorre de abajo hacia arriba (si queda columna)
-            if (left <= right)
+            if (izq <= der)
             {
-                for (int i = bottom; i >= top; i--)
-                    result.Add(matrix[i, left]);
-                left++;
+                for (int i = abajo; i >= arriba; i--)
+                    result.Add(matrix[i, izq]);
+                izq++;
             }
         }
 
