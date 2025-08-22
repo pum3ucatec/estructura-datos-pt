@@ -1,14 +1,28 @@
 ﻿using System;
 
 class pregunta2 {
-    static void Main() {
-        int[] arr = {1, 2, 4, 5, 6};
-        int n = arr.Length + 1;
-        int sumaEsperada = n * (n + 1) / 2;
-        int sumaReal = 0;
+    static void Main()
+    {
+        Console.Write("Ingrese el tamaño del arreglo: ");
+        int n = int.Parse(Console.ReadLine());
 
-        foreach (int num in arr) sumaReal += num;
+        int[] arr = new int[n];
+        Console.WriteLine("Ingrese los números del arreglo (del 1 al "+ n +", faltando uno):");
 
-        Console.WriteLine("Número faltante: " + (sumaEsperada - sumaReal));
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        // La suma de 1 a n (fórmula: n*(n+1)/2)
+        int total = (n + 1) * (n + 2) / 2;
+        int sumaArr = 0;
+
+        foreach (int num in arr)
+        {
+            sumaArr += num;
+        }
+
+        Console.WriteLine("El número faltante es: " + (total - sumaArr));
     }
 }
