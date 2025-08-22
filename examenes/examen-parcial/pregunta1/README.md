@@ -1,5 +1,9 @@
+ HEAD
 # Pregunta 1
 ## ESPIRAL DE UNA  MATRIZ
+=======
+## Pregunta 1
+198f0509620789d980ddc3715bbc910f7e2512db
 
 ### Ejercicio:
 Espiral en una Matriz
@@ -10,6 +14,7 @@ Ejemplo:
   [4, 5, 6],
   [7, 8, 9] ]
 ```
+ HEAD
 → `[1, 2, 3, 6, 9, 8, 7, 4, 5]`.
 
  ## *Declaraciòn de la matriz*
@@ -43,3 +48,6 @@ Ejemplo:
 lo primero es definir los limites de la matriz en filas y columnas, recorremos fila superior, columna derecha, fila inferior, columna izquierda, ajustamos los limites despues de cda recorrido y asi sucesivamente  con todos los elementos. 
 
 ### Camii :)
+=======
+→ `[1, 2, 3, 6, 9, 8, 7, 4, 5]`.
+198f0509620789d980ddc3715bbc910f7e2512db
