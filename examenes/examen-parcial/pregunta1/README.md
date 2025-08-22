@@ -32,6 +32,21 @@ Arreglo: `[1, 2, 4, 5, 6]`
 - Resultado → **Falta el número 3**  
 
 ***
+## ***Comandos para Ejecutar***
+
+1. Verificar que esté instalado **.NET SDK**:
+   ```bash
+   dotnet --version
+
+2. Posteriormente agrega el comando(el cual sirve para crear una plantilla básica listo para que trabajemos en nuestro proyecto):
+    ```bash
+   dotnet new console
+
+3. Por ultimo ejecutamos nuestro programa:
+    ```bash
+   dotnet run
+
+   ***
 
 ## ***Código Principal***
 ```csharp
@@ -62,16 +77,4 @@ class NumeroFaltante
 
    ***
 
-## ***Comandos para Ejecutar***
 
-1. Verificar que esté instalado **.NET SDK**:
-   ```bash
-   dotnet --version
-
-2. Posteriormente agrega el comando(el cual sirve para crear una plantilla básica listo para que trabajemos en nuestro proyecto):
-    ```bash
-   dotnet new console
-
-3. Por ultimo ejecutamos nuestro programa:
-    ```bash
-   dotnet run
