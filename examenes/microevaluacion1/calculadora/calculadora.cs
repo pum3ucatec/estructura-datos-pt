@@ -76,7 +76,7 @@ class CalculadoraBasica
                 }
                 else
                 {
-                    Console.WriteLine("No se puede raiz de negativo");
+                    Console.WriteLine("No se puede calcular la raiz de un numero negativo");
                 }
             }
             else if (opc == 7)
@@ -109,7 +109,7 @@ class CalculadoraBasica
 
             if (opc != 0)
             {
-                Console.WriteLine("\nPresiona una tecla...");
+                Console.WriteLine("\nPresiona una tecla para continuar...");
                 Console.ReadKey();
             }
 
