@@ -1,10 +1,8 @@
-﻿using System;
-
-class Principal
+﻿class Principal
 {
     static void Main(string[] args)
     {
-        Cola cola = new Cola(5);
+        MyQueue cola = new MyQueue(5);
         int opcion;
 
         do
@@ -27,7 +25,7 @@ class Principal
             switch (opcion)
             {
                 case 1:
-                    //pila.Mostrar();
+                    cola.Mostrar();
                     break;
                 case 2:
                     Console.Write("Ingrese el número a insertar: ");

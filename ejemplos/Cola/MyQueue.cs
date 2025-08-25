@@ -12,7 +12,7 @@ public class MyQueue
     public MyQueue(int N)
     {
         this.Elements = new char[2] { 'D', 'V'};
-        this.Size = N;
+        this.Size = 2;
     }
 
     public void Mostrar()
