@@ -8,9 +8,8 @@ El objetivo es **detectar cuál es el número faltante**.
 ## Lógica
 
 1.  Se calcula la **suma esperada** de los números del `1` al `n` usando
-    la fórmula:
-
-(n \* (n + 1)) / 2
+    la fórmula: 
+                (n \* (n + 1)) / 2
 
 donde `n` es el último número esperado en la secuencia./
 
@@ -18,7 +17,7 @@ donde `n` es el último número esperado en la secuencia./
 
 3. El número faltante es la diferencia entre la suma esperada y la suma real.
 
-## 🔹 Ejemplo de ejecución
+## 🔹 Ejecución
 
     Arreglo: [1, 2, 4, 5, 6]
     Suma esperada (1..6) = 21

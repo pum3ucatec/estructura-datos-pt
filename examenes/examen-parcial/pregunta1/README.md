@@ -18,7 +18,7 @@ siguiendo un recorrido en forma de **espiral**.
 ¡Ahora tenemos un cuadro más pequeño en el centro!
 Repetimos el proceso hasta que no quede nada.
 
-## 🔹 Ejemplo de ejecución
+## 🔹 Ejecución
 
     Matriz:
     [ [1, 2, 3],
