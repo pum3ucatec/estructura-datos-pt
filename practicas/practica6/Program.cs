@@ -3,7 +3,8 @@
 class Cola
 {
     private int[] elementos;
-    private int frente, tamaño, cantidad, final;
+    private int frente, final, cantidad, tamaño;
+
     public Cola(int tamaño)
     {
         this.tamaño = tamaño;
@@ -13,45 +14,53 @@ class Cola
         cantidad = 0;
     }
 
-    public void Enqueue(int elemento)
+    public void Enqueue(int valor)
     {
         if (cantidad == tamaño)
         {
-            Console.WriteLine("Cola llena. No se puede insertar el elemento.");
+            Console.WriteLine(" Cola llena.");
             return;
         }
         final = (final + 1) % tamaño;
-        elementos[final] = elemento;
+        elementos[final] = valor;
         cantidad++;
     }
+
     public int Dequeue()
     {
         if (cantidad == 0)
         {
-            Console.WriteLine("Cola vacía. No se puede eliminar ningún elemento.");
+            Console.WriteLine(" Cola vacía.");
             return -1;
         }
-        int elemento = elementos[frente];
+        int valor = elementos[frente];
         frente = (frente + 1) % tamaño;
         cantidad--;
-        return elemento;
+        return valor;
     }
-
 
     public int Peek()
     {
         if (cantidad == 0)
-        {
-            Console.WriteLine("Cola vacía. No hay elementos para mostrar.");
-            return -1;
-        }
+            throw new InvalidOperationException("Cola vacía.");
         return elementos[frente];
     }
 
-    public bool EstaVacia()
+    public bool EstaVacia() => cantidad == 0;
+
+    public bool EstaLlena() => cantidad == tamaño;
+
+    public bool Contiene(int valor)
     {
-        return cantidad == 0;
+        for (int i = 0; i < cantidad; i++)
+        {
+            if (elementos[(frente + i) % tamaño] == valor)
+                return true;
+        }
+        return false;
     }
+
+    public int CapacidadTotal() => tamaño;
 
     public void Mostrar()
     {
@@ -68,8 +77,6 @@ class Cola
     }
 }
 
-
-
 class Principal
 {
     static void Main(string[] args)
@@ -84,7 +91,10 @@ class Principal
             Console.WriteLine("2. Insertar (Enqueue)");
             Console.WriteLine("3. Eliminar (Dequeue)");
             Console.WriteLine("4. Ver frente (Peek)");
-            Console.WriteLine("5. Verificar si está vacía");
+            Console.WriteLine("5. Verificar la capacidad total de la cola");
+            Console.WriteLine("6. Verificar si un elemento existe en la cola");
+            Console.WriteLine("7. Verificar si la cola no tiene elementos");
+            Console.WriteLine("8. Verificar si la cola está llena");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
 
@@ -99,42 +109,69 @@ class Principal
                 case 1:
                     cola.Mostrar();
                     break;
+
                 case 2:
                     Console.Write("Ingrese el número a insertar: ");
                     if (int.TryParse(Console.ReadLine(), out int numero))
                     {
-
                         cola.Enqueue(numero);
-                        Console.WriteLine($"✅ Número {numero} insertado en la cola.");
+                        Console.WriteLine($" Número {numero} insertado en la cola.");
                     }
                     else
                     {
                         Console.WriteLine("Número inválido.");
                     }
                     break;
+
                 case 3:
                     int eliminado = cola.Dequeue();
                     if (eliminado != -1)
-                        Console.WriteLine($"Número {eliminado} eliminado de la cola.");
+                        Console.WriteLine($" Se eliminó {eliminado} de la cola.");
                     break;
+
                 case 4:
                     try
                     {
                         Console.WriteLine($" Frente de la cola: {cola.Peek()}");
                     }
-                    catch (Exception m)
+                    catch (Exception e)
                     {
-                        Console.WriteLine(m.Message);
+                        Console.WriteLine(e.Message);
                     }
                     break;
+
                 case 5:
-                    Console.WriteLine(cola.EstaVacia() ? "Cola vacía." : "Cola con elementos.");
+                    Console.WriteLine($" Capacidad total de la cola: {cola.CapacidadTotal()} elementos.");
                     break;
+
+                case 6:
+                    Console.Write("Ingrese el número a buscar en la cola: ");
+                    if (int.TryParse(Console.ReadLine(), out int buscado))
+                    {
+                        Console.WriteLine(cola.Contiene(buscado)
+                            ? $" El número {buscado} está en la cola."
+                            : $" El número {buscado} NO está en la cola.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número inválido.");
+                    }
+                    break;
+
+                case 7:
+                    Console.WriteLine(cola.EstaVacia() ? " La cola nO tiene elementos." : " La cola tiene elementos.");
+                    break;
+
+                case 8:
+                    Console.WriteLine(cola.EstaLlena() ? " La cola está llena." : " La cola NO está llena.");
+                    break;
+
                 case 0:
-                    Console.WriteLine("Saliendo del programa...");
+                    Console.WriteLine(" Saliendo del programa...");
                     break;
+
                 default:
-                    Console.WriteLine("Opción no válida.");
+                    Console.WriteLine(" Opción no válida.");
                     break;
             }
 
