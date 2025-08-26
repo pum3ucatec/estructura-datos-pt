@@ -61,7 +61,9 @@ Ingrese el tamaño máximo de la cola: 5
 7. Buscar un elemento (Contains)
 8. Verificar si está vacía (IsEmpty)
 9. Verificar si está llena (IsFull)
-0. alir
+0. Salir
+
+```txt
 Elija una opción: 2
 Ingrese un carácter a agregar: A
 'A' agregado a la cola.
@@ -71,12 +73,15 @@ Mostrar Cola
 Agregar (Enqueue)
 Eliminar (Dequeue)
 ...
+
 Elija una opción: 2
 Ingrese un carácter a agregar: B
 'B' agregado a la cola.
+
 ===== MENÚ DE LA COLA =====
 Mostrar Cola
 ...
+
 Elija una opción: 1
 Cola: A B
 
