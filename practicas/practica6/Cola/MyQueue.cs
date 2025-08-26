@@ -17,21 +17,19 @@ public class MyQueue
         this.Count = 0;
     }
 
-    // Insertar elemento al final de la cola
     public void Enqueue(char valor)
     {
-        if (Count == Size)
+        if (IsFull())
         {
             Console.WriteLine("La cola está llena.");
             return;
         }
-        Rear = (Rear + 1) % Size;  // Cola circular
+        Rear = (Rear + 1) % Size;
         Elements[Rear] = valor;
         Count++;
         Console.WriteLine($"Se insertó: {valor}");
     }
 
-    // Eliminar elemento del frente de la cola
     public void Dequeue()
     {
         if (IsEmpty())
@@ -40,12 +38,11 @@ public class MyQueue
             return;
         }
         char valor = Elements[Front];
-        Front = (Front + 1) % Size;  // Cola circular
+        Front = (Front + 1) % Size;
         Count--;
         Console.WriteLine($"Se eliminó: {valor}");
     }
 
-    // Ver el elemento en el frente sin eliminarlo
     public char Peek()
     {
         if (IsEmpty())
@@ -56,13 +53,37 @@ public class MyQueue
         return Elements[Front];
     }
 
-    // Verificar si la cola está vacía
     public bool IsEmpty()
     {
         return Count == 0;
     }
 
-    // Mostrar todos los elementos en orden
+    public bool IsFull()
+    {
+        return Count == Size;
+    }
+
+    public int GetCount()
+    {
+        return Count;
+    }
+
+    public int GetSize()
+    {
+        return Size;
+    }
+
+    public bool Contains(char valor)
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            int index = (Front + i) % Size;
+            if (Elements[index] == valor)
+                return true;
+        }
+        return false;
+    }
+
     public void Mostrar()
     {
         if (IsEmpty())
@@ -79,4 +100,3 @@ public class MyQueue
         Console.WriteLine();
     }
 }
-
