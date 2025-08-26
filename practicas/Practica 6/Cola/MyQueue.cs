@@ -1,70 +1,22 @@
 using System;
-using System.Collections.Generic;
 
-public class MyQueue
+public class Cola
 {
-    private char[] Elements;
-    private int Size;
-    private int Front;
-    private int Rear;
-    private int Count;
+    private int[] elementos;
+    private int tamaño;
+    private int frente;
+    private int final;
+    private int cantidad;
 
-    public MyQueue(int N)
+    public Cola(int N)
     {
-        this.Elements = new char[2] { 'D', 'V'};
-        this.Size = 2;
+        this.elementos = new int[N];
+        this.tamaño = N;
+        this.frente = 0;
+        this.final = -1;
+        this.cantidad = 0;
     }
 
-    public void Mostrar()
-    {
-        Console.WriteLine("\nElementos en la cola:");
-        for (int i = 0; i < this.Size; i++)
-        {
-            Console.Write($"{this.Elements[i]} ");
-        }
-    }
-
-    // Enqueue (Agregar a la cola)
-    public void Enqueue(int valor)
-    {
-        if (cantidad == tamaño)
-        {
-            Console.WriteLine("La cola está llena.");
-            return;
-        }
-        final = (final + 1) % tamaño;
-        elementos[final] = valor;
-        cantidad++;
-        Console.WriteLine("Elemento agregado: " + valor);
-    }
-
-    // Dequeue (Quitar de la cola)
-    public int Dequeue()
-    {
-        if (cantidad == 0)
-        {
-            Console.WriteLine("La cola está vacía.");
-            return -1;
-        }
-        int valor = elementos[frente];
-        frente = (frente + 1) % tamaño;
-        cantidad--;
-        Console.WriteLine("Elemento atendido: " + valor);
-        return valor;
-    }
-
-    // Peek (Ver el primero sin sacarlo)
-    public int Peek()
-    {
-        if (cantidad == 0)
-        {
-            Console.WriteLine("La cola está vacía.");
-            return -1;
-        }
-        return elementos[frente];
-    }
-
-    // Mostrar la cola
     public void Mostrar()
     {
         if (cantidad == 0)
@@ -80,5 +32,57 @@ public class MyQueue
             Console.Write(elementos[indice] + " ");
         }
         Console.WriteLine();
+    }
+
+    public void Enqueue(int valor)
+    {
+        if (cantidad == tamaño)
+        {
+            Console.WriteLine("La cola está llena.");
+            return;
+        }
+        final = (final + 1) % tamaño;
+        elementos[final] = valor;
+        cantidad++;
+        Console.WriteLine("Elemento agregado: " + valor);
+    }
+
+    public int Dequeue()
+    {
+        if (cantidad == 0)
+        {
+            Console.WriteLine("La cola está vacía.");
+            return -1;
+        }
+        int valor = elementos[frente];
+        frente = (frente + 1) % tamaño;
+        cantidad--;
+        Console.WriteLine("Elemento atendido: " + valor);
+        return valor;
+    }
+
+    public int Peek()
+    {
+        if (cantidad == 0)
+        {
+            Console.WriteLine("La cola está vacía.");
+            return -1;
+        }
+        return elementos[frente];
+    }
+
+    public bool EstaVacia()
+    {
+        return cantidad == 0;
+    }
+    
+    public bool EstaLlena()
+    {
+        return cantidad == tamaño;
+    }
+
+    public int Conteo()
+    {
+        return cantidad;
     }
 }

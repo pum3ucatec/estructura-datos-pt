@@ -1,5 +1,4 @@
 ﻿using System;
-
 class Principal
 {
     static void Main(string[] args)
@@ -15,6 +14,8 @@ class Principal
             Console.WriteLine("3. Eliminar (Dequeue)");
             Console.WriteLine("4. Ver frente (Peek)");
             Console.WriteLine("5. Verificar si está vacía");
+            Console.WriteLine("6. Verificar si está llena");
+            Console.WriteLine("7. Ver la cantidad(count)");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
 
@@ -58,7 +59,12 @@ class Principal
                     else
                         Console.WriteLine("La cola NO está vacía.");
                     break;
-
+                case 6:
+                    Console.WriteLine(cola.EstaLlena() ? "Sí, está llena" : "No, aún hay espacio");
+                    break;
+                case 7:
+                    Console.WriteLine("Cantidad de elementos: " + cola.Conteo());
+                    break;
                 case 0:
                     Console.WriteLine("Saliendo del programa...");
                     break;
