@@ -24,14 +24,14 @@ namespace Cola
         {
             if (Count == Size)
             {
-                Console.WriteLine("⚠️ La cola está llena, no se puede insertar.");
+                Console.WriteLine(" La cola está llena, no se puede insertar.");
                 return;
             }
 
             Rear = (Rear + 1) % Size;
             Elements[Rear] = value;
             Count++;
-            Console.WriteLine($"✅ Insertado {value} en la cola.");
+            Console.WriteLine($" Insertado {value} en la cola.");
         }
 
         // Insertar varios elementos
@@ -41,7 +41,7 @@ namespace Cola
             {
                 if (Count == Size)
                 {
-                    Console.WriteLine("⚠️ La cola está llena, no se pueden insertar más elementos.");
+                    Console.WriteLine(" La cola está llena, no se pueden insertar más elementos.");
                     break;
                 }
                 Enqueue(value);
@@ -53,14 +53,14 @@ namespace Cola
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía, no se puede eliminar.");
+                Console.WriteLine(" La cola está vacía, no se puede eliminar.");
                 return '\0';
             }
 
             char value = Elements[Front];
             Front = (Front + 1) % Size;
             Count--;
-            Console.WriteLine($"🗑️ Eliminado {value} de la cola.");
+            Console.WriteLine($" Eliminado {value} de la cola.");
             return value;
         }
 
@@ -69,7 +69,7 @@ namespace Cola
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía.");
+                Console.WriteLine(" La cola está vacía.");
                 return '\0';
             }
             return Elements[Front];
@@ -86,7 +86,7 @@ namespace Cola
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía.");
+                Console.WriteLine(" La cola está vacía.");
                 return;
             }
 
