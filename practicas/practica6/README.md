@@ -21,7 +21,7 @@ Interactúa con el menú para probar las distintas operaciones de la cola.
 
 ### 1.1. Archivo 1: MyQueue.cs
 
-Este archivo contiene la definición de la clase base QueueBase y la clase derivada MyQueue.
+Este archivo contiene la definición de la clase base QueueBase y la clase derivada MyQueue que contiene las operaciones de la cola.
 
 **1.1.1. Clase QueueBase**
 
@@ -32,17 +32,17 @@ Este archivo contiene la definición de la clase base QueueBase y la clase deriv
 	- **Rear** -> indice del ultimo elemento.
 	- **Count** -> cantidad de elementos en la cola.
 
-- **Metodos basicos:**
+- **Operaciones principales:**
 
-	- **IsEmpty()** -> retorna true si la cola está vacía.
-	- **IsFull()** -> retorna true si la cola está llena.
-	- **Clase MyQueue:** -> (hereda de QueueBase)
-
-- **Implementa las operaciones de la cola:**
-	- **Enqueue(char element)** -> inserta un elemento al final de la cola.
-	- **Dequeue()** -> elimina y retorna el primer elemento de la cola.
-	- **Peek()** -> muestra el primer elemento sin eliminarlo.
-	- **Mostrar()** -> imprime todos los elementos en orden FIFO.
+	- **Enqueue:** -> Inserta un elemento al final de la cola.
+	- **Dequeue:** -> Elimina el elemento en el frente de la cola.
+	- **Peek:** -> Devuelve el elemento en el frente de la cola sin eliminarlo.
+	- **Count:** -> Devuelve la cantidad de elementos almacenados actualmente en la cola.
+	- **Size:** -> Devuelve la capacidad maxima de la cola.
+	- **Contains:** -> Verifica si un elemento existe dentro de la cola.
+	- **IsEmpty:** -> Comprueba si la cola esta vacia.
+	- **IsFull:** -> Comprueba si la cola esta llena.
+	- **Mostrar:** -> Muestra todos los elementos de la cola en orden.
 
 ### 1.2. Archivo 2: Principal.cs
 
@@ -59,19 +59,27 @@ Luego, aparece el menu interactivo:
 2. Insertar (Enqueue)
 3. Eliminar (Dequeue)
 4. Ver frente (Peek)
-5. Verificar si está vacía
+5. Verificar si está vacía (IsEmpty)
 6. Insertar varios elementos
+7. Cantidad de elementos (Count)
+8. Tamaño de la cola (Size)
+9. Buscar elemento (Contains)
+10. Verificar si está llena (IsFull)
 0. Salir
 ```
 
 - **Opciones disponibles:**
 
 	1. **Mostrar COLA** -> Muestra todos los elementos en orden.
-	2. **Insertar (uno)** -> Inserta un solo caracter.
+	2. **Insertar (Enqueue)** -> Inserta un solo caracter.
 	3. **Eliminar (Dequeue)** -> Elimina el primer elemento de la cola.
 	4. **Ver frente (Peek)** -> Muestra el primer elemento sin eliminarlo.
-	5. **Verificar si esta vacia** -> Indica si la cola esta vacia o no.
+	5. **Verificar si esta vacia (IsEmpty)** -> Indica si la cola esta vacia o no.
 	6. **Insertar varios elementos** -> Permite ingresar varios caracteres separados por espacio y los agrega uno por uno a la cola.
+	7. **Cantidad de elementos (Count)** -> Devuelve la cantidad de elementos almacenados actualmente en la cola.
+	8. **Tamaño de la cola(Size)** -> Devuelve la capacidad maxima de la cola
+	9. **Buscar elemento(Countains)** -> Verifica si un elemento existe dentro de la cola.
+	10. **Verificar si esta llena(IsFull)** -> Comprueba si la cola esta llena.
 	0. **Salir** -> Finaliza el programa.
 
 ### 1.3. Ejemplo de uso en consola

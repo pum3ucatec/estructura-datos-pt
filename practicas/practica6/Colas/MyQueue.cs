@@ -26,6 +26,16 @@ public class QueueBase
     {
         return Count == Size;
     }
+
+    public int GetCount()
+    {
+        return Count;
+    }
+
+    public int GetSize()
+    {
+        return Size;
+    }
 }
 
 public class MyQueue : QueueBase
@@ -36,7 +46,7 @@ public class MyQueue : QueueBase
     {
         if (IsFull())
         {
-            Console.WriteLine("La cola está llena. No se puede insertar más datos.");
+            Console.WriteLine("La cola está llena. No se puede insertar.");
             return;
         }
 
@@ -69,6 +79,20 @@ public class MyQueue : QueueBase
             return '\0';
         }
         return Elements[Front];
+    }
+
+    public bool Contains(char element)
+    {
+        if (IsEmpty()) return false;
+
+        int index = Front;
+        for (int i = 0; i < Count; i++)
+        {
+            if (Elements[index] == element)
+                return true;
+            index = (index + 1) % Size;
+        }
+        return false;
     }
 
     public void Mostrar()
