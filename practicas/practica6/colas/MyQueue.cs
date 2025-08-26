@@ -9,22 +9,31 @@ public class MyQueue
     private int Rear;
     private int Count;
 
-    public MyQueue(int N)
-    {
-        this.Elements = new char[2] { 'D', 'V' };
-        this.Size = 3;
-    }
+public MyQueue(int n)
+{
+    Elements = new char[n];
+    Size = n;
+    Front = 0;
+    Rear = 0;
+    Count = 0;
+}
 
     public void Mostrar()
+{
+    Console.WriteLine("\nElementos en la cola:");
+    if (IsEmpty())
     {
-        Console.WriteLine("\nElementos en la cola:");
-        for (int i = 0; i < this.Size; i++)
-        {
-            Console.Write($"{this.Elements[i]} ");
-        }
-
-
+        Console.WriteLine("(vacía)");
+        return;
     }
+    int limite = Front;
+    for (int i = 0; i < Count; i++)
+    {
+        Console.Write($"{Elements[limite]} ");
+        limite = (limite + 1) % Size;
+    }
+    Console.WriteLine();
+}
 
     public void Enqueue(char value)
     {
@@ -76,14 +85,16 @@ public class MyQueue
     }
 
     public bool Contains(char value)
+{
+    int limite = Front;
+    for (int i = 0; i < Count; i++)
     {
-        for (int i = 0; i < Size; i++)
-        {
-            if (Elements[i] == value)
-                return true;
-        }
-        return false;
+        if (Elements[limite] == value)
+            return true;
+        limite = (limite + 1) % Size;
     }
+    return false;
+}
 
     public bool IsEmpty()
     {
