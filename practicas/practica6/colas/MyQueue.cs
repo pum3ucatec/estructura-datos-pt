@@ -12,7 +12,7 @@ public class MyQueue
     public MyQueue(int N)
     {
         this.Elements = new char[2] { 'D', 'V' };
-        this.Size = 2;
+        this.Size = 3;
     }
 
     public void Mostrar()
@@ -65,9 +65,33 @@ public class MyQueue
         return Elements[Front];
     }
 
+    public int CountElements()
+    {
+        return Count;
+    }
+
+    public int Length()
+    {
+        return Size;
+    }
+
+    public bool Contains(char value)
+    {
+        for (int i = 0; i < Size; i++)
+        {
+            if (Elements[i] == value)
+                return true;
+        }
+        return false;
+    }
+
     public bool IsEmpty()
-    { 
+    {
         return Count == 0;
     }
+    public bool IsFull()
+    { 
+        return Count == Size;
+}
 
 }
