@@ -29,16 +29,21 @@
                     break;
                 case 2:
                     Console.Write("Ingrese el número a insertar: ");
-                    
+                    int.TryParse(Console.ReadLine(), out int valor);
+                    cola.Enqueue(valor);
                     break;
                 case 3:
-                    
+                    Console.Write("Ingrese el número a eliminar: ");
+                    int.TryParse(Console.ReadLine(), out int valor);
+                    cola.Dequeue(valor);
                     break;
-                case 4:
-                    
+               case 4:
+                    char frente = cola.Peek();
+                    if (frente != '\0')
+                        Console.WriteLine($"Elemento en el frente: {frente}");
                     break;
                 case 5:
-                    
+                    Console.WriteLine(cola.IsEmpty() ? "La cola está vacía." : "La cola NO está vacía.");
                     break;
                 case 0:
                     Console.WriteLine("Saliendo del programa...");
