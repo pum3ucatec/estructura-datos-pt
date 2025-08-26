@@ -1,19 +1,15 @@
-﻿using System;
-using Cola;
-class Principal
+﻿class Principal
 {
     static void Main(string[] args)
     {
-        int tamanio;
-        Console.WriteLine("===== CONFIGURACIÓN DE LA COLA =====");
-        Console.Write("Ingrese el tamaño maximo de la cola: ");
-
-        while (!int.TryParse(Console.ReadLine(), out tamanio) || tamanio <= 0)
+        Console.Write("Ingrese el tamaño de la cola: ");
+        if (!int.TryParse(Console.ReadLine(), out int tamaño) || tamaño <= 0)
         {
-            Console.WriteLine("Debe ingresar un número entero positivo.");
-            Console.Write("Ingrese el tamaño maximo de la cola: ");
+            Console.WriteLine("Tamaño inválido. Usando tamaño por defecto de 5.");
+            tamaño = 5;
         }
-        MyQueue cola = new MyQueue(tamanio);
+
+        MyQueue cola = new MyQueue(tamaño);
         int opcion;
 
         do
@@ -23,11 +19,14 @@ class Principal
             Console.WriteLine("2. Insertar (Enqueue)");
             Console.WriteLine("3. Eliminar (Dequeue)");
             Console.WriteLine("4. Ver frente (Peek)");
-            Console.WriteLine("5. Verificar si está vacía");
-			Console.WriteLine("6. Insertar varios elementos");
+            Console.WriteLine("5. Ver final (Rear)");
+            Console.WriteLine("6. Verificar si está vacía (IsEmpty)");
+            Console.WriteLine("7. Verificar si está llena (IsFull)");
+            Console.WriteLine("8. Buscar elemento (Contains)");
+            Console.WriteLine("9. Ver cantidad de elementos actuales (Count)");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
-
+            
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
                 Console.WriteLine("Ingrese un número válido.");
@@ -41,44 +40,85 @@ class Principal
                     break;
                 case 2:
                     Console.Write("Ingrese el carácter a insertar: ");
-                    char valor;
-                    if (char.TryParse(Console.ReadLine(), out valor))
-                        cola.Enqueue(valor);
+                    char caracter;
+                    if (char.TryParse(Console.ReadLine(), out caracter))
+                    {
+                        cola.Enqueue(caracter);
+                    }
                     else
-                        Console.WriteLine("Debe ingresar un solo carácter.");
+                    {
+                        Console.WriteLine("Carácter inválido.");
+                    }
                     break;
                 case 3:
                     cola.Dequeue();
                     break;
                 case 4:
                     char frente = cola.Peek();
-                    if (frente != '\0')
-                        Console.WriteLine($"Frente de la cola: {frente}");
+                    if (frente != ' ')
+                    {
+                        Console.WriteLine($"El elemento en el frente es: '{frente}'");
+                    }
                     break;
                 case 5:
-                    Console.WriteLine(cola.IsEmpty() ? "La cola está vacía." : "La cola NO está vacía.");
-                    break;
-				 case 6:
-                    Console.Write("Ingrese varios caracteres separados por espacio: ");
-                    string entrada = Console.ReadLine();
-                    string[] elementos = entrada.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-                    foreach (var e in elementos)
+                    char final = cola.GetRear();
+                    if (final != ' ')
                     {
-                        if (e.Length == 1) 
-                            cola.Enqueue(e[0]);
-                        else
-                            Console.WriteLine($"'{e}' no es un carácter válido.");
+                        Console.WriteLine($"El elemento en el final es: '{final}'");
                     }
+                    break;
+                case 6:
+                    if (cola.IsEmpty())
+                    {
+                        Console.WriteLine("La cola está vacía.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("La cola NO está vacía.");
+                    }
+                    break;
+                case 7:
+                    if (cola.IsFull())
+                    {
+                        Console.WriteLine("La cola está llena.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("La cola NO está llena.");
+                        Console.WriteLine($"Espacios disponibles: {cola.GetSize() - cola.GetCount()}");
+                    }
+                    break;
+                case 8:
+                    Console.Write("Ingrese el carácter a buscar: ");
+                    if (char.TryParse(Console.ReadLine(), out char buscar))
+                    {
+                        int posicion = cola.Contains(buscar);
+                        if (posicion != -1)
+                        {
+                            Console.WriteLine($"El elemento '{buscar}' SÍ está en la cola.");
+                            Console.WriteLine($"Posición: {posicion}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"El elemento '{buscar}' NO está en la cola.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Carácter inválido.");
+                    }
+                    break;
+                case 9:
+                    Console.WriteLine($"Cantidad de elementos actuales: {cola.GetCount()}");
                     break;
                 case 0:
                     Console.WriteLine("Saliendo del programa...");
                     break;
-
                 default:
                     Console.WriteLine("Opción no válida.");
                     break;
             }
+
         } while (opcion != 0);
     }
 }
