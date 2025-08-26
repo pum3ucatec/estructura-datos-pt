@@ -16,22 +16,24 @@ class Principal
 
         do
         {
-            Console.WriteLine("\n===== MENÚ COLA =====");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("[     MENÚ COLA     ]");
+            Console.WriteLine("---------------------");
             Console.WriteLine("1. Mostrar COLA");
-            Console.WriteLine("2. Insertar (Enqueue)");
-            Console.WriteLine("3. Eliminar (Dequeue)");
-            Console.WriteLine("4. Ver frente (Peek)");
-            Console.WriteLine("5. Ver cantidad de elementos (Count)");
-            Console.WriteLine("6. Ver capacidad de la cola (Size)");
-            Console.WriteLine("7. Buscar elemento (Contains)");
-            Console.WriteLine("8. Verificar si está vacía (IsEmpty)");
-            Console.WriteLine("9. Verificar si está llena (IsFull)");
+            Console.WriteLine("2. Equeue = Insertar");
+            Console.WriteLine("3. Dequeue = Eliminar");
+            Console.WriteLine("4. Peek = Ver primer elemento");
+            Console.WriteLine("5. Count = Ver cantidad actual");
+            Console.WriteLine("6. Size = Ver capacidad máxima");
+            Console.WriteLine("7. Contains = Buscar elemento");
+            Console.WriteLine("8. IsEmpty = Verificar si está vacía");
+            Console.WriteLine("9. IsFull = Verificar si está llena");
             Console.WriteLine("0. Salir");
-            Console.Write("Seleccione una opción: ");
+            Console.Write("Seleccione la opción que desea: ");
 
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
-                Console.WriteLine("⚠️ Ingrese un número válido.");
+                Console.WriteLine("Ingrese un número válido.");
                 continue;
             }
 
@@ -41,58 +43,58 @@ class Principal
                     cola.Mostrar();
                     break;
 
-                case 2: // Enqueue
-                    Console.Write("Ingrese un carácter a insertar: ");
+                case 2: // Enqueue Encolar, Insertar
+                    Console.Write("Ingrese un carácter para insertar: ");
                     string entrada = Console.ReadLine();
                     if (!string.IsNullOrEmpty(entrada))
                         cola.Enqueue(entrada[0]);
                     else
-                        Console.WriteLine("⚠️ Entrada no válida.");
+                        Console.WriteLine(" Está entrada no es válida.");
                     break;
 
-                case 3: // Dequeue
+                case 3: // Dequeue Desencolar, Eliminar
                     char eliminado = cola.Dequeue();
                     if (eliminado != '\0')
-                        Console.WriteLine("✅ Se eliminó: " + eliminado);
+                        Console.WriteLine("Se eliminó el carcater: " + eliminado);
                     break;
 
-                case 4: // Peek
+                case 4: // Peek  Front Ver primer elemento
                     char frente = cola.Peek();
                     if (frente != '\0')
-                        Console.WriteLine("👀 El frente de la cola es: " + frente);
+                        Console.WriteLine("El frente de la cola está el caracter: " + frente);
                     break;
 
-                case 5: // GetCount
-                    Console.WriteLine("📊 Cantidad actual de elementos: " + cola.GetCount());
+                case 5: // Count Cantidad actual y elementos
+                    Console.WriteLine("La cantidad actual de elementos es: " + cola.GetCount());
                     break;
 
-                case 6: // GetSize
-                    Console.WriteLine("📏 Capacidad máxima de la cola: " + cola.GetSize());
+                case 6: // Size/Length Capacidad máxima poible
+                    Console.WriteLine("La capacidad máxima de la cola es: " + cola.GetSize());
                     break;
 
-                case 7: // Contains
-                    Console.Write("Ingrese el carácter a buscar: ");
+                case 7: // Contains Contiene, Buscar si existe un elemento 
+                    Console.Write("Ingrese el carácter que desea buscar en la cola: ");
                     string busqueda = Console.ReadLine();
                     if (!string.IsNullOrEmpty(busqueda))
-                        Console.WriteLine("🔍 ¿La cola contiene '{0}'?: {1}", busqueda[0], cola.Contains(busqueda[0]));
+                        Console.WriteLine(" ¿La cola contiene '{0}'?: {1}", busqueda[0], cola.Contains(busqueda[0]));
                     else
-                        Console.WriteLine("⚠️ Entrada no válida.");
+                        Console.WriteLine(" La entrada no es válida.");
                     break;
 
-                case 8: // IsEmpty
-                    Console.WriteLine("❓ ¿Cola vacía?: " + cola.IsEmpty());
+                case 8: // IsEmpty ¿Empty Cola vacía?
+                    Console.WriteLine(" ¿La cola está vacía?: " + cola.IsEmpty());
                     break;
 
-                case 9: // IsFull
-                    Console.WriteLine("❓ ¿Cola llena?: " + cola.IsFull());
+                case 9: // IsFull ¿Full Cola llena?
+                    Console.WriteLine(" ¿La cola está llena?: " + cola.IsFull());
                     break;
 
                 case 0:
-                    Console.WriteLine("👋 Saliendo del programa...");
+                    Console.WriteLine("  Estas saliendo del programa de colas...");
                     break;
 
                 default:
-                    Console.WriteLine("⚠️ Opción no válida.");
+                    Console.WriteLine(" Está opción no es válida, Imgrese otro caracter.");
                     break;
             }
 
