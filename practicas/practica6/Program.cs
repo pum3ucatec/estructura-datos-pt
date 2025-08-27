@@ -159,7 +159,7 @@ class Principal
                     break;
 
                 case 7:
-                    Console.WriteLine(cola.EstaVacia() ? " La cola nO tiene elementos." : " La cola tiene elementos.");
+                    Console.WriteLine(cola.EstaVacia() ? " La cola no tiene elementos." : " La cola tiene elementos.");
                     break;
 
                 case 8:
