@@ -28,7 +28,7 @@ public class MyQueue
     {
         if (IsFull())
         {
-            Console.WriteLine("❌ Error: La cola está llena. No se puede insertar.");
+            Console.WriteLine(" Error: La cola está llena. No se puede insertar.");
             return;
         }
 
@@ -36,7 +36,7 @@ public class MyQueue
         Elements[Rear] = elemento;
         Count++;
 
-        Console.WriteLine($"✔️ Elemento '{elemento}' insertado correctamente.");
+        Console.WriteLine($" Elemento '{elemento}' insertado correctamente.");
     }
 
     // Elimina el elemento del frente de la cola (Dequeue)
@@ -44,7 +44,7 @@ public class MyQueue
     {
         if (IsEmpty())
         {
-            Console.WriteLine("❌ Error: La cola está vacía. No se puede eliminar.");
+            Console.WriteLine(" Error: La cola está vacía. No se puede eliminar.");
             return ' ';
         }
 
@@ -53,7 +53,7 @@ public class MyQueue
         Front = (Front + 1) % Size;
         Count--;
 
-        Console.WriteLine($"✔️ Elemento '{elementoEliminado}' eliminado correctamente.");
+        Console.WriteLine($" Elemento '{elementoEliminado}' eliminado correctamente.");
         return elementoEliminado;
     }
 
@@ -62,7 +62,7 @@ public class MyQueue
     {
         if (IsEmpty())
         {
-            Console.WriteLine("⚠️ La cola está vacía.");
+            Console.WriteLine(" La cola está vacía.");
             return ' ';
         }
         return Elements[Front];
@@ -73,7 +73,7 @@ public class MyQueue
     {
         if (IsEmpty())
         {
-            Console.WriteLine("⚠️ La cola está vacía.");
+            Console.WriteLine(" La cola está vacía.");
             return ' ';
         }
         return Elements[Rear];

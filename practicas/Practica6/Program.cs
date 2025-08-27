@@ -36,7 +36,7 @@ class Program
             
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
-                Console.WriteLine("⚠️ Error: Ingrese un número válido.");
+                Console.WriteLine(" Error: Ingrese un número válido.");
                 continue;
             }
 
@@ -54,7 +54,7 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("⚠️ Error: Carácter inválido.");
+                        Console.WriteLine(" Error: Carácter inválido.");
                     }
                     break;
 
@@ -65,27 +65,27 @@ class Program
                 case 4:
                     char frente = cola.Peek();
                     if (frente != ' ')
-                        Console.WriteLine($"👉 El elemento en el frente es: '{frente}'");
+                        Console.WriteLine($" El elemento en el frente es: '{frente}'");
                     break;
 
                 case 5:
                     char final = cola.GetRear();
                     if (final != ' ')
-                        Console.WriteLine($"👉 El elemento al final es: '{final}'");
+                        Console.WriteLine($" El elemento al final es: '{final}'");
                     break;
 
                 case 6:
-                    Console.WriteLine(cola.IsEmpty() ? "✅ La cola está vacía." : "❌ La cola NO está vacía.");
+                    Console.WriteLine(cola.IsEmpty() ? " La cola está vacía." : " La cola NO está vacía.");
                     break;
 
                 case 7:
                     if (cola.IsFull())
                     {
-                        Console.WriteLine("✅ La cola está llena.");
+                        Console.WriteLine(" La cola está llena.");
                     }
                     else
                     {
-                        Console.WriteLine("❌ La cola NO está llena.");
+                        Console.WriteLine(" La cola NO está llena.");
                         Console.WriteLine($"Espacios disponibles: {cola.GetSize() - cola.GetCount()}");
                     }
                     break;
@@ -96,26 +96,26 @@ class Program
                     {
                         int posicion = cola.Contains(buscar);
                         if (posicion != -1)
-                            Console.WriteLine($"✅ El elemento '{buscar}' está en la cola (posición {posicion}).");
+                            Console.WriteLine($" El elemento '{buscar}' está en la cola (posición {posicion}).");
                         else
-                            Console.WriteLine($"❌ El elemento '{buscar}' NO está en la cola.");
+                            Console.WriteLine($" El elemento '{buscar}' NO está en la cola.");
                     }
                     else
                     {
-                        Console.WriteLine("⚠️ Error: Carácter inválido.");
+                        Console.WriteLine(" Error: Carácter inválido.");
                     }
                     break;
 
                 case 9:
-                    Console.WriteLine($"📊 Cantidad de elementos actuales: {cola.GetCount()}");
+                    Console.WriteLine($" Cantidad de elementos actuales: {cola.GetCount()}");
                     break;
 
                 case 0:
-                    Console.WriteLine("👋 Saliendo del programa...");
+                    Console.WriteLine(" Saliendo del programa...");
                     break;
 
                 default:
-                    Console.WriteLine("⚠️ Opción no válida. Intente nuevamente.");
+                    Console.WriteLine(" Opción no válida. Intente nuevamente.");
                     break;
             }
 
