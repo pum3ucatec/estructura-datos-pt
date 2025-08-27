@@ -22,71 +22,91 @@ namespace Cola
         // Insertar un elemento
         public void Enqueue(char value)
         {
-            if (Count == Size)
+            if (IsFull())
             {
-                Console.WriteLine("⚠️ La cola está llena, no se puede insertar.");
+                Console.WriteLine(" La cola está llena, no se puede insertar.");
                 return;
             }
 
             Rear = (Rear + 1) % Size;
             Elements[Rear] = value;
             Count++;
-            Console.WriteLine($"✅ Insertado {value} en la cola.");
+            Console.WriteLine($"Insertado {value} en la cola.");
         }
 
-        // Insertar varios elementos
-        public void EnqueueMultiple(char[] values)
-        {
-            foreach (var value in values)
-            {
-                if (Count == Size)
-                {
-                    Console.WriteLine("⚠️ La cola está llena, no se pueden insertar más elementos.");
-                    break;
-                }
-                Enqueue(value);
-            }
-        }
-
-        // Eliminar elemento
+        // Es para eliminar un elemento del frente
         public char Dequeue()
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía, no se puede eliminar.");
+                Console.WriteLine("La cola está vacía, no se puede eliminar.");
                 return '\0';
             }
 
             char value = Elements[Front];
             Front = (Front + 1) % Size;
             Count--;
-            Console.WriteLine($"🗑️ Eliminado {value} de la cola.");
+            Console.WriteLine($"Eliminado {value} de la cola.");
             return value;
         }
 
-        // Ver frente
+        
+        // Funcion peek es para Ver el frente sin eliminarlo
         public char Peek()
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía.");
+                Console.WriteLine("La cola está vacía.");
                 return '\0';
             }
             return Elements[Front];
         }
 
-        // Verificar si está vacía
+        // Función Count es para ver la cantidad de elementos actuales
+
+        public int GetCount()
+        {
+            return Count;
+        }
+
+        // Funcion length es para determinar la capacidad maxima de la cola
+
+        public int GetLength()
+        {
+            return Size;
+        }
+
+        // Funcion contains es para ver si un elemento existe en la cola
+
+        public bool Contains(char value)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                int index = (Front + i) % Size;
+                if (Elements[index] == value)
+                    return true;
+            }
+            return false;
+        }
+
+        // Funcion isEmpty es para ver si la cola esta vacia
         public bool IsEmpty()
         {
             return Count == 0;
         }
 
+        // Funcion is Full es para ver si la cola esta llena
+
+        public bool IsFull()
+        {
+            return Count == Size;
+        }
         // Mostrar cola
         public void Mostrar()
         {
             if (IsEmpty())
             {
-                Console.WriteLine("⚠️ La cola está vacía.");
+                Console.WriteLine("La cola está vacía.");
                 return;
             }
 
