@@ -65,11 +65,13 @@ Mensajes informativos de error
 ===== MENÚ COLA con NODOS =====
 1. Mostrar Cola (View)
 2. Insertar (Enqueue)
-3. Eliminar (Dequeue) 
+3. Eliminar frente (Dequeue)
 4. Ver frente (Peek)
 5. Verificar si está vacía (IsEmpty)
 6. Cantidad de elementos (Count)
 7. Vaciar cola (Clear)
 8. Buscar elemento (Contains)
+9. Eliminar por posición
+10. Eliminar por búsqueda (mostrar posición)
 0. Salir
 ```

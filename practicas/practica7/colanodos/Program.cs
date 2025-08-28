@@ -10,12 +10,14 @@
             Console.WriteLine("\n===== MENÚ COLA con NODOS =====");
             Console.WriteLine("1. Mostrar Cola (View)");
             Console.WriteLine("2. Insertar (Enqueue)");
-            Console.WriteLine("3. Eliminar (Dequeue)");
+            Console.WriteLine("3. Eliminar frente (Dequeue)");
             Console.WriteLine("4. Ver frente (Peek)");
             Console.WriteLine("5. Verificar si está vacía (IsEmpty)");
             Console.WriteLine("6. Cantidad de elementos (Count)");
             Console.WriteLine("7. Vaciar cola (Clear)");
             Console.WriteLine("8. Buscar elemento (Contains)");
+            Console.WriteLine("9. Eliminar por una posición");
+            Console.WriteLine("10. Eliminar por búsqueda");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             
@@ -73,6 +75,32 @@
                     {
                         bool encontrado = cola.Contains(buscar);
                         Console.WriteLine($"El elemento '{(encontrado ? "SÍ" : "NO")}' se encuentra en la cola.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Valor inválido para búsqueda.");
+                    }
+                    break;
+                case 9:
+                    Console.Write("Ingrese la posición a eliminar: ");
+                    if (int.TryParse(Console.ReadLine(), out int posicion))
+                    {
+                        string removido = cola.RemoveAt(posicion);
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("Posición inválida.");
+                    }
+                    break;
+                case 10:
+                    Console.Write("Ingrese el nombre a buscar y eliminar: ");
+                    string buscarEliminar = Console.ReadLine();
+                    if (!string.IsNullOrEmpty(buscarEliminar))
+                    {
+                        int posicionEncontrada;
+                        string eliminadoBusqueda = cola.RemoveAndFindPosition(buscarEliminar, out posicionEncontrada);
+                        
                     }
                     else
                     {

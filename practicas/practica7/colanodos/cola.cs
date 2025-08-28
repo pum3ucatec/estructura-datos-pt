@@ -39,7 +39,6 @@ public class Cola
         string valorEliminado = Front.Name;
         Front = Front.Next;
         
-        // Si la cola queda vacía después de eliminar
         if (Front == null)
         {
             Rear = null;
@@ -84,6 +83,110 @@ public class Cola
             current = current.Next;
         }
         return false;
+    }
+
+    // Nueva función: Eliminar por posición
+    public string RemoveAt(int position)
+    {
+        if (IsEmpty())
+        {
+            Console.WriteLine("La cola está vacía. No se puede eliminar.");
+            return null;
+        }
+
+        if (position < 1 || position > Count)
+        {
+            Console.WriteLine($"Posición inválida. Debe estar entre 1 y {Count}.");
+            return null;
+        }
+
+        // Caso especial: eliminar el primer elemento (posición 1)
+        if (position == 1)
+        {
+            return Dequeue();
+        }
+
+        Nodo current = Front;
+        Nodo previous = null;
+        int currentPosition = 1;
+
+        // Buscar el nodo en la posición especificada
+        while (current != null && currentPosition < position)
+        {
+            previous = current;
+            current = current.Next;
+            currentPosition++;
+        }
+
+        // Eliminar el nodo encontrado
+        if (current != null)
+        {
+            string removedValue = current.Name;
+            previous.Next = current.Next;
+
+            // Si eliminamos el último elemento, actualizar Rear
+            if (current.Next == null)
+            {
+                Rear = previous;
+            }
+
+            Count--;
+            Console.WriteLine($"Elemento '{removedValue}' eliminado de la posición {position}.");
+            return removedValue;
+        }
+
+        return null;
+    }
+
+    // Nueva función: Eliminar por búsqueda y mostrar posición
+    public string RemoveAndFindPosition(string name, out int position)
+    {
+        position = -1;
+        
+        if (IsEmpty())
+        {
+            Console.WriteLine("La cola está vacía. No se puede eliminar.");
+            return null;
+        }
+
+        // Caso especial: eliminar el primer elemento
+        if (Front.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+        {
+            position = 1;
+            return Dequeue();
+        }
+
+        Nodo current = Front;
+        Nodo previous = null;
+        int currentPosition = 1;
+
+        // Buscar el elemento
+        while (current != null)
+        {
+            if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
+                position = currentPosition;
+                string removedValue = current.Name;
+                previous.Next = current.Next;
+
+                // Si eliminamos el último elemento, actualizar Rear
+                if (current.Next == null)
+                {
+                    Rear = previous;
+                }
+
+                Count--;
+                Console.WriteLine($"Elemento '{removedValue}' encontrado y eliminado de la posición {position}.");
+                return removedValue;
+            }
+
+            previous = current;
+            current = current.Next;
+            currentPosition++;
+        }
+
+        Console.WriteLine($"Elemento '{name}' no encontrado en la cola.");
+        return null;
     }
 
     public void View()
