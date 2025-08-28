@@ -114,4 +114,58 @@ public class Cola
 
         Console.WriteLine(); // Salto de línea final
     }
+
+    // 🔹 NUEVO: Buscar la posición de un elemento por nombre
+    public int FindPosition(string name)
+    {
+        Nodo current = Front;
+        int position = 1;
+
+        while (current != null)
+        {
+            if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
+                return position;
+            }
+            current = current.Next;
+            position++;
+        }
+
+        return -1; // No encontrado
+    }
+
+    // 🔹 NUEVO: Eliminar elemento por posición
+    public string RemoveAt(int index)
+    {
+        if (index < 1 || index > size)
+        {
+            return null; // fuera de rango
+        }
+
+        if (index == 1) // eliminar el primero (Front)
+        {
+            return Dequeue();
+        }
+
+        Nodo current = Front;
+        Nodo previous = null;
+        int count = 1;
+
+        while (current != null && count < index)
+        {
+            previous = current;
+            current = current.Next;
+            count++;
+        }
+
+        if (current != null)
+        {
+            previous.Next = current.Next;
+            if (current == Rear) Rear = previous; // si se eliminó el último
+            size--;
+            return current.Name;
+        }
+
+        return null;
+    }
 }
