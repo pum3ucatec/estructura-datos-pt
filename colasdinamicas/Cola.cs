@@ -98,7 +98,7 @@ public class Cola<T>
             }
             else
             {
-                Console.WriteLine("⚠️ Posición no encontrada.");
+                Console.WriteLine("Posición no encontrada.");
                 return default(T);
             }
         }
@@ -112,7 +112,7 @@ public class Cola<T>
     {
         if (IsEmpty())
         {
-            Console.WriteLine("⚠️ La cola está vacía.");
+            Console.WriteLine("La cola está vacía.");
             return default(T);
         }
         return frente.Dato;
@@ -129,7 +129,7 @@ public class Cola<T>
     {
         if (IsEmpty())
         {
-            Console.WriteLine("⚠️ La cola está vacía.");
+            Console.WriteLine("La cola está vacía.");
             return;
         }
 
