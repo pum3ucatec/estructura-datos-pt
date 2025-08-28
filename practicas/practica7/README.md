@@ -1,12 +1,23 @@
-# Implementacion de Cola con Nodos en C#
+**ÍNDICE**
+- [1. Implementacion de Cola con Nodos en C#](#1-implementacion-de-cola-con-nodos-en-c)
+	- [1.1. Descripcion](#11-descripcion)
+		- [1.1.1. Como Ejecutar el Programa](#111-como-ejecutar-el-programa)
+	- [1.2. Estructura del Proyecto](#12-estructura-del-proyecto)
+		- [1.2.1. `Nodo.cs`](#121-nodocs)
+		- [1.2.2. `Cola.cs`](#122-colacs)
+		- [1.2.3. `Program.cs`](#123-programcs)
+	- [1.3. Ejemplo de Uso](#13-ejemplo-de-uso)
 
-## Descripcion
+
+# 1. Implementacion de Cola con Nodos en C#
+
+## 1.1. Descripcion
 
 Este proyecto implementa una Cola usando Nodos enlazados con C#
 
 El programa tiene un menu interactivo para insertar, eliminar, ver y gestionar los elementos de la cola.
 
-### Como Ejecutar el Programa
+### 1.1.1. Como Ejecutar el Programa
 
 **1. Requisitos**
 
@@ -40,11 +51,11 @@ Si usas la terminal con .NET:
 dotnet run
 ```
 
-## Estructura del Proyecto
+## 1.2. Estructura del Proyecto
 
 El proyecto esta dividido en tres archivos principales:
 
-### 1. `Nodo.cs`
+### 1.2.1. `Nodo.cs`
 
 Representa un nodo de la cola.
 
@@ -67,7 +78,7 @@ public class Nodo
 }
 ```
 
-### 2. `Cola.cs`
+### 1.2.2. `Cola.cs`
 
 Define la estructura de la Cola y sus operaciones principales.
 
@@ -79,14 +90,17 @@ Define la estructura de la Cola y sus operaciones principales.
 - **Metodos implementados:**
 	- `Enqueue(string name)` -> inserta un elemento al final.
 	- `Dequeue()` -> elimina el primer elemento.
+	- `Varios()` -> Agrega varios nombres a la vez.
 	- `Peek()` -> muestra el valor en el frente sin eliminarlo.
 	- `IsEmpty()` -> verifica si la cola está vacía.
 	- `GetCount()` -> devuelve el número de elementos.
 	- `Contains(string name)` -> busca si un elemento existe.
 	- `Clear()` -> vacía toda la cola.
 	- `View()` -> imprime todos los elementos.
+	- `Search(string name)` -> busca un elemento y devuelve su posición en la cola.
+	- `Abandon(string name)` -> permite que un elemento salga de la cola desde cualquier posición.
 
-### 3. `Program.cs`
+### 1.2.3. `Program.cs`
 
 Contiene el menu interactivo que permite al usuario manipular la cola.
 
@@ -94,25 +108,31 @@ Contiene el menu interactivo que permite al usuario manipular la cola.
 
 	- Mostrar Cola (View)
 	- Insertar (Enqueue)
+	- Insertar varios nombres
 	- Eliminar (Dequeue)
 	- Ver frente (Peek)
 	- Verificar si está vacía (IsEmpty)
 	- Cantidad de elementos (Count)
 	- Buscar elemento (Contains)
 	- Limpiar Cola (Clear)
+	- Buscar posición en la cola (Search)
+	- Abandonar cola desde cualquier posición (Abandon)
 	- Salir
 
-### 4. Ejemplo de Uso
+## 1.3. Ejemplo de Uso
 ```markdown
 ===== MENÚ COLA con NODOS =====
 1. Mostrar Cola(View)
 2. Insertar (Enqueue)
-3. Eliminar (Dequeue)
-4. Ver frente (Peek)
-5. Verificar si está vacía(IsEmpty)
-6. Cantidad de elementos (Count)
-7. Buscar elemento (Contains)
-8. Limpiar Cola (Clear)
+3. Insertar varios nombres
+4. Eliminar (Dequeue)
+5. Ver frente (Peek)
+6. Verificar si está vacía(IsEmpty)
+7. Cantidad de elementos (Count)
+8. Buscar elemento (Contains)
+9. Limpiar Cola (Clear)
+10. Buscar persona (Search)
+11. Abandonar cola (Abandon)
 0. Salir
 ```
 ```markdown
@@ -134,4 +154,18 @@ Elemento eliminado: Ana
 ```markdown
 Seleccione una opción: 1
 Cola: Pedro |
+```
+```markdown
+Seleccione una opción: 9
+Ingrese el nombre a buscar (posición): Pedro
+El elemento 'Pedro' está en la posición 1 de la cola.
+```
+```markdown
+Seleccione una opción: 10
+Ingrese el nombre que abandonará la cola: Pedro
+El elemento 'Pedro' abandonó la cola.
+```
+```markdown
+Seleccione una opción: 1
+La cola está vacía.
 ```
