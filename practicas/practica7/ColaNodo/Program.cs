@@ -19,7 +19,9 @@ namespace ColaNodo
                 Console.WriteLine("4. Ver frente (Peek)");
                 Console.WriteLine("5. Verificar si está vacía");
                 Console.WriteLine("6. Limpiar Cola");
-                Console.WriteLine("7. Tamaño de la Cola");
+                Console.WriteLine("7. Verificar la cantidad de elementos");
+                Console.WriteLine("8. Buscar elemento");
+                Console.WriteLine("9. Sacar un elemento");
                 Console.WriteLine("0. Salir");
                 Console.Write("Seleccione una opción: ");
 
@@ -59,7 +61,15 @@ namespace ColaNodo
                         cola.Clear();
                         break;
                     case 7:
-                        cola.Size();
+                        cola.Count();
+                        break;
+                    case 8:
+                        Console.Write("Ingrese el elemento a buscar: ");
+                        string elemento = Console.ReadLine();
+                        cola.Buscar(elemento);
+                        break;
+                    case 9:
+                        cola.SacarElemento();
                         break;
                     case 0:
                         Console.WriteLine("Saliendo del programa...");

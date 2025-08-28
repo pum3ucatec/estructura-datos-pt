@@ -97,9 +97,83 @@ namespace ColaNodo
             Console.WriteLine("La cola ha sido vaciada.");
         }
 
-        public void Size()
+        public void Count()
         {
             Console.WriteLine($"Tamaño actual de la cola: {tamaño}");
+        }
+
+        public void Buscar(string name)
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("La cola está vacía.");
+                return;
+            }
+
+            Nodo current = Front;
+            int posicion = 0;
+            bool encontrado = false;
+
+            while (current != null)
+            {
+                if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine($"Elemento '{name}' encontrado en la posición {posicion}.");
+                    encontrado = true;
+                    break;
+                }
+                current = current.Next;
+                posicion++;
+            }
+
+            if (!encontrado)
+            {
+                Console.WriteLine($"Elemento '{name}' no se encontró en la cola.");
+            }
+        }
+
+        public void SacarElemento()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("La cola está vacía.");
+                return;
+            }
+
+            Console.Write("Ingrese el nombre del elemento a eliminar: ");
+            string name = Console.ReadLine();
+
+            Nodo actual = Front;
+            Nodo anterior = null;
+
+            while (actual != null)
+            {
+                if (actual.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    if (anterior == null)
+                    {
+                        // Eliminar el primero
+                        Front = actual.Next;
+                        if (Front == null)
+                            Rear = null;
+                    }
+                    else
+                    {
+                        anterior.Next = actual.Next;
+                        if (actual == Rear)
+                            Rear = anterior;
+                    }
+
+                    tamaño--;
+                    Console.WriteLine($"Elemento '{name}' eliminado de la cola.");
+                    return;
+                }
+
+                anterior = actual;
+                actual = actual.Next;
+            }
+
+            Console.WriteLine($"Elemento '{name}' no se encontró en la cola.");
         }
     }
 }
