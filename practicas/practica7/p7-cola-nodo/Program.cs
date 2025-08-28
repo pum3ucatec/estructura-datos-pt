@@ -12,10 +12,12 @@
             Console.WriteLine("2. Insertar (Enqueue)");
             Console.WriteLine("3. Eliminar (Dequeue)");
             Console.WriteLine("4. Ver frente (Peek)");
-            Console.WriteLine("5. Verificar si esta vacia (IsEmpity)");
-            Console.WriteLine("6. Contar elementos de la lista (Count)");
+            Console.WriteLine("5. Verificar si esta vacia (IsEmpty)");
+            Console.WriteLine("6. Contar elementos de la cola (Count)");
             Console.WriteLine("7. Limpiar cola (Clear)");
-            Console.WriteLine("8. Buscar un elemento(Countains)");
+            Console.WriteLine("8. Buscar un elemento(Contains)");
+            Console.WriteLine("9. ¿Elemento existe?");
+            Console.WriteLine("10. Eliminar elemento especifico ");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             
@@ -52,7 +54,6 @@
                     Console.WriteLine(cola.IsEmpty() ? "La cola está vacía " : "La cola no está vacía.");
                     break;
                 case 6:
-                    cola.Count();
                     Console.WriteLine($"La cola tiene {cola.Count()} elementos.");
                     break;
                 case 7:
@@ -64,9 +65,19 @@
                     string elemento = Console.ReadLine();
                     int pos = cola.Contains(elemento);
                     if (pos != -1)
-                        Console.WriteLine($"El elemento está en la posición {pos}");
+                        Console.WriteLine($"Si esta en la cola, en la posición {pos + 1}");
                     else
-                        Console.WriteLine("El elemento no está en la cola.");
+                        Console.WriteLine("No está en la cola.");
+                    break;
+                case 9:
+                    Console.Write("Ingrese el elemento a buscar: ");
+                    string buscar = Console.ReadLine();
+                    Console.WriteLine(cola.ContainsBool(buscar) ? "El elemento sí está en la cola." : "El elemento no está en la cola.");
+                    break;
+                case 10:
+                    Console.Write("Ingrese el elemento a eliminar: ");
+                    string eliminar = Console.ReadLine();
+                    cola.EliminarEspecifico(eliminar);
                     break;
                 case 0:
                     break;

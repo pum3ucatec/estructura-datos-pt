@@ -82,10 +82,10 @@ public class Cola
     }
     public void Clear()
     {
-            this.Front = null;
-            this.Rear = null;
-        }
-        public int Contains(string name)
+        this.Front = null;
+        this.Rear = null;
+    }
+    public int Contains(string name)
     {
         Nodo current = this.Front;
         int posicion = 0;
@@ -93,13 +93,62 @@ public class Cola
         {
             if (current.Name == name)
             {
-                return posicion; // Retorna la posición donde se encontró
+                return posicion;
+
             }
             current = current.Next;
             posicion++;
         }
-        return -1; // No se encontró
+        return -1;
+    }
+
+    public bool ContainsBool(string name)
+    {
+        Nodo current = this.Front;
+        while (current != null)
+        {
+            if (current.Name == name)
+            {
+                return true;
+            }
+            current = current.Next;
+        }
+        return false;
     }
     
+    public void EliminarEspecifico(string name)
+    {
+         if (IsEmpty())
+        {
+            Console.WriteLine("La cola está vacía. No se puede eliminar ningún elemento.");
+            return;
+        }
+        if (Front.Name == name)
+        {
+            Front = Front.Next;
+            if (Front == null)
+                Rear = null;
+            Console.WriteLine($"Elemento '{name}' eliminado.");
+            return;
+
+        }
+        Nodo current = Front;
+        while (current.Next != null)
+        {
+            if (current.Next.Name == name)
+            {
+                current.Next = current.Next.Next; 
+                
+                if (current.Next == null)
+                    Rear = current;
+                Console.WriteLine($"Elemento '{name}' eliminado.");
+                return; 
+            }
+            current = current.Next;
+        }
+        Console.WriteLine("No se encontró el elemento.");
+        
+    }
+
    
 }
