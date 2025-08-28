@@ -92,6 +92,62 @@ public class Cola
         return false;
     }
 
+    public int BuscarElementoConPosicion(string name)
+    {
+        Nodo current = this.Front;
+        int position = 1;
+
+        while (current != null)
+        {
+            if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
+                return position;
+            }
+            current = current.Next;
+            position++;
+        }
+
+        return -1; // No encontrado
+    }
+
+    public string EliminarPorPosicion(int posicion)
+    {
+        if (posicion <= 0 || posicion > this.Count())
+        {
+            return null;
+        }
+
+        if (posicion == 1)
+        {
+            return this.Dequeue();
+        }
+
+        Nodo current = this.Front;
+        Nodo previous = null;
+        int count = 1;
+
+        while (current != null && count < posicion)
+        {
+            previous = current;
+            current = current.Next;
+            count++;
+        }
+
+        if (current == null)
+        {
+            return null;
+        }
+
+        previous.Next = current.Next;
+
+        if (current == this.Rear)
+        {
+            this.Rear = previous;
+        }
+
+        return current.Name;
+    }
+
     public void View()
     {
         if (this.IsEmpty())

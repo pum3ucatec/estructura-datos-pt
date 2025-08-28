@@ -50,6 +50,12 @@ El menú interactivo incluye las siguientes operaciones:
 - *8. Buscar Elemento (Contains)*  
   Verifica si un valor específico existe dentro de la cola.  
 
+- *9. Buscar Elemento y Mostrar Posición*  
+  Busca un nombre específico en la cola y devuelve la posición que ocupa (empezando desde 1).  
+
+- *10. Eliminar Elemento por Posición*  
+  Elimina un nodo ubicado en una posición específica dentro de la cola (por índice comenzando en 1).  
+
 - *0. Salir*  
   Finaliza el programa.  
 
@@ -67,6 +73,8 @@ El menú interactivo incluye las siguientes operaciones:
 6. Contar elementos
 7. Limpiar cola
 8. Buscar elemento
+9. Buscar elemento y mostrar posición
+10. Eliminar elemento por posición
 0. Salir
 Seleccione una opción: 2
 Ingrese el nombre a insertar: Juan
@@ -76,19 +84,24 @@ Seleccione una opción: 2
 Ingrese el nombre a insertar: Ana
 Elemento insertado.
 
-Seleccione una opción: 1
-Contenido de la cola:
-Sebas | Juanma | Jose Gabriel |
+Seleccione una opción: 9
+Ingrese el nombre a buscar: Ana
+Elemento 'Ana' encontrado en la posición 2.
+
+Seleccione una opción: 10
+Ingrese la posición del elemento a eliminar: 1
+Elemento eliminado: Juan
 ```
 
-## 🛠️ Tecnologías
+ 
+# 🛠️ Tecnologías
 Lenguaje: C#
 
 Framework: .NET Console Application
 
 Paradigma: Programación Orientada a Objetos
 
-## 📘 Conceptos Clave Aprendidos 
+# 📘 Conceptos Clave Aprendidos
 
 Uso de nodos enlazados para implementar una cola dinámica.
 

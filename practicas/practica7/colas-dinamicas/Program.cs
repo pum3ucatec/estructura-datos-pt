@@ -15,7 +15,9 @@
             Console.WriteLine("5. Verificar si está vacía");
             Console.WriteLine("6. Contar elementos");
             Console.WriteLine("7. Limpiar cola");
-            Console.WriteLine("8. Buscar elemento");
+            Console.WriteLine("8. Buscar si existe un elemento");
+            Console.WriteLine("9. Buscar elemento y mostrar posición");
+            Console.WriteLine("10. Eliminar elemento por posición");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
 
@@ -77,6 +79,32 @@
                         Console.WriteLine("Elemento encontrado en la cola.");
                     else
                         Console.WriteLine("Elemento NO encontrado.");
+                    break;
+
+                case 9:
+                    Console.Write("Ingrese el nombre a buscar: ");
+                    string nombreBuscar = Console.ReadLine();
+                    int pos = cola.BuscarElementoConPosicion(nombreBuscar);
+                    if (pos != -1)
+                        Console.WriteLine($"Elemento '{nombreBuscar}' encontrado en la posición {pos}.");
+                    else
+                        Console.WriteLine("Elemento no encontrado.");
+                    break;
+
+                case 10:
+                    Console.Write("Ingrese la posición del elemento a eliminar: ");
+                    if (int.TryParse(Console.ReadLine(), out int posicionEliminar))
+                    {
+                        string eliminadoPorPos = cola.EliminarPorPosicion(posicionEliminar);
+                        if (eliminadoPorPos != null)
+                            Console.WriteLine($"Elemento eliminado: {eliminadoPorPos}");
+                        else
+                            Console.WriteLine("No se pudo eliminar. Posición inválida.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ingrese un número válido.");
+                    }
                     break;
 
                 case 0:
