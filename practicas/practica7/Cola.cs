@@ -1,71 +1,126 @@
+using System;
+
 public class Cola
 {
     public Nodo Front { get; private set; }
     public Nodo Rear { get; private set; }
-    private int CountElements;  // contador de elementos
+    private int CountElements;
 
     public Cola()
     {
-        this.Front = null;
-        this.Rear = null;
-        this.CountElements = 0;
+        Front = null;
+        Rear = null;
+        CountElements = 0;
     }
 
-    // Insertar al final
+    // Insertar un nombre
     public void Enqueue(string name)
     {
         Nodo nodo = new Nodo(name);
 
-        if (this.Front == null)
+        if (IsEmpty())
         {
-            this.Front = nodo;
-            this.Rear = nodo;
+            Front = nodo;
+            Rear = nodo;
         }
         else
         {
-            this.Rear.Next = nodo;
-            this.Rear = nodo;
+            Rear.Next = nodo;
+            Rear = nodo;
         }
         CountElements++;
     }
 
-    // Eliminar del frente
+    // Eliminar el primer elemento
     public string Dequeue()
     {
         if (IsEmpty())
-            throw new InvalidOperationException("La cola está vacía.");
+        {
+            Console.WriteLine(" La cola está vacía.");
+            return null;
+        }
 
         string value = Front.Name;
         Front = Front.Next;
+        CountElements--;
 
-        if (Front == null)
-            Rear = null;
+        if (Front == null) Rear = null;
+
+        return value;
+    }
+
+    // Eliminar por posición (1 = primer nodo)
+    public string RemoveAt(int position)
+    {
+        if (IsEmpty())
+        {
+            Console.WriteLine(" La cola está vacía.");
+            return null;
+        }
+
+        if (position < 1 || position > CountElements)
+        {
+            Console.WriteLine(" Posición inválida.");
+            return null;
+        }
+
+        Nodo current = Front;
+        string value;
+
+        if (position == 1)
+        {
+            return Dequeue(); // ya tenemos el método para esto
+        }
+
+        Nodo prev = null;
+        int index = 1;
+        while (index < position)
+        {
+            prev = current;
+            current = current.Next;
+            index++;
+        }
+
+        value = current.Name;
+        prev.Next = current.Next;
+
+        if (current == Rear) Rear = prev;
 
         CountElements--;
         return value;
     }
 
-    // Ver el primero sin eliminar
+    // Ver primer elemento
     public string Peek()
     {
-        if (IsEmpty())
-            throw new InvalidOperationException("La cola está vacía.");
-        return Front.Name;
+        return IsEmpty() ? null : Front.Name;
     }
 
-    // ¿Está vacía?
-    public bool IsEmpty()
+    // Buscar nombre y mostrar su posición
+    public int Search(string name)
     {
-        return Front == null;
+        Nodo current = Front;
+        int position = 1;
+
+        while (current != null)
+        {
+            if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
+                return position;
+            }
+            current = current.Next;
+            position++;
+        }
+        return -1;
     }
 
-    // Cantidad de elementos
-    public int Count()
+    // Verificar si contiene un nombre
+    public bool Contains(string name)
     {
-        return CountElements;
+        return Search(name) != -1;
     }
 
-    // Vaciar cola
+    // Vaciar la cola
     public void Clear()
     {
         Front = null;
@@ -73,35 +128,36 @@ public class Cola
         CountElements = 0;
     }
 
-    // ¿Contiene un valor?
-    public bool Contains(string name)
+    // Mostrar toda la cola
+   public void View()
+{
+    Nodo current = this.Front;
+
+    if (current == null)
     {
-        Nodo current = Front;
-        while (current != null)
-        {
-            if (current.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
-                return true;
-            current = current.Next;
-        }
-        return false;
+        Console.WriteLine(" La cola está vacía.");
+        return;
     }
 
-    // Mostrar elementos
-    public void View()
+    Console.WriteLine(" Nombres que hay en la cola:");
+    while (current != null)
     {
-        if (IsEmpty())
-        {
-            Console.WriteLine("La cola está vacía.");
-            return;
-        }
+        Console.Write($"| {current.Name} ");
+        current = current.Next;
+    }
+    Console.WriteLine("|");
+}
 
-        Nodo current = this.Front;
-        Console.Write("Elementos en la cola: ");
-        while (current != null)
-        {
-            Console.Write($"{current.Name} | ");
-            current = current.Next;
-        }
-        Console.WriteLine();
+
+    // Verificar si está vacía
+    public bool IsEmpty()
+    {
+        return Front == null;
+    }
+
+    // Cantidad actual de elementos
+    public int Count()
+    {
+        return CountElements;
     }
 }
