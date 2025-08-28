@@ -98,38 +98,38 @@ Ejemplo de ejecución
 8. Ver último elemento de la cola
 0. Salir
 Elige una opción: 1
-👉 Ingresa un nombre: Laura
-✔️ 'Laura' agregado a la cola.
+ Ingresa un nombre: Laura
+ 'Laura' agregado a la cola.
 
 Elige una opción: 1
-👉 Ingresa un nombre: Juan
-✔️ 'Juan' agregado a la cola.
+ Ingresa un nombre: Juan
+ 'Juan' agregado a la cola.
 
 Elige una opción: 1
-👉 Ingresa un nombre: Sofia
-✔️ 'Sofia' agregado a la cola.
+ Ingresa un nombre: Sofia
+ 'Sofia' agregado a la cola.
 
 Elige una opción: 4
-📋 Elementos en la cola con su posición:
+ Elementos en la cola con su posición:
 1. Laura
 2. Juan
 3. Sofia
 
 Elige una opción: 7
-🔎 Ingresa los nombres a buscar (separados por coma): Juan, Pedro, Sofia
-✅ 'Juan' está en la fila 2 de la cola.
-❌ 'Pedro' NO está en la cola.
-✅ 'Sofia' está en la fila 3 de la cola.
+ Ingresa los nombres a buscar (separados por coma): Juan, Pedro, Sofia
+ 'Juan' está en la fila 2 de la cola.
+ 'Pedro' NO está en la cola.
+ 'Sofia' está en la fila 3 de la cola.
 
 Elige una opción: 2
-❌ Ingresa el nombre a eliminar: Laura
-✔️ 'Laura' eliminado de la cola.
+ Ingresa el nombre a eliminar: Laura
+ 'Laura' eliminado de la cola.
 
 Elige una opción: 3
-👀 Primero en la cola: Juan
+Primero en la cola: Juan
 
 Elige una opción: 8
-👀 Último en la cola: Sofia
+Último en la cola: Sofia
 
 Diagrama simple de la cola
 [ Frente ] → Juan → Sofia → [ Final ]
@@ -157,4 +157,4 @@ Muestra primer y último elemento de la cola.
 
 Menú interactivo y con colores.
 
-Código modular en Nodo.cs, Cola.cs y Program.cs.
+Código modular en Nodo.cs, Cola.cs y Program.cs. 

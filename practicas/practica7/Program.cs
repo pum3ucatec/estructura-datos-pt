@@ -26,7 +26,7 @@ class Program
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("⚠️ Ingresa un número válido.");
+                Console.WriteLine(" Ingresa un número válido.");
                 Console.ResetColor();
                 continue;
             }
@@ -35,39 +35,39 @@ class Program
             switch (opcion)
             {
                 case 1:
-                    Console.Write("👉 Ingresa un nombre: ");
+                    Console.Write(" Ingresa un nombre: ");
                     string? nombre = Console.ReadLine();
                     if (!string.IsNullOrWhiteSpace(nombre))
                     {
                         cola.Enqueue(nombre);
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"✔️ '{nombre}' agregado a la cola.");
+                        Console.WriteLine($" '{nombre}' agregado a la cola.");
                         Console.ResetColor();
                     }
                     break;
 
                 case 2:
-                    Console.Write("❌ Ingresa el nombre a eliminar: ");
+                    Console.Write(" Ingresa el nombre a eliminar: ");
                     string? nombreEliminar = Console.ReadLine();
                     if (!string.IsNullOrWhiteSpace(nombreEliminar))
                     {
                         bool eliminado = cola.Remove(nombreEliminar);
                         Console.ForegroundColor = eliminado ? ConsoleColor.Red : ConsoleColor.Yellow;
                         Console.WriteLine(eliminado
-                            ? $"✔️ '{nombreEliminar}' eliminado de la cola."
-                            : $"⚠️ '{nombreEliminar}' no se encontró en la cola.");
+                            ? $" '{nombreEliminar}' eliminado de la cola."
+                            : $" '{nombreEliminar}' no se encontró en la cola.");
                         Console.ResetColor();
                     }
                     break;
 
                 case 3:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine($"👀 Primero en la cola: {cola.Peek() ?? "Nada, está vacía"}");
+                    Console.WriteLine($"Primero en la cola: {cola.Peek() ?? "Nada, está vacía"}");
                     Console.ResetColor();
                     break;
 
                 case 4:
-                    Console.WriteLine("📋 Elementos en la cola con su posición:");
+                    Console.WriteLine(" Elementos en la cola con su posición:");
                     Nodo? actual = cola.Front;
                     int pos = 1;
                     while (actual != null)
@@ -82,14 +82,14 @@ class Program
 
                 case 5:
                     Console.ForegroundColor = ConsoleColor.Magenta;
-                    Console.WriteLine($"📊 Cantidad de elementos: {cola.Count()}");
+                    Console.WriteLine($" Cantidad de elementos: {cola.Count()}");
                     Console.ResetColor();
                     break;
 
                 case 6:
                     cola.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("🧹 Cola vaciada.");
+                    Console.WriteLine(" Cola vaciada.");
                     Console.ResetColor();
                     break;
 
@@ -105,12 +105,12 @@ class Program
                             if (posicion != -1)
                             {
                                 Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine($"✅ '{n}' está en la fila {posicion} de la cola.");
+                                Console.WriteLine($" '{n}' está en la fila {posicion} de la cola.");
                             }
                             else
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine($"❌ '{n}' NO está en la cola.");
+                                Console.WriteLine($" '{n}' NO está en la cola.");
                             }
                         }
                         Console.ResetColor();
@@ -119,19 +119,19 @@ class Program
 
                 case 8:
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine($"👀 Último en la cola: {cola.Last() ?? "Nada, está vacía"}");
+                    Console.WriteLine($" Último en la cola: {cola.Last() ?? "Nada, está vacía"}");
                     Console.ResetColor();
                     break;
 
                 case 0:
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("👋 Saliendo del programa...");
+                    Console.WriteLine(" Saliendo del programa...");
                     Console.ResetColor();
                     break;
 
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("⚠️ Opción no válida.");
+                    Console.WriteLine(" Opción no válida.");
                     Console.ResetColor();
                     break;
             }
