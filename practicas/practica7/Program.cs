@@ -13,13 +13,13 @@ class Program
             Console.WriteLine("\n===== MENÚ DE COLA =====");
             Console.ResetColor();
             Console.WriteLine("1. Encolar (Agregar)");
-            Console.WriteLine("2. Desencolar (Eliminar)");
+            Console.WriteLine("2. Eliminar un nombre específico");
             Console.WriteLine("3. Ver primer elemento (Peek)");
-            Console.WriteLine("4. Ver todos los elementos");
+            Console.WriteLine("4. Ver todos los elementos con posición");
             Console.WriteLine("5. Cantidad de elementos");
-            Console.WriteLine("6. ¿Está vacía?");
-            Console.WriteLine("7. Vaciar cola (Clear)");
-            Console.WriteLine("8. Buscar un nombre (Contains)");
+            Console.WriteLine("6. Vaciar cola (Clear)");
+            Console.WriteLine("7. Buscar nombres (uno o varios)");
+            Console.WriteLine("8. Ver último elemento de la cola");
             Console.WriteLine("0. Salir");
             Console.Write("Elige una opción: ");
 
@@ -47,12 +47,17 @@ class Program
                     break;
 
                 case 2:
-                    string? eliminado = cola.Dequeue();
-                    Console.ForegroundColor = eliminado != null ? ConsoleColor.Red : ConsoleColor.Yellow;
-                    Console.WriteLine(eliminado != null
-                        ? $"❌ Se eliminó: {eliminado}"
-                        : "⚠️ La cola está vacía.");
-                    Console.ResetColor();
+                    Console.Write("❌ Ingresa el nombre a eliminar: ");
+                    string? nombreEliminar = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(nombreEliminar))
+                    {
+                        bool eliminado = cola.Remove(nombreEliminar);
+                        Console.ForegroundColor = eliminado ? ConsoleColor.Red : ConsoleColor.Yellow;
+                        Console.WriteLine(eliminado
+                            ? $"✔️ '{nombreEliminar}' eliminado de la cola."
+                            : $"⚠️ '{nombreEliminar}' no se encontró en la cola.");
+                        Console.ResetColor();
+                    }
                     break;
 
                 case 3:
@@ -62,8 +67,17 @@ class Program
                     break;
 
                 case 4:
-                    Console.WriteLine("📋 Elementos en la cola:");
-                    cola.View();
+                    Console.WriteLine("📋 Elementos en la cola con su posición:");
+                    Nodo? actual = cola.Front;
+                    int pos = 1;
+                    while (actual != null)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine($"{pos}. {actual.Dato}");
+                        Console.ResetColor();
+                        actual = actual.Siguiente;
+                        pos++;
+                    }
                     break;
 
                 case 5:
@@ -73,29 +87,40 @@ class Program
                     break;
 
                 case 6:
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine($"❓ ¿Está vacía?: {cola.IsEmpty()}");
-                    Console.ResetColor();
-                    break;
-
-                case 7:
                     cola.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("🧹 Cola vaciada.");
                     Console.ResetColor();
                     break;
 
-                case 8:
-                    Console.Write("🔎 Ingresa el nombre a buscar: ");
-                    string? buscar = Console.ReadLine();
-                    if (!string.IsNullOrWhiteSpace(buscar))
+                case 7:
+                    Console.Write("🔎 Ingresa los nombres a buscar (separados por coma): ");
+                    string? entrada = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(entrada))
                     {
-                        Console.ForegroundColor = cola.Contains(buscar) ? ConsoleColor.Green : ConsoleColor.Red;
-                        Console.WriteLine(cola.Contains(buscar)
-                            ? $"✅ La cola contiene a '{buscar}'."
-                            : $"❌ La cola NO contiene a '{buscar}'.");
+                        string[] nombres = entrada.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+                        foreach (string n in nombres)
+                        {
+                            int posicion = cola.IndexOf(n);
+                            if (posicion != -1)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine($"✅ '{n}' está en la fila {posicion} de la cola.");
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine($"❌ '{n}' NO está en la cola.");
+                            }
+                        }
                         Console.ResetColor();
                     }
+                    break;
+
+                case 8:
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine($"👀 Último en la cola: {cola.Last() ?? "Nada, está vacía"}");
+                    Console.ResetColor();
                     break;
 
                 case 0:

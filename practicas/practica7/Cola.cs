@@ -13,6 +13,9 @@ public class Cola
         cantidad = 0;
     }
 
+    // Propiedad para acceder al frente desde Program.cs
+    public Nodo? Front => frente;
+
     public void Enqueue(string dato)
     {
         Nodo nuevo = new Nodo(dato);
@@ -43,6 +46,8 @@ public class Cola
     }
 
     public string? Peek() => frente?.Dato;
+
+    public string? Last() => final?.Dato;
 
     public bool Contains(string dato)
     {
@@ -85,4 +90,44 @@ public class Cola
     }
 
     public bool IsEmpty() => cantidad == 0;
+
+    public int IndexOf(string dato)
+    {
+        Nodo? actual = frente;
+        int posicion = 1;
+        while (actual != null)
+        {
+            if (actual.Dato == dato) return posicion;
+            actual = actual.Siguiente;
+            posicion++;
+        }
+        return -1;
+    }
+
+    // Eliminar un nombre específico
+    public bool Remove(string dato)
+    {
+        if (frente == null) return false;
+
+        if (frente.Dato == dato)
+        {
+            Dequeue();
+            return true;
+        }
+
+        Nodo? actual = frente;
+        while (actual.Siguiente != null)
+        {
+            if (actual.Siguiente.Dato == dato)
+            {
+                if (actual.Siguiente == final)
+                    final = actual;
+                actual.Siguiente = actual.Siguiente.Siguiente;
+                cantidad--;
+                return true;
+            }
+            actual = actual.Siguiente;
+        }
+        return false;
+    }
 }

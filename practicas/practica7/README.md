@@ -1,76 +1,160 @@
 Colas Dinámicas
 
-Este proyecto implementa una cola dinámica en C# con un menú interactivo, permitiendo al usuario agregar, eliminar y consultar elementos en la cola de manera sencilla. Está diseñado para practicar estructuras de datos y operaciones básicas de colas utilizando programación orientada a objetos.
+Escobar Rosas Edwin
 
-🔹 Características
+Práctica: 7
 
-Implementación de cola dinámica con nodos enlazados.
+Descripción
 
-Permite agregar cualquier cantidad de elementos sin límite.
+Este proyecto implementa una cola dinámica en C#.
+Permite agregar, eliminar y buscar nombres de manera interactiva, mostrando la posición de cada elemento, así como el primero y el último de la fila.
+La cola es ilimitada y su visualización ayuda a entender cómo se organiza internamente.
 
-Menú interactivo con colores para mejorar la experiencia visual.
+Archivos principales
+Nodo.cs
 
-Operaciones disponibles:
+Representa un nodo de la cola.
 
-Enqueue (Agregar): Agrega un elemento al final de la cola.
+Contiene:
 
-Dequeue (Eliminar): Elimina el primer elemento de la cola.
+Dato: el nombre almacenado.
 
-Peek (Ver primero): Muestra el primer elemento sin eliminarlo.
+Siguiente: referencia al siguiente nodo.
 
-View (Ver todos): Muestra todos los elementos de la cola.
+Cola.cs
 
-Count (Cantidad): Indica cuántos elementos hay en la cola.
+Implementa la cola dinámica.
 
-IsEmpty (Vacía): Verifica si la cola está vacía.
+Funciones principales:
 
-Clear (Vaciar): Elimina todos los elementos de la cola.
+Enqueue(string dato): agregar un nombre al final.
 
-Contains (Buscar): Verifica si un elemento específico está en la cola.
+Dequeue(): eliminar el primer elemento.
 
-🔹 Descripción de los archivos
+Remove(string dato): eliminar un nombre específico.
 
-Nodo.cs:
-Representa un nodo individual de la cola. Contiene:
+Peek(): mostrar el primer elemento sin eliminarlo.
 
-Dato: el valor que guarda el nodo (en este caso un nombre).
+Last(): mostrar el último elemento.
 
-Siguiente: referencia al siguiente nodo en la cola.
+Contains(string dato): verificar si un nombre existe.
 
-Cola.cs:
-Implementa la estructura de la cola dinámica. Contiene:
+IndexOf(string dato): obtener la posición/fila de un nombre.
 
-Referencias a los nodos frente y final.
+Count(): cantidad de elementos.
 
-Métodos para todas las operaciones de la cola (Enqueue, Dequeue, Peek, View, Count, IsEmpty, Clear, Contains).
+Clear(): vaciar toda la cola.
 
-Manejo del número de elementos de la cola.
+View(): mostrar todos los elementos.
 
-Program.cs:
-Implementa el menú interactivo que permite al usuario interactuar con la cola. Contiene:
+Program.cs
 
-Opciones para agregar, eliminar, consultar y buscar elementos.
+Contiene el menú interactivo en consola con colores.
 
-Validación de entradas y mensajes claros con colores en consola.
+Funciones del menú:
 
-Salida ordenada y amigable para el usuario.
+Agregar nombres a la cola.
 
-🔹 Cómo ejecutar
+Eliminar un nombre específico.
 
-Abrir la terminal en la carpeta del proyecto.
+Ver el primer elemento (Peek).
+
+Ver todos los elementos con posición/fila.
+
+Ver cantidad de elementos.
+
+Vaciar la cola (Clear).
+
+Buscar uno o varios nombres mostrando su posición.
+
+Ver el último elemento de la cola.
+
+Salir del programa.
+
+La búsqueda permite ingresar varios nombres separados por coma.
+
+Las posiciones comienzan desde 1 (frente de la cola).
+
+Cómo ejecutar
+
+Abrir PowerShell en la carpeta del proyecto (practica7).
 
 Ejecutar:
 
 dotnet run
 
 
-Seguir las opciones del menú.
+Seguir las instrucciones del menú interactivo.
 
-Ingresar nombres cuando se agreguen elementos.
+Ejemplo de ejecución
+===== MENÚ DE COLA =====
+1. Encolar (Agregar)
+2. Eliminar un nombre específico
+3. Ver primer elemento (Peek)
+4. Ver todos los elementos con posición
+5. Cantidad de elementos
+6. Vaciar cola (Clear)
+7. Buscar nombres (uno o varios)
+8. Ver último elemento de la cola
+0. Salir
+Elige una opción: 1
+👉 Ingresa un nombre: Laura
+✔️ 'Laura' agregado a la cola.
 
-Usar 0 para salir del programa.
+Elige una opción: 1
+👉 Ingresa un nombre: Juan
+✔️ 'Juan' agregado a la cola.
 
-🔹 Autor
+Elige una opción: 1
+👉 Ingresa un nombre: Sofia
+✔️ 'Sofia' agregado a la cola.
 
-Escobar Rosas Edwin
-Proyecto de práctica de estructuras de datos en C#.
+Elige una opción: 4
+📋 Elementos en la cola con su posición:
+1. Laura
+2. Juan
+3. Sofia
+
+Elige una opción: 7
+🔎 Ingresa los nombres a buscar (separados por coma): Juan, Pedro, Sofia
+✅ 'Juan' está en la fila 2 de la cola.
+❌ 'Pedro' NO está en la cola.
+✅ 'Sofia' está en la fila 3 de la cola.
+
+Elige una opción: 2
+❌ Ingresa el nombre a eliminar: Laura
+✔️ 'Laura' eliminado de la cola.
+
+Elige una opción: 3
+👀 Primero en la cola: Juan
+
+Elige una opción: 8
+👀 Último en la cola: Sofia
+
+Diagrama simple de la cola
+[ Frente ] → Juan → Sofia → [ Final ]
+
+
+El primer nodo está al frente y se elimina primero.
+
+Los nuevos nombres se agregan al final.
+
+Cada nodo apunta al siguiente (Siguiente).
+
+Se puede buscar cualquier nombre y ver su posición/fila.
+
+Características
+
+Cola dinámica sin límite de elementos.
+
+Permite agregar, eliminar y buscar nombres fácilmente.
+
+Muestra posición/fila de cada elemento.
+
+Permite búsqueda de múltiples nombres a la vez.
+
+Muestra primer y último elemento de la cola.
+
+Menú interactivo y con colores.
+
+Código modular en Nodo.cs, Cola.cs y Program.cs.
