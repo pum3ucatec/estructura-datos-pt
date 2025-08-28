@@ -1,57 +1,61 @@
-Colas Dinámicas
+Práctica 7: Colas Dinámicas en C#
 
-Escobar Rosas Edwin
-
-Práctica: 7
+Autor: Escobar Rosas Edwin
 
 Descripción
 
-Este proyecto implementa una cola dinámica en C#.
-Permite agregar, eliminar y buscar nombres de manera interactiva, mostrando la posición de cada elemento, así como el primero y el último de la fila.
-La cola es ilimitada y su visualización ayuda a entender cómo se organiza internamente.
+Este proyecto implementa una cola dinámica en C# utilizando nodos enlazados.
+Permite agregar, eliminar y buscar nombres de manera interactiva, mostrando la posición de cada elemento, así como el primero y el último de la fila. La cola es ilimitada y su visualización ayuda a entender cómo se organiza internamente.
+
+Estructura del proyecto
+practica7/
+│
+├─ Nodo.cs      # Representa cada nodo de la cola
+├─ Cola.cs      # Implementa la cola dinámica con operaciones básicas
+├─ Program.cs   # Menú interactivo en consola
+└─ README.md    # Documentación del proyecto
 
 Archivos principales
 Nodo.cs
 
 Representa un nodo de la cola.
-
 Contiene:
 
-Dato: el nombre almacenado.
+Dato → El valor almacenado (nombre).
 
-Siguiente: referencia al siguiente nodo.
+Siguiente → Referencia al siguiente nodo en la cola.
 
 Cola.cs
 
-Implementa la cola dinámica.
-
+Implementa la estructura de la cola dinámica.
 Funciones principales:
 
-Enqueue(string dato): agregar un nombre al final.
+Enqueue(string dato) → Agrega un nombre al final.
 
-Dequeue(): eliminar el primer elemento.
+Dequeue() → Elimina el primer elemento.
 
-Remove(string dato): eliminar un nombre específico.
+Remove(string dato) → Elimina un nombre específico.
 
-Peek(): mostrar el primer elemento sin eliminarlo.
+Peek() → Muestra el primer elemento sin eliminarlo.
 
-Last(): mostrar el último elemento.
+Last() → Muestra el último elemento.
 
-Contains(string dato): verificar si un nombre existe.
+Contains(string dato) → Verifica si un nombre existe.
 
-IndexOf(string dato): obtener la posición/fila de un nombre.
+IndexOf(string dato) → Obtiene la posición/fila de un nombre.
 
-Count(): cantidad de elementos.
+Count() → Retorna la cantidad de elementos.
 
-Clear(): vaciar toda la cola.
+Clear() → Vacía toda la cola.
 
-View(): mostrar todos los elementos.
+View() → Muestra todos los elementos con su posición.
+
+IsEmpty() → Verifica si la cola está vacía.
 
 Program.cs
 
-Contiene el menú interactivo en consola con colores.
-
-Funciones del menú:
+Contiene el menú interactivo en consola.
+Permite:
 
 Agregar nombres a la cola.
 
@@ -61,7 +65,7 @@ Ver el primer elemento (Peek).
 
 Ver todos los elementos con posición/fila.
 
-Ver cantidad de elementos.
+Contar elementos en la cola.
 
 Vaciar la cola (Clear).
 
@@ -72,19 +76,7 @@ Ver el último elemento de la cola.
 Salir del programa.
 
 La búsqueda permite ingresar varios nombres separados por coma.
-
 Las posiciones comienzan desde 1 (frente de la cola).
-
-Cómo ejecutar
-
-Abrir PowerShell en la carpeta del proyecto (practica7).
-
-Ejecutar:
-
-dotnet run
-
-
-Seguir las instrucciones del menú interactivo.
 
 Ejemplo de ejecución
 ===== MENÚ DE COLA =====
@@ -98,38 +90,32 @@ Ejemplo de ejecución
 8. Ver último elemento de la cola
 0. Salir
 Elige una opción: 1
- Ingresa un nombre: Laura
- 'Laura' agregado a la cola.
+Ingresa un nombre: Laura
+'Laura' agregado a la cola.
 
 Elige una opción: 1
- Ingresa un nombre: Juan
- 'Juan' agregado a la cola.
-
-Elige una opción: 1
- Ingresa un nombre: Sofia
- 'Sofia' agregado a la cola.
+Ingresa un nombre: Juan
+'Juan' agregado a la cola.
 
 Elige una opción: 4
- Elementos en la cola con su posición:
+Elementos en la cola con su posición:
 1. Laura
 2. Juan
-3. Sofia
 
 Elige una opción: 7
- Ingresa los nombres a buscar (separados por coma): Juan, Pedro, Sofia
- 'Juan' está en la fila 2 de la cola.
- 'Pedro' NO está en la cola.
- 'Sofia' está en la fila 3 de la cola.
+Ingresa los nombres a buscar (separados por coma): Juan, Pedro
+'Juan' está en la fila 2 de la cola.
+'Pedro' NO está en la cola.
 
 Elige una opción: 2
- Ingresa el nombre a eliminar: Laura
- 'Laura' eliminado de la cola.
+Ingresa el nombre a eliminar: Laura
+'Laura' eliminado de la cola.
 
 Elige una opción: 3
 Primero en la cola: Juan
 
 Elige una opción: 8
-Último en la cola: Sofia
+Último en la cola: Juan
 
 Diagrama simple de la cola
 [ Frente ] → Juan → Sofia → [ Final ]
@@ -155,6 +141,33 @@ Permite búsqueda de múltiples nombres a la vez.
 
 Muestra primer y último elemento de la cola.
 
-Menú interactivo y con colores.
+Menú interactivo y claro.
 
-Código modular en Nodo.cs, Cola.cs y Program.cs. 
+Código modular en Nodo.cs, Cola.cs y Program.cs.
+
+Cómo ejecutar
+
+Abrir PowerShell en la carpeta del proyecto (practica7).
+
+Ejecutar:
+
+dotnet run
+
+
+Seguir las instrucciones del menú interactivo.
+
+Notas sobre C# y referencias nulas
+
+En el código se utiliza ? para declarar nodos y propiedades nullable, por ejemplo:
+
+private Nodo? frente;
+public Nodo? Siguiente { get; set; }
+
+
+Esto indica que la variable puede contener null, lo cual tiene sentido:
+
+Al inicio, la cola está vacía → frente = null
+
+El último nodo apunta a null → Siguiente = null
+
+Esto evita warnings del compilador sobre referencias nulas y posibles errores en tiempo de ejecución.
