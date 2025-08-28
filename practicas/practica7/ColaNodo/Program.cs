@@ -18,6 +18,8 @@ class Principal
             Console.WriteLine("6. Contar elementos");
             Console.WriteLine("7. Limpiar Cola (Clear)");
             Console.WriteLine("8. Buscar en la Cola (Contains)");
+            Console.WriteLine("9. Buscar posición de un elemento");
+            Console.WriteLine("10. Eliminar por posición");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
 
@@ -77,6 +79,30 @@ class Principal
                     string buscar = Console.ReadLine();
                     bool encontrado = cola.Contains(buscar);
                     Console.WriteLine(encontrado ? "El nombre está en la cola." : "El nombre no se encontró.");
+                    break;
+
+                case 9:
+                    Console.Write("Ingrese el nombre a buscar (posición): ");
+                    string nombreBuscar = Console.ReadLine();
+                    int pos = cola.Search(nombreBuscar);
+                    if (pos != -1)
+                        Console.WriteLine($"'{nombreBuscar}' está en la posición {pos} de la cola.");
+                    else
+                        Console.WriteLine("El elemento no se encontró en la cola.");
+                    break;
+
+                case 10:
+                    Console.Write("Ingrese la posición a eliminar: ");
+                    if (int.TryParse(Console.ReadLine(), out int posEliminar))
+                    {
+                        string eliminadoPos = cola.RemoveAt(posEliminar);
+                        if (eliminadoPos != null)
+                            Console.WriteLine($"Elemento '{eliminadoPos}' eliminado en la posición {posEliminar}.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Posición inválida.");
+                    }
                     break;
 
                 case 0:
