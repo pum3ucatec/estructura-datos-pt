@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\colasdinamicas\\ColaNodo.csproj",
-      "projectName": "ColaNodo",
-      "projectPath": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\colasdinamicas\\ColaNodo.csproj",
+      "projectUniqueName": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\ejemplos\\e1-mayor-dos-numeros\\e1-mayor-dos-numeros.csproj",
+      "projectName": "e1-mayor-dos-numeros",
+      "projectPath": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\ejemplos\\e1-mayor-dos-numeros\\e1-mayor-dos-numeros.csproj",
       "packagesPath": "C:\\Users\\Laboratorio3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\colasdinamicas\\obj\\",
+      "outputPath": "C:\\Users\\Laboratorio3\\ucatec\\estructura-datos-pt\\ejemplos\\e1-mayor-dos-numeros\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Laboratorio3\\AppData\\Roaming\\NuGet\\NuGet.Config"
