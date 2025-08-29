@@ -7,7 +7,7 @@ Permite operaciones típicas de una cola: insertar, eliminar, ver frente, verifi
 
 
 El proyecto consta de tres clases principales:
-- **Nodo.cs** → Representa cada nodo de la cola.
+- **Nodo.cs** → Representa cada nodo.
 - **Cola.cs** → Implementa la estructura de la cola con operaciones básicas.
 - **Program.cs (Principal.cs)** → Muestra la interfaz de usuario mediante un menú en consola.
 
@@ -46,7 +46,7 @@ A[Frente] --> B[Nodo 1] --> C[Nodo 2] --> E[Final]
 6. **Contar elementos** → Muestra la cantidad de elementos en la cola.  
 7. **Vaciar cola (Clear)** → Elimina todos los elementos de la cola.  
 8. **Verificar si contiene un valor (Contains)** → Busca un valor específico dentro de la cola.  
-
+9. **Eliminar cualquier elemento** → Elimina un elemento especifico no siempre el del frente.
 ---
 
 ## Ejecución del programa
@@ -67,6 +67,7 @@ A[Frente] --> B[Nodo 1] --> C[Nodo 2] --> E[Final]
     6. Contar elementos
     7. Vaciar cola (Clear)
     8. Verificar si contiene un valor
+    9. Eliminar cualquier elemento
     0. Salir
     Seleccione una opción: 5
     La cola está vacía.

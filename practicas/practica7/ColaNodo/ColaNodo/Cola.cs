@@ -68,16 +68,18 @@ public class Cola<T>
         count = 0;
     }
 
-    public bool Contains(T dato)
+    public int Contains(T dato)
     {
         Nodo<T>? actual = frente;
+        int posicion = 0;
         while (actual != null)
         {
             if (actual.Dato!.Equals(dato))
-                return true;
+                return posicion;
             actual = actual.Siguiente;
+            posicion++;
         }
-        return false;
+        return -1;
     }
 
     public void Mostrar()
@@ -90,5 +92,39 @@ public class Cola<T>
             actual = actual.Siguiente;
         }
         Console.WriteLine("null");
+    }
+
+    public bool EliminarCualquierElemento(T dato)
+    {
+        if (EstaVacia())
+            return false;
+
+        Nodo<T>? actual = frente;
+        Nodo<T>? anterior = null;
+
+        while (actual != null)
+        {
+            if (actual.Dato!.Equals(dato))
+            {
+                if (anterior == null)
+                {
+                    // Eliminar el frente
+                    frente = actual.Siguiente;
+                    if (frente == null)
+                        fin = null;
+                }
+                else
+                {
+                    anterior.Siguiente = actual.Siguiente;
+                    if (actual == fin)
+                        fin = anterior;
+                }
+                count--;
+                return true;
+            }
+            anterior = actual;
+            actual = actual.Siguiente;
+        }
+        return false;
     }
 }
