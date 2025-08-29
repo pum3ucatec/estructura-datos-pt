@@ -39,3 +39,18 @@ Lista original:
 
 Después de ejecutar EliminarAlrededor(30):
 10 -> 30 -> 50 -> null
+```
+###🔹 Inciso C: Mostrar lista
+```csharp
+public void MostrarLista()
+Recorre la lista desde la cabeza hasta el final.
+
+Imprime todos los nodos en el formato:
+rust
+Copiar código
+valor1 -> valor2 -> ... -> null
+
+ Ejemplo de salida:
+rust
+Copiar código
+Lista: 10 -> 20 -> 30 -> 40 -> 50 -> null
