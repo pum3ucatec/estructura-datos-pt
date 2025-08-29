@@ -1,0 +1,5 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.sourcelink.json
