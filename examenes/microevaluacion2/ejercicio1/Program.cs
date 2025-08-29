@@ -2,19 +2,16 @@
 
 class Program
 {
-    // Clase para cada elemento de la lista
     class Nodo
     {
         public string nombre;
         public Nodo siguiente;
     }
-
-    static Nodo inicio = null; // Donde empieza la lista
-
+    static Nodo inicio = null;
     static void Main()
     {
         int opcion;
-        
+
         do
         {
             Console.WriteLine("\n--- LISTA DE NOMBRES ---");
@@ -22,10 +19,10 @@ class Program
             Console.WriteLine("2. Ver todos los nombres");
             Console.WriteLine("3. Salir");
             Console.Write("Elige una opción: ");
-            
+
             opcion = Convert.ToInt32(Console.ReadLine());
-            
-            switch(opcion)
+
+            switch (opcion)
             {
                 case 1:
                     AgregarNombre();
@@ -40,26 +37,22 @@ class Program
                     Console.WriteLine("Opción no válida");
                     break;
             }
-            
+
         } while (opcion != 3);
     }
 
-    // Función para agregar nombre al inicio
     static void AgregarNombre()
     {
         Console.Write("Ingresa un nombre: ");
         string nom = Console.ReadLine();
-        
+
         Nodo nuevo = new Nodo();
         nuevo.nombre = nom;
         nuevo.siguiente = inicio;
-        
         inicio = nuevo;
-        
         Console.WriteLine("¡Nombre agregado al inicio!");
     }
 
-    // Función para ver todos los nombres
     static void VerNombres()
     {
         if (inicio == null)
@@ -67,11 +60,9 @@ class Program
             Console.WriteLine("La lista está vacía");
             return;
         }
-        
         Console.WriteLine("\nNombres en la lista:");
         Nodo actual = inicio;
         int contador = 1;
-        
         while (actual != null)
         {
             Console.WriteLine($"{contador}. {actual.nombre}");
