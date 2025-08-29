@@ -23,7 +23,7 @@ El programa permite mostrar los elementos, ingresar letras al final y eliminar n
 
 ## Ejecución del programa  
 
-Al iniciar, la lista se carga con los valores:  
+Al iniciar, la lista se carga con los valores:
 
 P → K → A → D → D → A
 
@@ -44,16 +44,20 @@ Elige una opción:
 ## Ejemplo de uso  
 
 **1. Mostrar lista:**  
+
 Elementos en la lista: [1:P] [2:K] [3:A] [4:D] [5:D] [6:A]
 
 **2. Eliminar alrededor de un valor:**  
-Ingrese el valor alrededor del cual desea eliminar: A
-Se eliminó 'K' en la posición 2
+Ingrese el valor alrededor del cual desea eliminar: A    
+
+Se eliminó 'K' en la posición 2  
+
 Se eliminó 'D' en la posición 4
 
 **3. Ingresar letra:**  
-Ingrese la letra a agregar: X
-'X' agregado a la lista.
+Ingrese la letra a agregar: X  
+
+'X' agregado a la lista.  
 
 **4. Salir:**  
 

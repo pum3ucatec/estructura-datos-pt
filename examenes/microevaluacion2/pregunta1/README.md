@@ -18,16 +18,18 @@ El programa permite mostrar los elementos de la cola e **insertar nuevos valores
 ## Ejecución del programa  
 
 Al iniciar, la lista se llena con los valores iniciales:  
-P → K → A → D → D → A 
+
+P → K → A → D → D → A   
 
 # Después, aparece el menú:  
---- Menú ---
+--- Menú ---  
 
-1. Mostrar lista
+1. Mostrar lista  
 
-2. Insertar al inicio
+2. Insertar al inicio  
 
-3. Salir
+3. Salir  
+
 Elige una opción:
 
 ---
@@ -35,13 +37,16 @@ Elige una opción:
 ## Ejemplo de uso  
 
 **Mostrar lista:**  
-Elementos: P K A D D A
+  
+Elementos: P K A D D A  
 
 **Insertar un valor al inicio:**  
-Escribe el valor a insertar al inicio: X
-'X' agregado al inicio.
-
-Elementos: X P K A D D A
+  
+Escribe el valor a insertar al inicio: X  
+  
+'X' agregado al inicio.  
+  
+Elementos: X P K A D D A  
 
 **Salir del programa:**  
 
