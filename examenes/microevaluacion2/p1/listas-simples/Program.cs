@@ -1,0 +1,29 @@
+﻿class Program
+{
+    static void Main()
+    {
+        ListasSimples lista = new ListasSimples();
+        char opcion;
+        do
+        {
+            Console.WriteLine("1. Insertar al principio");
+            Console.WriteLine("2. Mostrar lista");
+            Console.WriteLine("0. Salir");
+            Console.Write("Opción: ");
+            opcion = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+
+            switch (opcion)
+            {
+                case '1':
+                    Console.Write("Ingrese un nombre: ");
+                    string nombre = Console.ReadLine()!;
+                    lista.InsertarAlPrincipio(nombre);
+                    break;
+                case '2':
+                    lista.Mostrar();
+                    break;
+            }
+        } while (opcion != '0');
+    }
+}
