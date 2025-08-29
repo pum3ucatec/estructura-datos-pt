@@ -14,7 +14,7 @@ class Program
 
         do
         {
-            Console.WriteLine("\n--- LISTA DE NOMBRES ---");
+            Console.WriteLine("\n LISTA DE NOMBRES ");
             Console.WriteLine("1. Agregar nombre al inicio");
             Console.WriteLine("2. Ver todos los nombres");
             Console.WriteLine("3. Salir");
@@ -31,10 +31,10 @@ class Program
                     VerNombres();
                     break;
                 case 3:
-                    Console.WriteLine("¡Adiós!");
+                    Console.WriteLine("programa terminado");
                     break;
                 default:
-                    Console.WriteLine("Opción no válida");
+                    Console.WriteLine("Opción invalida");
                     break;
             }
 
@@ -50,14 +50,14 @@ class Program
         nuevo.nombre = nom;
         nuevo.siguiente = inicio;
         inicio = nuevo;
-        Console.WriteLine("¡Nombre agregado al inicio!");
+        Console.WriteLine("Nombre agregado al inicio");
     }
 
     static void VerNombres()
     {
         if (inicio == null)
         {
-            Console.WriteLine("La lista está vacía");
+            Console.WriteLine("La lista esta vacia");
             return;
         }
         Console.WriteLine("\nNombres en la lista:");
