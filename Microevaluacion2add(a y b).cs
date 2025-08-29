@@ -9,6 +9,10 @@ class Nodo
         siguiente = null;
     }
 }
+// A)Inciso a la insercion del principio de la lista simple
+// se añade a su cabeza el elemento nuevo recoriendo uno el espacio <<A>> , <<B>> , <<C>> a=1 b=2 c=3
+// seguria esta logica agregadon "+ = W " <<W>>, <<A>> , <<B>> , <<C>> 
+// pasando de w=1 a=2 b=3 c=4
 class ListaEnlazada
 {
     private Nodo cabeza;
