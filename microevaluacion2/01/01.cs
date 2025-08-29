@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class Nodo<T>
 {
@@ -47,7 +48,7 @@ public class ListaSimple<T>
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         ListaSimple<string> lista = new ListaSimple<string>();
         lista.Agregar("Anthony");
@@ -58,4 +59,3 @@ class Program
         lista.Mostrar();
     }
 }
-

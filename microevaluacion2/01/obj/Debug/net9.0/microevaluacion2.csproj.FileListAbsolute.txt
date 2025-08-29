@@ -1,0 +1,15 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\bin\Debug\net9.0\microevaluacion2.exe
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\bin\Debug\net9.0\microevaluacion2.deps.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\bin\Debug\net9.0\microevaluacion2.runtimeconfig.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\bin\Debug\net9.0\microevaluacion2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\bin\Debug\net9.0\microevaluacion2.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.sourcelink.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\refint\microevaluacion2.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\microevaluacion2.genruntimeconfig.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\microevaluacion2\obj\Debug\net9.0\ref\microevaluacion2.dll

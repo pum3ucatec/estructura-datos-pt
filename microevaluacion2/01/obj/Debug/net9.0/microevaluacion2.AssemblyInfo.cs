@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("microevaluacion2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bed336aba445dfc99dd6c687a88b6aa6dbce913d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ce15c85e5edf2e11ae1ba2b1e398745069f59e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("microevaluacion2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("microevaluacion2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
