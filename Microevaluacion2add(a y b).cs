@@ -1,45 +1,84 @@
 using System;
+
 class Nodo
 {
     public int dato;
     public Nodo siguiente;
+
     public Nodo(int valor)
     {
-        dato = valor;
-        siguiente = null;
+        this.dato = valor;
+        this.siguiente = null;
     }
 }
-// A)Inciso a la insercion del principio de la lista simple
-// se añade a su cabeza el elemento nuevo recoriendo uno el espacio <<A>> , <<B>> , <<C>> a=1 b=2 c=3
-// seguria esta logica agregadon "+ = W " <<W>>, <<A>> , <<B>> , <<C>> 
-// pasando de w=1 a=2 b=3 c=4
+
 class ListaEnlazada
 {
     private Nodo cabeza;
+
     public ListaEnlazada()
     {
         cabeza = null;
     }
-    public void InsertarAlFinal(int valor)
+
+   
+    public void InsertarAlPrincipio(int valor)
     {
         Nodo nuevoNodo = new Nodo(valor);
-        if (cabeza == null)
+        nuevoNodo.siguiente = cabeza;
+        cabeza = nuevoNodo;
+    }
+
+   
+    public void EliminarAlrededor(int valor)
+    {
+        if (cabeza == null || cabeza.siguiente == null)
         {
-            cabeza = nuevoNodo;
+            
+            return;
         }
-        else
+
+        Nodo antesDelAnterior = null;
+        Nodo anterior = null;
+        Nodo actual = cabeza;
+
+      
+        while (actual != null && actual.dato != valor)
         {
-            Nodo actual = cabeza;
-            while (actual.siguiente != null)
+            antesDelAnterior = anterior;
+            anterior = actual;
+            actual = actual.siguiente;
+        }
+
+   
+        if (actual == null || actual.siguiente == null)
+        {
+            return;
+        }
+
+      
+        actual.siguiente = actual.siguiente.siguiente;
+
+  
+        if (anterior != null)
+        {
+            if (antesDelAnterior == null)
             {
-                actual = actual.siguiente;
+                
+                cabeza = actual;
             }
-            actual.siguiente = nuevoNodo;
+            else
+            {
+               
+                antesDelAnterior.siguiente = actual;
+            }
         }
     }
+
     public void MostrarLista()
     {
         Nodo actual = cabeza;
+        Console.Write("Lista: ");
         while (actual != null)
         {
             Console.Write(actual.dato + " -> ");
@@ -48,14 +87,28 @@ class ListaEnlazada
         Console.WriteLine("null");
     }
 }
+
 class Program
 {
     static void Main(string[] args)
     {
         ListaEnlazada lista = new ListaEnlazada();
-        lista.InsertarAlFinal(10);
-        lista.InsertarAlFinal(20);
-        lista.InsertarAlFinal(30);
-        lista.MostrarLista(); 
+
+        // Insertar elementos al principio
+        lista.InsertarAlPrincipio(50);
+        lista.InsertarAlPrincipio(40);
+        lista.InsertarAlPrincipio(30);
+        lista.InsertarAlPrincipio(20);
+        lista.InsertarAlPrincipio(10);
+
+        Console.WriteLine("Lista original:");
+        lista.MostrarLista();
+
+        // Eliminar los nodos alrededor del valor 30 (eliminará 20 y 40)
+        Console.WriteLine("\nEliminando alrededor del nodo con valor 30...");
+        lista.EliminarAlrededor(30);
+
+        Console.WriteLine("Lista después de la eliminación:");
+        lista.MostrarLista();
     }
 }
