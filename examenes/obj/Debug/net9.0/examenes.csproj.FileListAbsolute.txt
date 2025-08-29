@@ -1,0 +1,5 @@
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\obj\Debug\net9.0\examenes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\obj\Debug\net9.0\examenes.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\obj\Debug\net9.0\examenes.AssemblyInfo.cs
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\obj\Debug\net9.0\examenes.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\ucatec\estructura-datos-pt\examenes\obj\Debug\net9.0\examenes.sourcelink.json
