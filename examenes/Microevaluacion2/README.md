@@ -2,19 +2,20 @@
 
 ## ESCOBAR ROSAS EDWIN
 
-**LISTAS-SIMPLES** Repositorio que contiene los examenes, practicas y ejemplos de la materia
-
+**LISTAS-SIMPLES** 
+Microevaluacion2
 #### Enlaces importantes
+ListaSimple 
 
-- [Pregrado UCATEC](https://pregrado.ucatec.edu.bo)
-- [Markdown](https://markdown.es)
+Esta clase ListaSimple representa una lista enlazada simple, que es una forma de guardar una serie de números uno detrás de otro, como si fueran eslabones de una cadena.
 
-1. Para listar los archivos ocultos en `git bash`
+Estructura principal
 
-```
-ls -la
-```
+Nodo cabeza (cabeza):
+Es el primer nodo de la lista. Si la lista está vacía, cabeza es null.
 
-2. Tambien puedes viaulizar el historico de comandos con `history` el resultado es el siguiente:
+ListaSimple es una lista enlazada dinámica, no usa arreglos.
 
-![Captura del historial de la terminal](documentacion/imagenes/bio1.png)
+Permite agregar elementos rápidamente al final.
+
+Es ideal para aprender cómo funcionan las estructuras enlazadas y cómo recorrer nodos.
