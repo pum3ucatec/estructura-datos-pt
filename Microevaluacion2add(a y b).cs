@@ -21,7 +21,7 @@ class ListaEnlazada
         cabeza = null;
     }
 
-   
+   // A) Insertar al principio del  de la lista los valores
     public void InsertarAlPrincipio(int valor)
     {
         Nodo nuevoNodo = new Nodo(valor);
@@ -29,7 +29,7 @@ class ListaEnlazada
         cabeza = nuevoNodo;
     }
 
-   
+   // B) Elimina al rededor de la lista caso si tiene 
     public void EliminarAlrededor(int valor)
     {
         if (cabeza == null || cabeza.siguiente == null)
