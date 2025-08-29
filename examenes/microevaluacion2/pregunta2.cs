@@ -1,4 +1,5 @@
-public void EliminarAlrededor(int valor){
+    public void EliminarAlrededor(int valor)
+        git++{
     if (cabeza == null || cabeza.siguiente == null) return;
 
     Nodo actual = cabeza;
