@@ -10,6 +10,7 @@ public class Nodo
     }
 }
 
+// Nodo para la Lista Simple
 public class NodoLista
 {
     public int Dato { get; set; }
