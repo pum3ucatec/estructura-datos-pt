@@ -2,7 +2,7 @@
 ### MICROEVALUACION 2
 1. Insertar al principio en un alista simple
 2. Eliminar al rededor 
- # Proyecto de Estructuras de Datos en C\#
+ # Introduccion
 
 Este proyecto implementa **listas simples** y una **cola dinámica** en C#, incluyendo operaciones básicas y avanzadas, junto con un menú interactivo para probarlas.
 
