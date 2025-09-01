@@ -1,6 +1,5 @@
 ﻿using System;
-namespace RecorridoConFor
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -12,4 +11,4 @@ namespace RecorridoConFor
             }
         }
     }
-}
+

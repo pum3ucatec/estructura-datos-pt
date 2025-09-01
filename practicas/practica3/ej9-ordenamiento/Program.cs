@@ -1,6 +1,4 @@
 ﻿using System;
-namespace Invertirarreglo
-{
     class Program
     {
         static void Main(string[] args)
@@ -23,4 +21,3 @@ namespace Invertirarreglo
             Console.WriteLine("Arreglo ordenado: [" + string.Join(", ", numeros) + "]");
         }
     }
-}

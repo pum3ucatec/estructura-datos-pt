@@ -1,7 +1,5 @@
 ﻿using System;
 
-namespace PromedioDeElementos
-{
     class Program
     {
         static void Main(String[] args)
@@ -17,4 +15,3 @@ namespace PromedioDeElementos
             Console.WriteLine($"El array es: {string.Join(",", numeros)}");
         }
     }
-}

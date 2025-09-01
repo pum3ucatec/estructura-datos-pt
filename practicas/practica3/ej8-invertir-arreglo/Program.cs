@@ -1,6 +1,4 @@
 ﻿using System;
-namespace Invertirarreglo
-{
     class Program
     {
         static void Main(string[] args)
@@ -17,4 +15,3 @@ namespace Invertirarreglo
         }
 
     }
-}

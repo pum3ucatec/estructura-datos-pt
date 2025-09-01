@@ -1,6 +1,4 @@
 ﻿using System;
-namespace SMayoymenor
-{
     class Program
     {
         static void Main(String[] args)
@@ -23,4 +21,3 @@ namespace SMayoymenor
             Console.WriteLine($"El numero menor es: {menor}");
         }
     }
-}

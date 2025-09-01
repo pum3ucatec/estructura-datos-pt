@@ -1,6 +1,5 @@
 ﻿using System;
-namespace SumadeElementos
-{
+
     class Program
     {
         static void Main(String[] args)
@@ -15,4 +14,4 @@ namespace SumadeElementos
             Console.WriteLine($"El array es: {string.Join(",",numeros)}");
         }
     }
-}
+

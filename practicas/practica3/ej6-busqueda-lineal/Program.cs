@@ -1,6 +1,4 @@
 ﻿using System;
-namespace BusquedaLineal
-{
     class Program
     {
         static void Main(string[] args)
@@ -24,6 +22,5 @@ namespace BusquedaLineal
             } 
         }
     }
-}
 
 

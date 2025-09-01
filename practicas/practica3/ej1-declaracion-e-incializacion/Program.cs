@@ -1,6 +1,5 @@
 ﻿using System;
-namespace DeclaracionEInicializacion
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -13,5 +12,5 @@ namespace DeclaracionEInicializacion
             }
         }
     }
-}
+
 

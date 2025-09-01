@@ -1,6 +1,5 @@
 ﻿using System;
-namespace Contarocurrencias
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -22,4 +21,3 @@ namespace Contarocurrencias
             Console.WriteLine($"Se repite: {c} veces");
         }
     }
-}
