@@ -2,14 +2,14 @@
 
 using System;
 
-class Ejercicio9
+class ejercicio_9
 {
 	static void Main()
 	{
-		int cont = 0;
-		int num = 2;
+		int cont = 0; // cont = contador
+		int num = 2; // num = numero
 		
-		while (cont < 10)
+		while (cont < 10) 
 		{
 			Console.WriteLine(num);
 			num += 2;

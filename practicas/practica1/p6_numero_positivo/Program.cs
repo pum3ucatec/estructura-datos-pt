@@ -2,16 +2,16 @@
 
 using System;
 
-class Ejercicio6
+class ejercicio_6
 {
 	static void Main()
 	{
-		int num;
+		int num; // num = numero
 		do
 		{
 			Console.Write("Introduce un numero positivo: ");
 			num = int.Parse(Console.ReadLine());
-		} while (num <= 0);
+		} while (num <= 0); // no deja que el numero escrito desde consola sea menor o igual a 0
 		Console.WriteLine("Número válido: " + num);
 	}
 }

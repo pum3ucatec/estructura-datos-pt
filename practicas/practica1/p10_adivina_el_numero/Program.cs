@@ -4,34 +4,34 @@ Usar do-while hasta que acierte, indicando si es mayor o menor. */
 
 using System;
 
-class Ejercicio10
+class ejercicio_10
 {
 	static void Main()
 	{
 		Random random = new Random();
-		int numAl = random.Next(1, 51); 
-		int numU;
-		int ints = 0;
+		int num_al = random.Next(1, 51); //num_al = numero aleatorio
+		int num_u; // num_u = numero ingresado por el usuario
+		int ints = 0; //ints = intentos
 
 		do 
 		{
 			Console.Write("Adivina el número entre 1 al 50: ");
-			numU = int.Parse(Console.ReadLine());
+			num_u = int.Parse(Console.ReadLine());
 			ints++;
 
-			if (numU < numAl)
+			if (num_u < num_al)
 			{
 				Console.WriteLine("Aumenta mas ");
 			}
-			else if (numU > numAl)
+			else if (num_u > num_al)
 			{
 				Console.WriteLine("Un poco menos ");
 			}
 			else
 			{
-				Console.WriteLine($"Bien! Adivinaste el número {numAl} en {ints} intentos.");
+				Console.WriteLine($"Bien! Adivinaste el número {num_al} en {ints} intentos.");
 			}
 
-		} while (numU != numAl);
+		} while (num_u != num_al);
 	}
 }

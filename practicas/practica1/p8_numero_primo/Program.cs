@@ -2,17 +2,17 @@
 
 using System;
 
-class Ejercicio8
+class ejercicio_8
 {
 	static void Main()
 	{
 		Console.Write("Introduce un número para verificar si es primo: ");
 		int num = int.Parse(Console.ReadLine());
-		bool YPrimo = true;
+		bool n_primo = true;
 
-		if (num <= 1)
+		if (num <= 1) // num = numero; no deja que sea menor a 1
 		{
-			YPrimo = false;
+			n_primo = false; // n_primo = numero primo
 		}
 		else
 		{
@@ -20,12 +20,12 @@ class Ejercicio8
 			{
 				if (num % a == 0)
 				{
-					YPrimo = false;
+					n_primo = false;
 					break;
 				}
 			}
 		}
-		if (YPrimo)
+		if (n_primo)
 			Console.WriteLine(num + " es un número primo ");
 		else
 			Console.WriteLine("el " + num + " no es un número primo ") ;

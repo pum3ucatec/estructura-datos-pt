@@ -2,17 +2,17 @@
 
 using System;
 
-class Ejercicio7
+class ejercicio_7
 {
 	static void Main()
 	{
 		int suma = 0;
 
-		for (int a = 1; a <= 5; a++)
+		for (int i = 1; i <= 5; i++) // i = variable base, del 1 al 5
 		{
-			Console.Write("Introduce el número " + a + ": ");
+			Console.Write("Introduce el número " + i + ": ");
 			int num = int.Parse(Console.ReadLine());
-			suma += num;
+			suma += num; // num = número ingresado
 		}
 		Console.WriteLine("La suma es: " + suma);
 	}

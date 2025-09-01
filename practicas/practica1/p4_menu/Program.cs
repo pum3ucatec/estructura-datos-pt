@@ -1,11 +1,11 @@
 ﻿// 4. Menú con do-while Crear un pequeño menú que se repita hasta que el usuario elija salir (ejemplo: 1. Saludar, 2. Sumar, 3. Salir).
 
 using System;
-class Ejercicio4
+class ejercicio_4
 {
 	static void Main()
 	{
-		int op;
+		int op; // op = opcion 
 		do
 		{
 			Console.WriteLine("Menu");
