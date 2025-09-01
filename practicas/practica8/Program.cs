@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-class Nodo
+public class Nodo
 {
     public int Dato;
     public Nodo Siguiente;
@@ -13,7 +13,7 @@ class Nodo
     }
 }
 
-class ListaSimple
+public class ListaSimple
 {
     private Nodo cabeza;
     private int capacidadMaxima;
