@@ -1,10 +1,5 @@
 ﻿// Dado un arreglo de enteros, construye un nuevo arreglo donde cada posición contenga el producto de 
 // todos los elementos excepto el de esa posición (sin usar división).  
-/* el codigo fuunciona asi:
-En la posición 0: 4 × 5 × 11 = 220
-En la posición 1: 12 × 5 × 11 = 660
-En la posición 2: 12 × 4 × 11 = 528
-En la posición 3: 12 × 4 × 5 = 240 */
 
 using System;
 
