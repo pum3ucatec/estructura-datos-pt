@@ -10,7 +10,7 @@ class Program
 
         for (int a = valor; a < valor + 10; a++)
         {
-            int par = a * 2; // 2, 4, 6, ... 20
+            int par = a * 2; 
             Console.WriteLine(par + (a < 10 ? " " : "\n"));
         }
     }

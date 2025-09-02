@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
         var random = new Random();
-        int secreto = random.Next(1, 101); // genera entre 1 y 100 (101 es exclusivo)
+        int secreto = random.Next(1, 101); 
         int intentos = 0;
 
         Console.WriteLine("He pensado un número entre 1 y 100. ¡Adivínalo!");
@@ -32,13 +32,13 @@ class Program
             if (guess == secreto)
             {
                 Console.WriteLine($"¡Correcto! El número era {secreto}. Intentos: {intentos}");
-                break; // fin del juego
+                break; 
             }
             else if (guess < secreto)
             {
                 Console.WriteLine("Muy bajo. Prueba un número más GRANDE.");
             }
-            else // guess > secreto
+            else
             {
                 Console.WriteLine("Muy alto. Prueba un número más PEQUEÑO.");
             }

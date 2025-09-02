@@ -2,15 +2,15 @@
 
 class Program
 {
-    // Devuelve true si n es primo; false en caso contrario
+    
     static bool EsPrimo(int n)
     {
-        if (n <= 1) return false;     // 0, 1 y negativos no son primos
-        if (n <= 3) return true;      // 2 y 3 sí son primos
-        if (n % 2 == 0) return false; // todos los pares > 2 no son primos
+        if (n <= 1) return false;     
+        if (n <= 3) return true;      
+        if (n % 2 == 0) return false; 
 
-        int limite = (int)Math.Sqrt(n); // basta con probar hasta la raíz cuadrada
-        for (int i = 3; i <= limite; i += 2) // solo impares
+        int limite = (int)Math.Sqrt(n); 
+        for (int i = 3; i <= limite; i += 2) 
         {
             if (n % i == 0) return false;
         }

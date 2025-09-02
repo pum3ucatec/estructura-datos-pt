@@ -7,7 +7,7 @@ namespace Practica1
     {
         static void Main(string[] args)
         {
-            // Ejercicio 1
+            
             Console.WriteLine("Ejercicio 1");
             for (int i = 1; i <= 10; i++)
             { 
