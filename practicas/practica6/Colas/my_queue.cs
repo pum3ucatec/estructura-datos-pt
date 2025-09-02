@@ -1,6 +1,6 @@
 using System;
 
-public class QueueBase
+public class queue_base
 {
     protected char[] Elements;
     protected int Size;
@@ -8,7 +8,7 @@ public class QueueBase
     protected int Rear;
     protected int Count;
 
-    public QueueBase(int N)
+    public queue_base(int N)
     {
         this.Elements = new char[N];
         this.Size = N;
@@ -38,9 +38,9 @@ public class QueueBase
     }
 }
 
-public class MyQueue : QueueBase
+public class my_queue : queue_base
 {
-    public MyQueue(int N) : base(N) { }
+    public my_queue(int N) : base(N) { }
 
     public void Enqueue(char element)
     {
