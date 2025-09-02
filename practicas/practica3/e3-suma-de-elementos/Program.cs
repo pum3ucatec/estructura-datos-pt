@@ -15,3 +15,4 @@ class Ejercicio3
         Console.WriteLine("la suma es:" + suma);
     }
 }
+
