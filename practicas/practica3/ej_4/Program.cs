@@ -11,3 +11,5 @@ double promedio = (double)suma / notas.Length;
 
 Console.WriteLine("Notas: [" + string.Join(", ", notas) + "]");
 Console.WriteLine("Promedio: " + promedio);
+
+
