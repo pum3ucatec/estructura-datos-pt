@@ -1,173 +1,72 @@
-Práctica 7: Colas Dinámicas en C#
+# Práctica 7: Colas Dinámicas en C#
 
-Autor: Escobar Rosas Edwin
+**Autor:** Edwin Escross  
+**Carrera:** Ingeniería de Sistemas  
 
-Descripción
+---
 
-Este proyecto implementa una cola dinámica en C# utilizando nodos enlazados.
-Permite agregar, eliminar y buscar nombres de manera interactiva, mostrando la posición de cada elemento, así como el primero y el último de la fila. La cola es ilimitada y su visualización ayuda a entender cómo se organiza internamente.
+## Descripción
 
-Estructura del proyecto
-practica7/
-│
-├─ Nodo.cs      # Representa cada nodo de la cola
-├─ Cola.cs      # Implementa la cola dinámica con operaciones básicas
-├─ Program.cs   # Menú interactivo en consola
-└─ README.md    # Documentación del proyecto
+Este proyecto implementa una **cola dinámica** en C# utilizando nodos enlazados. Permite agregar, eliminar y buscar nombres de manera interactiva, mostrando la posición de cada elemento, así como el primero y el último de la fila. La cola es ilimitada y su visualización ayuda a entender cómo se organiza internamente.
 
-Archivos principales
-Nodo.cs
+---
 
-Representa un nodo de la cola.
-Contiene:
+## Estructura del proyecto
 
-Dato → El valor almacenado (nombre).
+- **Nodo.cs:** Representa cada nodo de la cola con un dato (nombre) y un puntero al siguiente nodo.  
+- **Cola.cs:** Implementa la cola dinámica con todas las operaciones principales.  
+- **Program.cs:** Contiene el menú interactivo que permite manipular la cola desde la consola.  
+- **README.md:** Documentación del proyecto.
 
-Siguiente → Referencia al siguiente nodo en la cola.
+---
 
-Cola.cs
+## Funcionalidades Principales
 
-Implementa la estructura de la cola dinámica.
-Funciones principales:
+- **Enqueue:** Agrega un nombre al final de la cola.  
+- **Dequeue:** Elimina el primer elemento de la cola.  
+- **Remove:** Elimina un nombre específico de la cola.  
+- **Peek:** Muestra el primer elemento sin eliminarlo.  
+- **Last:** Muestra el último elemento de la cola.  
+- **Contains:** Verifica si un nombre existe en la cola.  
+- **IndexOf:** Retorna la posición de un nombre en la cola.  
+- **Count:** Muestra la cantidad de elementos.  
+- **Clear:** Vacía toda la cola.  
+- **View:** Muestra todos los elementos con su posición.  
+- **IsEmpty:** Verifica si la cola está vacía.
 
-Enqueue(string dato) → Agrega un nombre al final.
+---
 
-Dequeue() → Elimina el primer elemento.
+## Ejemplo de Uso
 
-Remove(string dato) → Elimina un nombre específico.
+1. Agregar nombres a la cola.  
+2. Eliminar un nombre específico.  
+3. Consultar el primer elemento (Peek).  
+4. Ver todos los elementos con posición.  
+5. Contar elementos en la cola.  
+6. Vaciar la cola completamente (Clear).  
+7. Buscar uno o varios nombres mostrando su posición.  
+8. Consultar el último elemento de la cola.  
 
-Peek() → Muestra el primer elemento sin eliminarlo.
+La búsqueda permite ingresar varios nombres separados por comas. Las posiciones comienzan desde 1 (frente de la cola).  
 
-Last() → Muestra el último elemento.
+---
 
-Contains(string dato) → Verifica si un nombre existe.
+## Características
 
-IndexOf(string dato) → Obtiene la posición/fila de un nombre.
+- Cola dinámica sin límite de elementos.  
+- Permite agregar, eliminar y buscar nombres fácilmente.  
+- Visualización de posición/fila de cada elemento.  
+- Búsqueda de múltiples nombres al mismo tiempo.  
+- Visualización del primer y último elemento.  
+- Menú interactivo y fácil de usar.  
+- Código modular y organizado en `Nodo.cs`, `Cola.cs` y `Program.cs`.
 
-Count() → Retorna la cantidad de elementos.
+---
 
-Clear() → Vacía toda la cola.
+## Notas sobre C# y referencias nulas
 
-View() → Muestra todos los elementos con su posición.
+En el código se utilizan nodos y propiedades *nullable*, como `Nodo?`, para permitir referencias a `null`. Esto es útil para:
 
-IsEmpty() → Verifica si la cola está vacía.
-
-Program.cs
-
-Contiene el menú interactivo en consola.
-Permite:
-
-Agregar nombres a la cola.
-
-Eliminar un nombre específico.
-
-Ver el primer elemento (Peek).
-
-Ver todos los elementos con posición/fila.
-
-Contar elementos en la cola.
-
-Vaciar la cola (Clear).
-
-Buscar uno o varios nombres mostrando su posición.
-
-Ver el último elemento de la cola.
-
-Salir del programa.
-
-La búsqueda permite ingresar varios nombres separados por coma.
-Las posiciones comienzan desde 1 (frente de la cola).
-
-Ejemplo de ejecución
-===== MENÚ DE COLA =====
-1. Encolar (Agregar)
-2. Eliminar un nombre específico
-3. Ver primer elemento (Peek)
-4. Ver todos los elementos con posición
-5. Cantidad de elementos
-6. Vaciar cola (Clear)
-7. Buscar nombres (uno o varios)
-8. Ver último elemento de la cola
-0. Salir
-Elige una opción: 1
-Ingresa un nombre: Laura
-'Laura' agregado a la cola.
-
-Elige una opción: 1
-Ingresa un nombre: Juan
-'Juan' agregado a la cola.
-
-Elige una opción: 4
-Elementos en la cola con su posición:
-1. Laura
-2. Juan
-
-Elige una opción: 7
-Ingresa los nombres a buscar (separados por coma): Juan, Pedro
-'Juan' está en la fila 2 de la cola.
-'Pedro' NO está en la cola.
-
-Elige una opción: 2
-Ingresa el nombre a eliminar: Laura
-'Laura' eliminado de la cola.
-
-Elige una opción: 3
-Primero en la cola: Juan
-
-Elige una opción: 8
-Último en la cola: Juan
-
-Diagrama simple de la cola
-[ Frente ] → Juan → Sofia → [ Final ]
-
-
-El primer nodo está al frente y se elimina primero.
-
-Los nuevos nombres se agregan al final.
-
-Cada nodo apunta al siguiente (Siguiente).
-
-Se puede buscar cualquier nombre y ver su posición/fila.
-
-Características
-
-Cola dinámica sin límite de elementos.
-
-Permite agregar, eliminar y buscar nombres fácilmente.
-
-Muestra posición/fila de cada elemento.
-
-Permite búsqueda de múltiples nombres a la vez.
-
-Muestra primer y último elemento de la cola.
-
-Menú interactivo y claro.
-
-Código modular en Nodo.cs, Cola.cs y Program.cs.
-
-Cómo ejecutar
-
-Abrir PowerShell en la carpeta del proyecto (practica7).
-
-Ejecutar:
-
-dotnet run
-
-
-Seguir las instrucciones del menú interactivo.
-
-Notas sobre C# y referencias nulas
-
-En el código se utiliza ? para declarar nodos y propiedades nullable, por ejemplo:
-
-private Nodo? frente;
-public Nodo? Siguiente { get; set; }
-
-
-Esto indica que la variable puede contener null, lo cual tiene sentido:
-
-Al inicio, la cola está vacía → frente = null
-
-El último nodo apunta a null → Siguiente = null
-
-Esto evita warnings del compilador sobre referencias nulas y posibles errores en tiempo de ejecución.
+- Inicializar la cola vacía (`frente = null`).  
+- Marcar el final de la cola (`Siguiente = null`).  
+- Evitar warnings del compilador y errores en tiempo de ejecución.
