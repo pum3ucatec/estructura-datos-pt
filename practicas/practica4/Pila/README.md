@@ -26,7 +26,7 @@ Esta práctica sigue las siguientes convenciones de nombres:
 ## 1. Clase PIla
 Como se menciono aqui esta toda la lógica de la estructura, a lo cual lo iremos explicando.
 
-**Archivo:** [`pila/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica4/practicas/practica4/pila/pila.cs)
+**Archivo:** [`Pila/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica4/practicas/practica4/Pila/Pila.cs)
 
 
 - `elementos:` Lista privada (List<int>) que almacena los elementos de la pila.
@@ -61,7 +61,7 @@ Como se menciono aqui esta toda la lógica de la estructura, a lo cual lo iremos
 
 ## 2. Clase principal
 
-**Archivo:** [`program/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica4/practicas/practica4/pila/program.cs)
+**Archivo:** [`Program/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica4/practicas/practica4/Pila/Program.cs)
 
 ### Menú interactivo:
 
