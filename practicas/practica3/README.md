@@ -1,4 +1,19 @@
-# 10 Ejercicios de Arreglos en C#
+**INDICE**
+- [1. 10 Ejercicios de Arreglos en C#](#1-10-ejercicios-de-arreglos-en-c)
+	- [1.1. Ejercicio 1 (Arreglo con 5 enteros).](#11-ejercicio-1-arreglo-con-5-enteros)
+	- [1.2. Ejercicio 2 (Recorrido con for).](#12-ejercicio-2-recorrido-con-for)
+	- [1.3. Ejercicico 3 (Suma de elementos).](#13-ejercicico-3-suma-de-elementos)
+	- [1.4. Ejercicio 4 (Promedio de elementos)](#14-ejercicio-4-promedio-de-elementos)
+	- [1.5. Ejercicio 5 (Mayor y menor valor).](#15-ejercicio-5-mayor-y-menor-valor)
+	- [1.6. Ejercicio 6 (Búsqueda lineal)](#16-ejercicio-6-búsqueda-lineal)
+	- [1.7. Ejercicio 7 (Contar ocurrencias).](#17-ejercicio-7-contar-ocurrencias)
+	- [1.8. Ejercicio 8 (Invertir arreglo).](#18-ejercicio-8-invertir-arreglo)
+	- [1.9. Ejercicio 9 (Ordenamiento (Burbuja)).](#19-ejercicio-9-ordenamiento-burbuja)
+	- [1.10. Arreglo bidimensional (Matriz)](#110-arreglo-bidimensional-matriz)
+
+
+
+# 1. 10 Ejercicios de Arreglos en C#
 
 Esta practica contiene **10 ejercicios prácticos en C#** sobre el manejo de arreglos (unidimensionales y bidimensionales).
 
@@ -27,7 +42,7 @@ class EjercicioN
 
 ---
 
-## 1. Ejercicio 1 (Arreglo con 5 enteros).
+## 1.1. Ejercicio 1 (Arreglo con 5 enteros).
 
 **Descripción:**  
 Declara un arreglo de 5 enteros y asígnales valores manualmente. Luego imprime todos los valores en pantalla.
@@ -51,7 +66,7 @@ for (int i = 0; i < nums.Length; i++)
 `40` 
 `50`  --> En una columna.
 
-## 2. Ejercicio 2 (Recorrido con for).
+## 1.2. Ejercicio 2 (Recorrido con for).
 
 **Descripción:**
 
@@ -73,7 +88,7 @@ int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 `1` `2` `3` `4` `5` `6` `7` `8` `9` `10` --> En una columna
 
-## 3. Ejercicico 3 (Suma de elementos).
+## 1.3. Ejercicico 3 (Suma de elementos).
 
 **Descripción:**
 
@@ -97,7 +112,7 @@ int[] nums = { 5, 10, 15, 20 };
 **Salida:**
 `Suma: 50`
 
-## 4. Ejercicio 4 (Promedio de elementos)
+## 1.4. Ejercicio 4 (Promedio de elementos)
 
 **Descripción:**
 
@@ -137,7 +152,7 @@ int[] notas = new int[5];
 **Salida:**
 `Promedio: 80`
 
-## 5. Ejercicio 5 (Mayor y menor valor).
+## 1.5. Ejercicio 5 (Mayor y menor valor).
 
 **Descripción:**
 Lee 8 números en un arreglo y muestra el mayor y el menor.
@@ -180,7 +195,7 @@ int[] nums = new int[8];
 `Mayor: 25`
 `Menor: 3`
 
-## 6. Ejercicio 6 (Búsqueda lineal)
+## 1.6. Ejercicio 6 (Búsqueda lineal)
 
 **Descripción:**
 
@@ -224,7 +239,7 @@ int[] datos = { 4, 9, 17, 23, 42, 17, 8, 12, 5, 33 };
 **Salida:**
 `El número 17 se encuentra en la posición 4`
 
-## 7. Ejercicio 7 (Contar ocurrencias).
+## 1.7. Ejercicio 7 (Contar ocurrencias).
 
 **Descripción:**
 Dado un arreglo, pide un número y cuenta cuántas veces aparece en él.
@@ -260,7 +275,7 @@ Arreglo: [2, 5, 2, 8, 2, 9]
 **Salida:**
 `El número aparece 3 veces`
 
-## 8. Ejercicio 8 (Invertir arreglo).
+## 1.8. Ejercicio 8 (Invertir arreglo).
 
 **Descripción:**
 Crea un segundo arreglo con los mismos elementos que el original pero en orden inverso.
@@ -286,7 +301,7 @@ int[] original = { 1, 2, 3, 4, 5 };
 
 `Arreglo invertido: [5, 4, 3, 2, 1]`
 
-## 9. Ejercicio 9 (Ordenamiento (Burbuja)).
+## 1.9. Ejercicio 9 (Ordenamiento (Burbuja)).
 
 **Descripción:**
 Implementa el algoritmo de Burbuja para ordenar un arreglo de enteros de menor a mayor.
@@ -325,7 +340,7 @@ int[] datos = { 8, 3, 5, 1, 9 };
 
 `Arreglo ordenado:   [1, 3, 5, 8, 9]`
 
-## 10. Arreglo bidimensional (Matriz)
+## 1.10. Arreglo bidimensional (Matriz)
 
 **Descripción:**
 Declara una matriz de 3x3, inicialízala y muestra la suma de cada fila y cada columna.
