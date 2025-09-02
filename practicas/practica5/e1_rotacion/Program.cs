@@ -5,7 +5,7 @@ Ejemplo: [1, 2, 3, 4, 5] con k=2 → [4, 5, 1, 2, 3]. */
 using System;
 using System.Linq;
 
-class Ejercicio1
+class ejercicio_1
 {
     static void Main() {
         Console.WriteLine("Ingrese los números separados por espacio:");
