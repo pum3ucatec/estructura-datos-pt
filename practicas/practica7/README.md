@@ -1,4 +1,4 @@
-# Practica 7
+# Practica N 7
 # Implementación de Colas 
 
 Este proyecto contiene **dos implementaciones de colas** en C#:
