@@ -1,264 +1,234 @@
 Ejercicios de Programación en C#
 
-Este repositorio contiene 10 ejercicios básicos de programación en C#, cada uno con su explicación detallada y ejecutable desde Program.cs. Los ejercicios están organizados en carpetas p1 a p10.
+Este repositorio contiene 10 ejercicios en C# diseñados para practicar los fundamentos de programación: bucles, condicionales, operaciones aritméticas, validaciones y lógica interactiva con el usuario. Cada ejercicio está organizado en carpetas p1 a p10.
 
-Ejercicio 1: Contar del 1 al 10
+A continuación se explica qué hace cada ejercicio, para qué sirve y los comandos y conceptos importantes que utiliza.
 
-Descripción: Mostrar en pantalla los números del 1 al 10 usando un bucle for.
+Práctica 1: Contar del 1 al 10
 
-Código principal:
+Objetivo:
+Mostrar los números del 1 al 10 en orden.
 
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine(i);
-}
+Para qué sirve:
+Aprender a usar bucles para repetir acciones automáticamente.
 
+Conceptos y comandos importantes:
 
-Explicación:
+for → Bucle que repite instrucciones un número determinado de veces.
 
-Queremos mostrar del 1 al 10.
+int → Declara variables enteras.
 
-for es un bucle que repite acciones: empieza en 1, termina en 10, sumando de uno en uno.
+Console.WriteLine → Muestra texto o números en pantalla.
 
-Dentro del bucle mostramos cada número en pantalla.
+Contador (i) → Variable que controla cuántas veces se repite la acción.
 
-Resultado esperado:
+Funcionamiento:
+El programa inicia un contador en 1 y lo incrementa hasta 10, mostrando cada número en pantalla.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+Práctica 2: Sumar números del 1 al N
 
-Ejercicio 2: Sumar números del 1 al N
+Objetivo:
+Calcular la suma de todos los números desde 1 hasta un número ingresado por el usuario.
 
-Descripción: Sumar todos los números desde 1 hasta un número ingresado por el usuario.
+Para qué sirve:
+Practicar acumuladores, bucles y entrada de datos del usuario.
 
-Código principal:
+Conceptos y comandos importantes:
 
-int suma = 0;
-int i = 1;
-while (i <= n)
-{
-    suma += i;
-    i++;
-}
-Console.WriteLine($"La suma de 1..{n} es {suma}");
+while → Bucle que repite acciones mientras se cumpla una condición.
 
+Console.ReadLine → Permite leer lo que escribe el usuario.
 
-Explicación:
+int.Parse → Convierte texto a número entero.
 
-Creamos un contador i y una variable suma.
++= → Acumula valores en una variable.
 
-Mientras i no supere n, sumamos i a suma y aumentamos i.
+Contador (i) → Controla la repetición hasta llegar al límite ingresado.
 
-Mostramos el resultado final.
+Funcionamiento:
+El programa suma todos los números del 1 al número que el usuario ingrese y muestra el resultado.
 
-Ejemplo de ejecución:
+Práctica 3: Tabla de multiplicar del 1 al 10
 
-Escribe N: 5
-La suma de 1..5 es 15
+Objetivo:
+Mostrar la tabla de multiplicar de un número dado por el usuario.
 
-Ejercicio 3: Tabla de multiplicar del 1 al 10
+Para qué sirve:
+Practicar bucles, operaciones aritméticas y presentación de resultados.
 
-Descripción: Mostrar la tabla de multiplicar de un número ingresado por el usuario, del 1 al 10.
+Conceptos y comandos importantes:
 
-Código principal:
+Multiplicación (*) → Realiza la operación matemática.
 
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"{n} x {i} = {n * i}");
-}
+Interpolación de texto ($"") → Permite combinar texto y valores en una sola línea.
 
+for → Repite la operación para todos los valores del 1 al 10.
 
-Explicación:
+Console.WriteLine → Muestra resultados en pantalla.
 
-for recorre los números del 1 al 10.
+Funcionamiento:
+Multiplica el número ingresado por los valores del 1 al 10 y muestra cada resultado.
 
-Multiplicamos el número ingresado por cada valor de i y mostramos el resultado.
+Práctica 4: Mini menú interactivo
 
-Ejemplo:
+Objetivo:
+Crear un menú que se repite hasta que el usuario decida salir.
 
-Número: 3
-3 x 1 = 3
-3 x 2 = 6
-...
-3 x 10 = 30
+Para qué sirve:
+Aprender a usar condicionales y bucles de repetición.
 
-Ejercicio 4: Mini menú
+Conceptos y comandos importantes:
 
-Descripción: Crear un menú que se repite hasta que el usuario decida salir.
+do-while → Bucle que ejecuta primero y luego verifica si debe repetir.
 
-Código principal:
+if/else if/else → Ejecuta instrucciones según condiciones.
 
-do
-{
-    Console.WriteLine("1) Saludar");
-    Console.WriteLine("2) Sumar 2 + 2");
-    Console.WriteLine("3) Salir");
-    opcion = int.Parse(Console.ReadLine());
-    if (opcion == 1)
-        Console.WriteLine("¡Hola!");
-    else if (opcion == 2)
-        Console.WriteLine("2 + 2 = 4");
-    else if (opcion != 3)
-        Console.WriteLine("Opción no válida");
-} while (opcion != 3);
+Console.ReadLine → Leer la opción del usuario.
 
+int.Parse → Convertir texto a número para evaluar condiciones.
 
-Explicación:
+Console.WriteLine → Mostrar opciones y resultados.
 
-do-while repite el menú al menos una vez y continúa mientras la opción no sea 3.
+Funcionamiento:
+El usuario selecciona opciones del menú, el programa ejecuta la acción correspondiente y repite hasta que se elige “salir”.
 
-Dependiendo de la opción, ejecuta una acción o muestra mensaje de error.
+Práctica 5: Contador regresivo del 10 al 1
 
-Ejercicio 5: Contador regresivo del 10 al 1
+Objetivo:
+Hacer una cuenta regresiva y mostrar un mensaje final.
 
-Descripción: Contar de 10 a 1 y mostrar un mensaje final.
+Para qué sirve:
+Practicar bucles con decrementos y secuencias numéricas.
 
-Código principal:
+Conceptos y comandos importantes:
 
-int i = 10;
-while (i >= 1)
-{
-    Console.WriteLine(i);
-    i--;
-}
-Console.WriteLine("¡Despegue!");
+while → Bucle que repite mientras la condición sea verdadera.
 
+i-- → Decrementa el valor del contador.
 
-Explicación:
+Console.WriteLine → Mostrar números y mensajes finales.
 
-Contador inicia en 10 y va disminuyendo hasta 1.
+Funcionamiento:
+El programa empieza en 10 y resta 1 cada paso hasta llegar a 1, luego muestra un mensaje final.
 
-Cada número se imprime y luego restamos 1.
+Práctica 6: Validar número positivo
 
-Al final mostramos un mensaje de finalización.
+Objetivo:
+Pedir un número positivo al usuario y repetir hasta que sea válido.
 
-Ejercicio 6: Validar número positivo
+Para qué sirve:
+Aprender validaciones de datos y manejo de condiciones.
 
-Descripción: Pedir un número positivo al usuario, repitiendo la solicitud si ingresa cero o negativo.
+Conceptos y comandos importantes:
 
-Código principal:
+do-while → Ejecuta al menos una vez y repite hasta cumplir condición.
 
-do
-{
-    Console.Write("Escribe un número positivo: ");
-    numero = int.Parse(Console.ReadLine());
-    if (numero <= 0)
-        Console.WriteLine("Número no válido, intenta de nuevo.");
-} while (numero <= 0);
+if → Verifica si el número es válido.
 
+Console.ReadLine y int.Parse → Leer y convertir el número ingresado.
 
-Explicación:
+Comparaciones (>, <=) → Evaluar si el número cumple los requisitos.
 
-do-while asegura que el usuario ingrese un número mayor que 0.
+Funcionamiento:
+El programa solicita números hasta que el usuario ingrese uno mayor que cero.
 
-Si el número es incorrecto, muestra mensaje y pide nuevamente.
+Práctica 7: Suma de 5 números
 
-Ejercicio 7: Suma de 5 números
+Objetivo:
+Pedir 5 números y calcular su suma total.
 
-Descripción: Solicitar 5 números al usuario y calcular la suma total.
+Para qué sirve:
+Practicar bucles fijos, acumuladores y entrada de datos.
 
-Código principal:
+Conceptos y comandos importantes:
 
-int suma = 0;
-for (int i = 1; i <= 5; i++)
-{
-    int num = int.Parse(Console.ReadLine());
-    suma += num;
-}
-Console.WriteLine($"La suma de los 5 números es: {suma}");
+for → Repetir un número determinado de veces.
 
++= → Acumular los números en una variable.
 
-Explicación:
+Console.ReadLine y int.Parse → Leer y convertir números.
 
-Bucle for se repite 5 veces para pedir cada número.
+Console.WriteLine → Mostrar la suma final.
 
-Sumamos cada número al total y mostramos el resultado al final.
+Funcionamiento:
+Se suman cinco números ingresados por el usuario y se muestra el total.
 
-Ejercicio 8: Detectar número primo
+Práctica 8: Detectar número primo
 
-Descripción: Determinar si un número ingresado por el usuario es primo.
+Objetivo:
+Determinar si un número es primo.
 
-Código principal:
+Para qué sirve:
+Practicar condicionales, operadores aritméticos y lógica de divisibilidad.
 
-bool esPrimo = true;
-for (int i = 2; i * i <= n; i++)
-{
-    if (n % i == 0)
-    {
-        esPrimo = false;
-        break;
-    }
-}
+Conceptos y comandos importantes:
 
+Operador módulo (%) → Obtener el resto de una división.
 
-Explicación:
+Bucle for con condición (i*i <= n) → Revisar posibles divisores.
 
-Un número primo solo es divisible por 1 y él mismo.
+break → Salir del bucle si se encuentra un divisor.
 
-Revisamos si hay algún divisor desde 2 hasta la raíz del número.
+Variables booleanas (bool) → Guardar si el número es primo o no.
 
-Si encontramos uno, no es primo y detenemos el bucle.
+Console.WriteLine → Mostrar resultado final.
 
-Ejercicio 9: Primeros 10 números pares
+Funcionamiento:
+El programa verifica si el número solo es divisible por 1 y él mismo.
 
-Descripción: Mostrar los primeros 10 números pares.
+Práctica 9: Primeros 10 números pares
 
-Código principal:
+Objetivo:
+Mostrar los primeros 10 números pares.
 
-int contador = 0;
-int numero = 2;
-while (contador < 10)
-{
-    Console.WriteLine(numero);
-    numero += 2;
-    contador++;
-}
+Para qué sirve:
+Practicar incrementos específicos y conteo controlado.
 
+Conceptos y comandos importantes:
 
-Explicación:
+Contadores (contador) → Controlar cuántos números se han mostrado.
 
-Comenzamos en 2 y sumamos 2 cada vez.
+Incremento (numero += 2) → Avanzar al siguiente número par.
 
-Contamos cuántos pares se han mostrado hasta llegar a 10.
+while → Repetir mientras no se alcance la cantidad deseada.
 
-Ejercicio 10: Juego “Adivina el número”
+Console.WriteLine → Mostrar números en pantalla.
 
-Descripción: Juego donde el usuario adivina un número secreto del 1 al 50, recibiendo pistas.
+Funcionamiento:
+Empieza en 2 y suma 2 cada vez, mostrando diez números pares consecutivos.
 
-Código principal:
+Práctica 10: Juego “Adivina el número”
 
-Random rnd = new Random();
-int secreto = rnd.Next(1, 51);
-int intento;
-int intentos = 0;
+Objetivo:
+Crear un juego donde el usuario adivina un número secreto.
 
-do
-{
-    intento = int.Parse(Console.ReadLine());
-    intentos++;
-    if (intento < secreto)
-        Console.WriteLine("Más grande");
-    else if (intento > secreto)
-        Console.WriteLine("Más pequeño");
-} while (intento != secreto);
+Para qué sirve:
+Practicar números aleatorios, bucles y condicionales, así como interacción avanzada.
 
-Console.WriteLine($"¡Correcto! El número era {secreto}. Intentos: {intentos}");
+Conceptos y comandos importantes:
 
+Random → Generar números aleatorios.
 
-Explicación:
+do-while → Repetir intentos hasta acertar.
 
-Generamos un número aleatorio entre 1 y 50.
+if/else if → Dar pistas “más grande” o “más pequeño”.
 
-Repetimos mientras el usuario no adivine.
+Contador de intentos (intentos++) → Contar cuántas veces se probó.
 
-Damos pistas “más grande” o “más pequeño”.
+Console.WriteLine → Mostrar instrucciones, pistas y resultados.
 
-Al acertar, mostramos el número y cantidad de intentos.
+Funcionamiento:
+El usuario adivina el número secreto y recibe pistas hasta acertar. Al final se muestra la cantidad de intentos.
+
+Estructura de carpetas
+practica1/
+    p1/ → Contar del 1 al 10
+    p2/ → Sumar del 1 al N
+    p3/ → Tabla de multiplicar
+    p4/ → Mini menú
+    p5/ → Contador regresivo
+    p6/ → Validar número positivo
+    p7/ → Suma de 5 números
+    p8/ → Detectar número primo
+    p9/ → Primeros 10 números pares
+    p10/ → Juego Adivina el número
