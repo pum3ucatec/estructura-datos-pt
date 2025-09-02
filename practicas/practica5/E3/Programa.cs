@@ -4,54 +4,49 @@ class EliminarDuplicados
 {
     static void Main(string[] args)
     {
-        // Ejemplo de arreglo ordenado con duplicados
-        int[] arreglo = { 1, 1, 2, 2, 3, 4, 4 };
+        int[] Numeros = { 1, 1, 2, 2, 3, 4, 4 };
 
         Console.WriteLine("Arreglo original:");
-        foreach (int num in arreglo)
+        foreach (int Num in Numeros)
         {
-            Console.Write(num + " ");
+            Console.Write(Num + " ");
         }
         Console.WriteLine();
 
-        // Llamamos al método para eliminar duplicados
-        int[] sinDuplicados = QuitarDuplicados(arreglo);
+        int[] SinDuplicados = QuitarDuplicados(Numeros);
 
         Console.WriteLine("\nArreglo sin duplicados:");
-        foreach (int num in sinDuplicados)
+        foreach (int Num in SinDuplicados)
         {
-            Console.Write(num + " ");
+            Console.Write(Num + " ");
         }
         Console.WriteLine();
     }
 
-    // Método que elimina duplicados en un arreglo ordenado
-    static int[] QuitarDuplicados(int[] arr)
+    static int[] QuitarDuplicados(int[] Arr)
     {
-        if (arr.Length == 0) return arr;
+        if (Arr.Length == 0) return Arr;
 
-        int n = arr.Length;
-        int j = 0; // índice para el nuevo arreglo
-        int[] temp = new int[n];
+        int N = Arr.Length;
+        int J = 0;
+        int[] Temp = new int[N];
 
-        for (int i = 0; i < n - 1; i++)
+        for (int I = 0; I < N - 1; I++)
         {
-            if (arr[i] != arr[i + 1])
+            if (Arr[I] != Arr[I + 1])
             {
-                temp[j++] = arr[i];
+                Temp[J++] = Arr[I];
             }
         }
 
-        // Agregar el último elemento
-        temp[j++] = arr[n - 1];
+        Temp[J++] = Arr[N - 1];
 
-        // Crear un arreglo del tamaño exacto sin duplicados
-        int[] resultado = new int[j];
-        for (int k = 0; k < j; k++)
+        int[] Resultado = new int[J];
+        for (int K = 0; K < J; K++)
         {
-            resultado[k] = temp[k];
+            Resultado[K] = Temp[K];
         }
 
-        return resultado;
+        return Resultado;
     }
 }

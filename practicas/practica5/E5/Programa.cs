@@ -14,11 +14,8 @@ class InterseccionArreglos
 
     static int[] Interseccion(int[] arr1, int[] arr2)
     {
-        // Usamos una lista temporal para guardar los comunes
         int[] temp = new int[Math.Min(arr1.Length, arr2.Length)];
         int k = 0;
-
-        // Copia de arr2 para "marcar" elementos usados
         bool[] usado = new bool[arr2.Length];
 
         for (int i = 0; i < arr1.Length; i++)
@@ -28,13 +25,12 @@ class InterseccionArreglos
                 if (arr1[i] == arr2[j] && !usado[j])
                 {
                     temp[k++] = arr1[i];
-                    usado[j] = true; // marcamos como usado
+                    usado[j] = true;
                     break;
                 }
             }
         }
 
-        // Ajustamos el tamaño real del resultado
         int[] resultado = new int[k];
         Array.Copy(temp, resultado, k);
 

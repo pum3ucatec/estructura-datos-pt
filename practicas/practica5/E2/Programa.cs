@@ -4,39 +4,35 @@ class SubarregloMaximo
 {
     static void Main(string[] args)
     {
-        // Ejemplo de arreglo
-        int[] numeros = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        int[] Numeros = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
 
         Console.WriteLine("Arreglo original:");
-        foreach (int num in numeros)
+        foreach (int Num in Numeros)
         {
-            Console.Write(num + " ");
+            Console.Write(Num + " ");
         }
         Console.WriteLine();
 
-        // Llamamos a Kadane
-        int sumaMaxima = Kadane(numeros);
+        int SumaMaxima = Kadane(Numeros);
 
-        Console.WriteLine("\nLa suma máxima de un subarreglo es: " + sumaMaxima);
+        Console.WriteLine("\nLa suma máxima de un subarreglo es: " + SumaMaxima);
     }
 
-    // Implementación de Kadane
-    static int Kadane(int[] arr)
+    static int Kadane(int[] Arreglo)
     {
-        int maxActual = arr[0];
-        int maxGlobal = arr[0];
+        int MaxActual = Arreglo[0];
+        int MaxGlobal = Arreglo[0];
 
-        for (int i = 1; i < arr.Length; i++)
+        for (int i = 1; i < Arreglo.Length; i++)
         {
-            // Elegimos entre empezar nuevo subarreglo o seguir sumando
-            maxActual = Math.Max(arr[i], maxActual + arr[i]);
+            MaxActual = Math.Max(Arreglo[i], MaxActual + Arreglo[i]);
 
-            if (maxActual > maxGlobal)
+            if (MaxActual > MaxGlobal)
             {
-                maxGlobal = maxActual;
+                MaxGlobal = MaxActual;
             }
         }
 
-        return maxGlobal;
+        return MaxGlobal;
     }
 }

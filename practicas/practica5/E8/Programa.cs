@@ -7,10 +7,10 @@ class BuscarEnRotado
         int[] arreglo = { 4, 5, 6, 7, 0, 1, 2 };
         int objetivo = 0;
 
-        int indice = BuscarElemento(arreglo, objetivo);
-
-        Console.WriteLine("Arreglo: ");
+        Console.WriteLine("Arreglo:");
         ImprimirArreglo(arreglo);
+
+        int indice = BuscarElemento(arreglo, objetivo);
 
         if (indice != -1)
             Console.WriteLine($"\nEl número {objetivo} se encontró en la posición: {indice}");
@@ -18,6 +18,7 @@ class BuscarEnRotado
             Console.WriteLine($"\nEl número {objetivo} NO está en el arreglo.");
     }
 
+    // Búsqueda binaria modificada para arreglo rotado
     static int BuscarElemento(int[] arr, int objetivo)
     {
         int izquierda = 0, derecha = arr.Length - 1;
@@ -47,9 +48,10 @@ class BuscarEnRotado
             }
         }
 
-        return -1; // no encontrado
+        return -1; // No encontrado
     }
 
+    // Método para imprimir el arreglo
     static void ImprimirArreglo(int[] arr)
     {
         foreach (int num in arr)

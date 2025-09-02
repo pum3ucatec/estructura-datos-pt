@@ -13,6 +13,7 @@ class Program
         EncontrarSubconjuntos(numeros, target, 0, actual);
     }
 
+    // Método recursivo para encontrar los subconjuntos
     static void EncontrarSubconjuntos(int[] nums, int target, int indice, List<int> actual)
     {
         if (target == 0)
@@ -26,7 +27,7 @@ class Program
 
         // Incluir el número en el subconjunto
         actual.Add(nums[indice]);
-        EncontrarSubconjuntos(nums, target - nums[indice], indice, actual); // no avanzamos índice porque se puede repetir
+        EncontrarSubconjuntos(nums, target - nums[indice], indice, actual); // Permite reutilizar el mismo número
 
         // Excluir el número
         actual.RemoveAt(actual.Count - 1);

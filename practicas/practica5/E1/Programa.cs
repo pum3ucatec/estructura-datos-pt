@@ -5,33 +5,34 @@ class RotacionArreglo
     static void Main(string[] args)
     {
         // Arreglo de ejemplo
-        int[] numeros = { 1, 2, 3, 4, 5 };
-        int k = 2; // Cuántas posiciones rotar
+        int[] Numeros = { 1, 2, 3, 4, 5 };
+        int K = 2; // Cuántas posiciones rotar
 
         // Llamamos a la función que rota
-        int[] resultado = Rotar(numeros, k);
+        int[] Resultado = Rotar(Numeros, K);
 
         // Mostrar resultado
         Console.WriteLine("Arreglo rotado:");
-        for (int i = 0; i < resultado.Length; i++)
+        for (int i = 0; i < Resultado.Length; i++)
         {
-            Console.Write(resultado[i] + " ");
+            Console.Write(Resultado[i] + " ");
         }
+        Console.WriteLine();
     }
 
     // Método para rotar el arreglo
-    static int[] Rotar(int[] arr, int k)
+    static int[] Rotar(int[] Arreglo, int K)
     {
-        int n = arr.Length;
-        int[] nuevo = new int[n];
+        int N = Arreglo.Length;
+        int[] Nuevo = new int[N];
 
         // Recorremos y colocamos cada número en su nueva posición
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < N; i++)
         {
-            int nuevaPos = (i + k) % n; // fórmula para calcular nueva posición
-            nuevo[nuevaPos] = arr[i];
+            int NuevaPos = (i + K) % N; // fórmula para calcular nueva posición
+            Nuevo[NuevaPos] = Arreglo[i];
         }
 
-        return nuevo;
+        return Nuevo;
     }
 }

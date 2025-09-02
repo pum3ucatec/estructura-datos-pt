@@ -5,15 +5,16 @@ class Program
     static void Main(string[] args)
     {
         int[,] matriz = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+            { 1, 2, 3 },
+            { 4, 5, 6 },
+            { 7, 8, 9 }
         };
 
         Console.WriteLine("Recorrido en espiral:");
         RecorrerEspiral(matriz);
     }
 
+    // Método para recorrer la matriz en espiral
     static void RecorrerEspiral(int[,] matriz)
     {
         int filas = matriz.GetLength(0);

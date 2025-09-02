@@ -4,48 +4,48 @@ class MatrizTranspuesta
 {
     static void Main(string[] args)
     {
-        int[,] matriz = {
+        int[,] numeros = {
             { 1, 2, 3 },
             { 4, 5, 6 }
         };
 
         Console.WriteLine("Matriz original:");
-        ImprimirMatriz(matriz);
+        ImprimirMatriz(numeros);
 
-        int[,] transpuesta = Transponer(matriz);
+        int[,] resultado = Transponer(numeros);
 
         Console.WriteLine("\nMatriz transpuesta:");
-        ImprimirMatriz(transpuesta);
+        ImprimirMatriz(resultado);
     }
 
-    static int[,] Transponer(int[,] matriz)
+    static int[,] Transponer(int[,] arr)
     {
-        int filas = matriz.GetLength(0);
-        int columnas = matriz.GetLength(1);
+        int filas = arr.GetLength(0);
+        int columnas = arr.GetLength(1);
 
-        int[,] transpuesta = new int[columnas, filas];
+        int[,] nuevo = new int[columnas, filas];
 
         for (int i = 0; i < filas; i++)
         {
             for (int j = 0; j < columnas; j++)
             {
-                transpuesta[j, i] = matriz[i, j];
+                nuevo[j, i] = arr[i, j];
             }
         }
 
-        return transpuesta;
+        return nuevo;
     }
 
-    static void ImprimirMatriz(int[,] matriz)
+    static void ImprimirMatriz(int[,] arr)
     {
-        int filas = matriz.GetLength(0);
-        int columnas = matriz.GetLength(1);
+        int filas = arr.GetLength(0);
+        int columnas = arr.GetLength(1);
 
         for (int i = 0; i < filas; i++)
         {
             for (int j = 0; j < columnas; j++)
             {
-                Console.Write(matriz[i, j] + " ");
+                Console.Write(arr[i, j] + " ");
             }
             Console.WriteLine();
         }
