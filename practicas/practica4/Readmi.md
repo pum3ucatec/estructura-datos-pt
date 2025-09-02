@@ -1,4 +1,4 @@
-# Ejercicio 11 - Implementación de una Pila en C#
+# practica 4  - Implementación de una Pila en C#
 
 ## 📌 Descripción
 Este programa en C# implementa una **pila** utilizando la clase genérica `Stack<int>`.  
