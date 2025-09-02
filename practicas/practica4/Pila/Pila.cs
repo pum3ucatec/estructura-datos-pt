@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-// Clase que implementa la estructura de Pila
 class Pila
 {
     private List<int> elementos = new List<int>();
@@ -79,7 +78,7 @@ class Pila
             else
             {
                 Console.WriteLine("Valor inválido, intente de nuevo.");
-                i--; // repetir el mismo intento
+                i--; 
             }
         }
         Console.WriteLine($"Se insertaron {cantidad} elementos en la pila.");
