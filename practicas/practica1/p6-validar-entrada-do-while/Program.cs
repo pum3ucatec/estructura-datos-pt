@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+class Ejercicio6
+{
+    static void Main()
+    {
+        int num;
+
+        do
+        {
+            Console.Write("Ingresa un número positivo: ");
+            num = int.Parse(Console.ReadLine());
+        } while (num <= 0);
+
+        Console.WriteLine("Ingresaste: " + num);
+    }
+}
