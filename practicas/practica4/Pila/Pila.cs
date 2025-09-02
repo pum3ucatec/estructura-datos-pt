@@ -12,16 +12,16 @@ class Pila
     }
 
     // Insertar un elemento en la pila
-    public void Push(int valor)
+    public void push(int valor)
     {
         elementos.Add(valor);
         Console.WriteLine($"Se insertó {valor} en la pila.");
     }
 
     // Eliminar el último elemento (cima)
-    public int Pop()
+    public int pop()
     {
-        if (IsEmpty())
+        if (isEmpty())
         {
             Console.WriteLine("La pila está vacía, no se puede eliminar.");
             return -1;
@@ -34,9 +34,9 @@ class Pila
     }
 
     // Ver el último elemento sin eliminarlo
-    public int Peek()
+    public int peek()
     {
-        if (IsEmpty())
+        if (isEmpty())
         {
             Console.WriteLine("La pila está vacía.");
             return -1;
@@ -45,9 +45,9 @@ class Pila
     }
 
     // Mostrar todos los elementos de la pila
-    public void Mostrar()
+    public void mostrar()
     {
-        if (IsEmpty())
+        if (isEmpty())
         {
             Console.WriteLine("La pila está vacía.");
             return;
@@ -61,31 +61,31 @@ class Pila
     }
 
     // Verificar si la pila está vacía
-    public bool IsEmpty()
+    public bool isEmpty()
     {
         return elementos.Count == 0;
     }
 
-    public int Eliminar()
+    public void eliminar()
     {
-        if (IsEmpty())
+        if (isEmpty())
         {
             Console.WriteLine("La pila está vacía, no se puede eliminar.");
-            return -1;
+            return;
         }
 
         while (elementos.Count > 0)
         {
-            int valor = elementos.RemoveAt(elementos.Count - 1);
+            elementos.RemoveAt(elementos.Count - 1);
         }
         Console.WriteLine($"Se eliminaron todos los elementos de la pila.");
     }
 
-    public void Push_n(int valor)
+    public void pushN(int valor)
     {
         Console.Write("Ingrese el número de elementos a añadir: ");
         int n = Convert.ToInt32(Console.ReadLine());
-        
+
         int i = 0;
         while (i < n)
         {
@@ -94,7 +94,5 @@ class Pila
             i++;
         }
         Console.WriteLine($"Se insertaron {n} elementos en la pila.");
-        }
     }
-
-
+}

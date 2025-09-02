@@ -27,13 +27,13 @@
             switch (opcion)
             {
                 case 1:
-                    pila.Mostrar();
+                    pila.mostrar();
                     break;
                 case 2:
                     Console.Write("Ingrese el número a insertar: ");
                     if (int.TryParse(Console.ReadLine(), out int valor))
                     {
-                        pila.Push(valor);
+                        pila.push(valor);
                     }
                     else
                     {
@@ -41,24 +41,24 @@
                     }
                     break;
                 case 3:
-                    pila.Pop();
+                    pila.pop();
                     break;
                 case 4:
-                    int cima = pila.Peek();
+                    int cima = pila.peek();
                     if (cima != -1)
                         Console.WriteLine($"Elemento en la cima: {cima}");
                     break;
                 case 5:
-                    Console.WriteLine(pila.IsEmpty() ? "La pila está vacía." : "La pila NO está vacía.");
+                    Console.WriteLine(pila.isEmpty() ? "La pila está vacía." : "La pila NO está vacía.");
                     break;
                  case 6:
-                    Console.WriteLine(pila.Eliminar() ? "La pila está vacía." : "La pila NO está vacía.");
+                    Console.WriteLine(pila.eliminar() ? "La pila está vacía." : "La pila NO está vacía.");
                     break;
                  case 7:
                     Console.Write("Ingrese el número a insertar: ");
                     if (int.TryParse(Console.ReadLine(), out int valor))
                     {
-                        pila.Push_n(valor);
+                        pila.pushN(valor);
                     }
                     else
                     {
