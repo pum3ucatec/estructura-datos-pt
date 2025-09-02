@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Principal
+class principal
 {
     static void Main(string[] args)
     {

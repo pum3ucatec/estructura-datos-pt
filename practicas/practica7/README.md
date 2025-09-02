@@ -3,8 +3,8 @@
 	- [1.1. Descripcion](#11-descripcion)
 		- [1.1.1. Como Ejecutar el Programa](#111-como-ejecutar-el-programa)
 	- [1.2. Estructura del Proyecto](#12-estructura-del-proyecto)
-		- [1.2.1. `Nodo.cs`](#121-nodocs)
-		- [1.2.2. `Cola.cs`](#122-colacs)
+		- [1.2.1. `nodo.cs`](#121-nodocs)
+		- [1.2.2. `cola.cs`](#122-colacs)
 		- [1.2.3. `Program.cs`](#123-programcs)
 	- [1.3. Ejemplo de Uso](#13-ejemplo-de-uso)
 
@@ -55,7 +55,7 @@ dotnet run
 
 El proyecto esta dividido en tres archivos principales:
 
-### 1.2.1. `Nodo.cs`
+### 1.2.1. `nodo.cs`
 
 Representa un nodo de la cola.
 
@@ -78,7 +78,7 @@ public class Nodo
 }
 ```
 
-### 1.2.2. `Cola.cs`
+### 1.2.2. `cola.cs`
 
 Define la estructura de la Cola y sus operaciones principales.
 
