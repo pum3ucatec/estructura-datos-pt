@@ -3,7 +3,7 @@ Dado un arreglo de 10 números, pide al usuario un número y determina si está 
 
 using System;
 
-class Ejercicio6
+class ejercicio_6
 {
     static void Main()
     {

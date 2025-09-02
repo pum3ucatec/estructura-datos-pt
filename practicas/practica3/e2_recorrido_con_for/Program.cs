@@ -5,7 +5,7 @@ Explicación: El alumno debe entender cómo usar Length para recorrer el arreglo
 
 using System;
 
-class Ejercicio2
+class ejercicio_2
 {
 	static void Main(string[] args)
 	{

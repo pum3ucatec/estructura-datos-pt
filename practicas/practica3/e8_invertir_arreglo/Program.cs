@@ -3,7 +3,7 @@ Dado un arreglo, crea un segundo arreglo que contenga los mismos elementos pero 
 
 using System;
 
-class Ejercicio8
+class ejercicio_8
 {
     static void Main()
     {

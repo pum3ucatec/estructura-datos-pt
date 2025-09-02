@@ -3,7 +3,7 @@ Ingresa 5 calificaciones en un arreglo y calcula el promedio. */
 
 using System;
 
-class Ejercicio4
+class ejercicio_4
 {
     static void Main()
     {

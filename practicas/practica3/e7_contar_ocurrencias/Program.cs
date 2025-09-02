@@ -3,7 +3,7 @@ Dado un arreglo de enteros, pide un número y cuenta cuántas veces aparece en e
 
 using System;
 
-class Ejercicio7
+class ejercicio_7
 {
     static void Main()
     {

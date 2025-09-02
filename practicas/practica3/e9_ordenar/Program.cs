@@ -3,7 +3,7 @@ Implementa un algoritmo sencillo (por ejemplo, Burbuja) para ordenar un arreglo 
 
 using System;
 
-class Ejercicio9
+class ejercicio_9
 {
     static void Main()
     {
@@ -13,7 +13,7 @@ class Ejercicio9
 
         for (int pasada = 0; pasada < datos.Length - 1; pasada++)
         {
-            bool huboIntercambio = false;
+            bool hubo_intercambio = false;
 
             for (int i = 0; i < datos.Length - 1 - pasada; i++)
             {
@@ -22,11 +22,11 @@ class Ejercicio9
                     int aux = datos[i];
                     datos[i] = datos[i + 1];
                     datos[i + 1] = aux;
-                    huboIntercambio = true;
+                    hubo_intercambio = true;
                 }
             }
 
-            if (!huboIntercambio) break;
+            if (!hubo_intercambio) break;
         }
 
         Console.WriteLine("Arreglo ordenado:   [" + string.Join(", ", datos) + "]");

@@ -3,7 +3,7 @@ Declara una matriz de 3x3, inicialízala con valores y muestra la suma de cada f
 
 using System;
 
-class Ejercicio10
+class ejercicio_10
 {
     static void Main()
     {
