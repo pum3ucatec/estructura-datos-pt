@@ -2,8 +2,7 @@
 
 using System;
 
-namespace Validar_entrada_con_do_while
-{
+
     class Ejercicio6
     {
         static void Main()
@@ -17,4 +16,4 @@ namespace Validar_entrada_con_do_while
             Console.WriteLine($"Número válido ingresado: {numeroPositivo}");
         }
     }
-}
+

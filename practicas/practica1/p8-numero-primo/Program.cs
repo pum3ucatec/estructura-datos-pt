@@ -2,8 +2,7 @@
 
 using System;
 
-namespace Dtectar_nuemro_primo
-{
+
     class Ejercicio8
     {
         static void Main()
@@ -31,4 +30,4 @@ namespace Dtectar_nuemro_primo
 
         }
     }
-}
+

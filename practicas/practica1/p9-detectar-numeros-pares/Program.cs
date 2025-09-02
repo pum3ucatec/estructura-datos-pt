@@ -2,8 +2,6 @@
 
 using System;
 
-namespace Mostrar_los_primeros_10_números_pares
-{
     class Ejercicio9
     {
         static void Main()
@@ -18,4 +16,4 @@ namespace Mostrar_los_primeros_10_números_pares
             }
         }
     }
-}
+

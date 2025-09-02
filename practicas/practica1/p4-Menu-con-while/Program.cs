@@ -1,13 +1,12 @@
 ﻿// Crear un pequeño menú que se repita hasta que el usuario elija salir (Ejemplo: 1.Saludar, 2.Sumar, 3.Salir)
 
 using System;
-namespace EjerciciosCSharp
-{
-    class Program
+
+    class Ejercicio4
     {
         static void Main()
         {
-            // ----- 4. Menú con do-while -----
+            
             int opcion;
             do
             {
@@ -42,4 +41,3 @@ namespace EjerciciosCSharp
             } while (opcion != 3);
         }
     }
-}

@@ -2,8 +2,6 @@
 
 using System;
 
-namespace Tabla_Multiplicar
-{
     class Ejercicio3
     {
         static void Main()
@@ -21,4 +19,4 @@ namespace Tabla_Multiplicar
             }
         }
     }
-}
+

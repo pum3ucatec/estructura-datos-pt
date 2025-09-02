@@ -2,9 +2,6 @@
 // Usar do-while hasta que acierte, indicando si es mayor o menor.
 
 using System;
-
-namespace Adivina_el_número_juego
-{
     class Ejercicio10
     {
         static void Main()
@@ -27,4 +24,4 @@ namespace Adivina_el_número_juego
             Console.WriteLine("¡Felicidades! Adivinaste el número.");
         }
     }
-}
+

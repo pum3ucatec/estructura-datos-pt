@@ -2,8 +2,6 @@
 
 using System;
 
-namespace Contador_regresivo
-{
     class Ejercicio5
     {
         static void Main()
@@ -16,4 +14,3 @@ namespace Contador_regresivo
             }
         }
     }
-}

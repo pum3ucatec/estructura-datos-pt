@@ -2,8 +2,6 @@
 
 using System;
 
-namespace Sumade_5_numeros_ingresados_por_el_usuario
-{
     class Ejercicio7
     {
         static void Main()
@@ -17,4 +15,4 @@ namespace Sumade_5_numeros_ingresados_por_el_usuario
             Console.WriteLine($"La suma total es: {suma}");
         }
     }
-}
+

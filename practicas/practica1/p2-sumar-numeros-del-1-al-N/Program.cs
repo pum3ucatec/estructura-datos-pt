@@ -2,8 +2,6 @@
 
 using System;
 
-namespace Sumar_numeros_del_1alN
-{
     class Ejercicio2
     {
         static void Main()
@@ -22,4 +20,4 @@ namespace Sumar_numeros_del_1alN
             Console.WriteLine($"La suma de los números del 1 al {N} es: {suma}");
         }
     }
-}
+
