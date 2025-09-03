@@ -1,0 +1,15 @@
+C:\Users\jhefe\estructura-datos-pt\listasdobles\bin\Debug\net9.0\listasdobles.exe
+C:\Users\jhefe\estructura-datos-pt\listasdobles\bin\Debug\net9.0\listasdobles.deps.json
+C:\Users\jhefe\estructura-datos-pt\listasdobles\bin\Debug\net9.0\listasdobles.runtimeconfig.json
+C:\Users\jhefe\estructura-datos-pt\listasdobles\bin\Debug\net9.0\listasdobles.dll
+C:\Users\jhefe\estructura-datos-pt\listasdobles\bin\Debug\net9.0\listasdobles.pdb
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.AssemblyInfoInputs.cache
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.AssemblyInfo.cs
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.csproj.CoreCompileInputs.cache
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.sourcelink.json
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.dll
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\refint\listasdobles.dll
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.pdb
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\listasdobles.genruntimeconfig.cache
+C:\Users\jhefe\estructura-datos-pt\listasdobles\obj\Debug\net9.0\ref\listasdobles.dll
