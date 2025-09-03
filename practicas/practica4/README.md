@@ -59,4 +59,6 @@ Seleccione una opción:
 ## Archivos principales
 
 - **Program.cs:** Contiene el menú principal y la interacción con el usuario.
-- **Pila.cs:** Implementa la lógica de la pila y sus operaciones.
+- ## **Pila.cs:** Implementa la lógica de la pila y sus operaciones.
+
+---
