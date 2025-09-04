@@ -28,10 +28,13 @@ M --> F[Fin]
 
 # Ejemplo de datos
 
-```mermaid
-A → B → C → D → null
-```
+flowchart LR
+    H["HEAD"]:::head --> A["A"]:::nodo
+    A --> B["B"]:::nodo
+    B --> C["C"]:::nodo
+    C --> D["D"]:::nodo
+    D --> N["null"]:::null
 
-```mermaid
-A → B → X → C → D → null
-```
+    classDef head fill:#2196F3,stroke:#0D47A1,color:#fff,stroke-width:2px;
+    classDef nodo fill:#4CAF50,stroke:#2E7D32,color:#fff,stroke-width:2px;
+    classDef null fill:#F44336,stroke:#B71C1C,color:#fff,stroke-width:2px;
