@@ -63,3 +63,4 @@ indice = 1 → arr[1] = 7 → no es 10 → llama otra vez con indice = 2.
 
 indice = 2 → arr[2] = 10 → ¡sí es 10! → devuelve true.
 ```
+
