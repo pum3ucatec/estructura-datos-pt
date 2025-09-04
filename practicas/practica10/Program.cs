@@ -11,6 +11,14 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine(FibonacciRecursivo(6));  // Salida: 8
+        Console.Write("Ingresa la cantidad de términos de la secuencia: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"\nSecuencia de Fibonacci con {n} términos:");
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write(FibonacciRecursivo(i) + " ");
+        }
     }
 }

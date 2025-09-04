@@ -5,7 +5,7 @@
 - Alan Ponce de Leon Terrazas
 
 ## Descripción
-Este proyecto implementa un método para calcular el **término n de la secuencia de Fibonacci** utilizando **recursividad** en C#.  
+Este proyecto implementa un programa en C# que calcula e imprime la **secuencia de Fibonacci hasta n términos** utilizando **recursividad**.  
 La secuencia de Fibonacci se define como:
 
 - `F(0) = 0`  
@@ -15,47 +15,55 @@ La secuencia de Fibonacci se define como:
 ---
 
 ## Funcionamiento del código
-El método `FibonacciRecursivo` utiliza llamadas recursivas para obtener el valor de la posición `n`:
+El método `FibonacciRecursivo` utiliza llamadas recursivas para calcular el valor de cada término de la secuencia:
 
 ```csharp
 public static int FibonacciRecursivo(int n)
 {
     if (n == 0) return 0;   // caso base
     if (n == 1) return 1;   // caso base
-    return FibonacciRecursivo(n - 1) + FibonacciRecursivo(n - 2);
+    return FibonacciRecursivo(n - 1) + FibonacciRecursivo(n - 2); // recursión
 }
 ```
 
 - Casos base:
 
-Si n = 0, devuelve 0.
+    - Si n = 0, devuelve 0.
 
-Si n = 1, devuelve 1.
+    - Si n = 1, devuelve 1.
 
 - Caso recursivo:
 
-Para cualquier n > 1, devuelve la suma de los dos términos anteriores:
+    - Para cualquier ``n > 1``, devuelve la suma de los dos términos anteriores:
+``F(n) = F(n-1) + F(n-2)``
 
-``F(n) = F(n-1) + F(n-2).``
+En el método ``Main``, se solicita al usuario la cantidad de términos y se muestra la secuencia completa:
 
-En el método Main, se prueba la función con el valor n = 6:
+```csharp
+Console.Write("Ingresa la cantidad de términos de la secuencia: ");
+int n = int.Parse(Console.ReadLine());
 
-``Console.WriteLine(FibonacciRecursivo(6));  // Salida: 8``
+Console.WriteLine($"\nSecuencia de Fibonacci con {n} términos:");
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write(FibonacciRecursivo(i) + " ");
+}
+```
 
 ### Ejemplo de ejecución
 
-Al ejecutar el programa, la salida en consola será:
-
-8
-
-Esto corresponde al término F(6) de la secuencia de Fibonacci:
+- Entrada del usuario:
 
 ```
-F(0) = 0
-F(1) = 1
-F(2) = 1
-F(3) = 2
-F(4) = 3
-F(5) = 5
-F(6) = 8
+Ingresa la cantidad de términos de la secuencia: 7
 ```
+
+- Salida en consola:
+
+```
+Secuencia de Fibonacci con 7 términos:
+0 1 1 2 3 5 8
+```
+
+Esto corresponde a los primeros 7 términos de la secuencia de Fibonacci.
