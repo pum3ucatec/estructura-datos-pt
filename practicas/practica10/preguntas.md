@@ -1,4 +1,4 @@
-# 📘 Ejercicios de Recursividad en C#
+#  Ejercicios de Recursividad en C#
 
 En este documento se presentan problemas clásicos que normalmente se resuelven con **recursividad**.  
 Sin embargo, aquí se muestran únicamente las **soluciones iterativas**.  
@@ -12,7 +12,7 @@ Sin embargo, aquí se muestran únicamente las **soluciones iterativas**.
 **Pregunta:**  
 Implementar una función que calcule el factorial de un número `n`.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int FactorialIterativo(int n)
 {
@@ -32,7 +32,7 @@ public static int FactorialIterativo(int n)
 **Pregunta:**  
 Calcular la suma de los primeros `n` números naturales.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int SumaIterativa(int n)
 {
@@ -52,7 +52,7 @@ public static int SumaIterativa(int n)
 **Pregunta:**  
 Calcular el término `n` de la secuencia de Fibonacci.
 
-### 🔄 Solución Iterativa
+### Solución Iterativa
 ```csharp
 public static int FibonacciIterativo(int n)
 {
@@ -78,7 +78,7 @@ public static int FibonacciIterativo(int n)
 **Pregunta:**  
 Calcular `base^exponente` (base elevado al exponente).
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int PotenciaIterativa(int baseNum, int exp)
 {
@@ -98,7 +98,7 @@ public static int PotenciaIterativa(int baseNum, int exp)
 **Pregunta:**  
 Invertir una cadena de texto.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static string InvertirCadenaIterativa(string cadena)
 {
@@ -115,7 +115,7 @@ public static string InvertirCadenaIterativa(string cadena)
 **Pregunta:**  
 Contar la cantidad de dígitos que tiene un número entero positivo.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int ContarDigitosIterativo(int n)
 {
@@ -136,7 +136,7 @@ public static int ContarDigitosIterativo(int n)
 **Pregunta:**  
 Calcular el máximo común divisor (MCD) de dos números.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int MCDIterativo(int a, int b)
 {
@@ -157,7 +157,7 @@ public static int MCDIterativo(int a, int b)
 **Pregunta:**  
 Calcular la suma de todos los elementos de un arreglo.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static int SumaArregloIterativa(int[] arr)
 {
@@ -177,7 +177,7 @@ public static int SumaArregloIterativa(int[] arr)
 **Pregunta:**  
 Determinar si un número existe en un arreglo.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static bool BuscarElementoIterativo(int[] arr, int valor)
 {
@@ -197,7 +197,7 @@ public static bool BuscarElementoIterativo(int[] arr, int valor)
 **Pregunta:**  
 Convertir un número decimal en su representación binaria.
 
-### 🔄 Solución Iterativa
+###  Solución Iterativa
 ```csharp
 public static string DecimalABinarioIterativo(int n)
 {
