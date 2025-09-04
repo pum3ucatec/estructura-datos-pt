@@ -1,20 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
-        int[] numeros = { 5, 10, 15, 20, 25 };
+        int[] Numeros = { 5, 10, 15, 20, 25 };
         
-        int suma = 0;
+        int Suma = 0;
 
-        for (int i = 0; i < numeros.Length; i++)
+        for (int I = 0; I < Numeros.Length; I++)
         {
-            suma += numeros[i];
+            Suma += Numeros[I];
         }
 
-        Console.WriteLine("La suma de todos los elementos es: " + suma);
+        Console.WriteLine("La Suma De Todos Los Elementos Es: " + Suma);
     }
 }
-
