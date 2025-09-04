@@ -2,7 +2,7 @@
 
 class Program
 {
-    // Método recursivo para sumar los primeros N números naturales
+    // Método recursivo para suma
     public static int SumaRecursiva(int n)
     {
         // Caso base
@@ -18,7 +18,7 @@ class Program
         Console.Write("Ingrese un número: ");
         int n = int.Parse(Console.ReadLine());
 
-        int resultado = SumaRecursiva(n);
-        Console.WriteLine($"La suma de los primeros {n} números naturales es: {resultado}");
+        int resu = SumaRecursiva(n);
+        Console.WriteLine($"La suma de los primeros {n} números naturales es: {resu}");
     }
 }
