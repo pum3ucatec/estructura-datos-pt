@@ -10,11 +10,11 @@ class Program
     public static int ContarDigitosRecursivo(int n)
     {
 
-        if (n < 10)
+        if (n < 10) // Caso base
         {
             return 1;
         }
 
-        return 1 + ContarDigitosRecursivo(n / 10);
+        return 1 + ContarDigitosRecursivo(n / 10); // Llamada recursiva
     }
 }
