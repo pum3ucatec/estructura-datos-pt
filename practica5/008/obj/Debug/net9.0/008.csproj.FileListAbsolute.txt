@@ -1,0 +1,15 @@
+C:\Users\jhefe\estructura-datos-pt\practica5\008\bin\Debug\net9.0\008.exe
+C:\Users\jhefe\estructura-datos-pt\practica5\008\bin\Debug\net9.0\008.deps.json
+C:\Users\jhefe\estructura-datos-pt\practica5\008\bin\Debug\net9.0\008.runtimeconfig.json
+C:\Users\jhefe\estructura-datos-pt\practica5\008\bin\Debug\net9.0\008.dll
+C:\Users\jhefe\estructura-datos-pt\practica5\008\bin\Debug\net9.0\008.pdb
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.AssemblyInfoInputs.cache
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.AssemblyInfo.cs
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.csproj.CoreCompileInputs.cache
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.sourcelink.json
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.dll
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\refint\008.dll
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.pdb
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\008.genruntimeconfig.cache
+C:\Users\jhefe\estructura-datos-pt\practica5\008\obj\Debug\net9.0\ref\008.dll
