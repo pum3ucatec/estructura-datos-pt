@@ -1,4 +1,12 @@
-# Práctica 6: Estructura de Datos - Implementación de Colas en C#
+**INDICE**
+- [Práctica 6: Implementación de Colas en C#](#práctica-6-implementación-de-colas-en-c)
+  - [1. Estructura del Proyecto](#1-estructura-del-proyecto)
+  - [2. Clase MyQueue](#2-clase-myqueue)
+  - [3. Clase Program](#3-clase-program)
+  - [4. Ejecución del programa](#4-ejecución-del-programa)
+      - [4.1 Ejemplo de ejecución](#41-ejemplo-de-ejecución)
+
+# Práctica 6: Implementación de Colas en C#
 
 Este proyecto contiene la implementación de una estructura de datos tipo **Cola (Queue)** en C#, el cual sigue el principio **FIFO** y se esta utilizando un arreglo de caracteres **(char[])**: lo que te permite ingresar letras,números, símbolos, etc.  
 
@@ -8,11 +16,15 @@ El tipo de cola en este proyecto es **lineal** porque:
 - Cuando haces **Dequeue**, el puntero **front** también avanza.
 - Pero si rear llega al último índice del arreglo y la cola no está llena (porque se liberaron elementos al inicio), **ese espacio ya no se reutiliza.**
 
-El programa permite al usuario interactuar con la cola mediante un menú en consola, donde se pueden realizar operaciones comunes como agregar, eliminar, consultar y verificar estados de la cola.
+Esta práctica sigue las siguientes convenciones de nombres:
+
+- Clases y métodos → PascalCase
+
+- Variables locales y parámetros → camelCase
 
 ---
 
-## Estructura del Proyecto
+## 1. Estructura del Proyecto
 
 - **MyQueue.cs**  
     Contiene la implementación de la clase `MyQueue`, que define los métodos y propiedades para gestionar una cola personalizada.
@@ -20,9 +32,13 @@ El programa permite al usuario interactuar con la cola mediante un menú en cons
 - **Program.cs**  
     Archivo principal donde se realizan pruebas y demostraciones del funcionamiento de la clase `MyQueue`.
 
+---
+
+## 2. Clase MyQueue
+
+**Archivo:** [`my-queue/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica6/practicas/practica6/Cola/MyQueue.cs)
 
 
-## MyQueue.cs
 Primero se definio el constructor:
 - **Size = N;** → el tamaño máximo de la cola.
 
@@ -45,7 +61,12 @@ Posterior a ello de definieron los metodos:
 - **IsEmpty:** Verificar si la cola está vacía.  
 - **IsFull:** Verificar si la cola está llena.  
 
-## Program.cs
+---
+
+## 3. Clase Program
+
+**Archivo:** [`Program/Program.cs`](https://github.com/pum3ucatec/estructura-datos-pt/blob/QuispeIsabel/Practica6/practicas/practica6/Cola/Program.cs)
+
 Aqui se tiene el menú que representa el funcionamiento de la clase MyQueue.
 
         --- MENÚ ---
@@ -59,16 +80,16 @@ Aqui se tiene el menú que representa el funcionamiento de la clase MyQueue.
       7. Buscar elemento (Contains)
       8. Ver si esta vacia (IsEmty)
       9.Ver si esta llena (IsFull)
-      0. Salir
+      9. Salir
 
-## Ejecución del programa
+## 4. Ejecución del programa
 
 1. Obten los cambios de la rama.
 2. Abre el proyecto en tu IDE de preferencia.
 3. Recuerda tener instalado el .Net
 4. Ejecuta el archivo `Program.cs`  con dotnet run.
 
-### Ejemplo de ejecución
+#### 4.1 Ejemplo de ejecución
 
     Ingrese el tamaño de la cola: 3
 
