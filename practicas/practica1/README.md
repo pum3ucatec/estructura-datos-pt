@@ -30,7 +30,6 @@ Cada ejercicio se ejecuta en consola, mostrando el uso de ciclos, condicionales,
 
 * **Clases** → PascalCase (`Ejercicio1`)
 * **Variables** → snake\_case (`num_secreto`, `num_intento`)
-* **Métodos** → PascalCase (`SumarHastaN`)
 
 ---
 
@@ -209,9 +208,3 @@ Juego donde el usuario debe adivinar un número aleatorio generado por el progra
 * Generación aleatoria con `Random`
 * Bucle `do-while`
 * Condicionales
-* Contador de intentos
-
-```
-
-¿Quieres que en este mismo README también agregue un **apartado inicial** con tus datos (nombre, materia, práctica 1), como hicimos antes en el README general, o prefieres dejarlo directo con el índice y descripción?
-```
