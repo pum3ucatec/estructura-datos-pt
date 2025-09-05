@@ -1,4 +1,30 @@
-﻿using System;
+# Documentación del Programa de Pilas en PascalCase
+
+Este programa en C# implementa una pila de enteros utilizando la clase `Stack<int>`.  
+Permite al usuario realizar operaciones comunes sobre la pila, como insertar, eliminar, consultar, limpiar y mostrar elementos.  
+El código ha sido convertido al estilo **PascalCase** para las variables, lo que significa que cada nombre comienza con mayúscula.
+
+## Explicación del Código
+
+1. **Declaración de la Pila:** Se crea una pila llamada `Pila` usando `Stack<int>`.  
+2. **Menú Interactivo:**  
+   - Se muestra un menú con opciones para insertar (`Push`), eliminar (`Pop`), ver el elemento superior (`Peek`), contar elementos (`Count`), limpiar la pila (`Clear`), insertar varios elementos (`Push 'n'`) y mostrar la pila.  
+3. **Opciones del Menú:**  
+   - **Push:** Inserta un elemento ingresado por el usuario.  
+   - **Pop:** Elimina el elemento superior de la pila y lo muestra.  
+   - **Peek:** Muestra el elemento superior sin eliminarlo.  
+   - **Count:** Muestra la cantidad de elementos en la pila.  
+   - **Clear:** Limpia todos los elementos de la pila.  
+   - **Push 'n':** Permite al usuario insertar varios elementos consecutivos.  
+   - **Mostrar pila:** Muestra todos los elementos desde el tope hasta la base.  
+4. **Funciones Auxiliares:**  
+   - `MostrarPila(Stack<int> Pila)`: Muestra los elementos de la pila en orden desde el tope hacia la base.  
+   - `LeerEntero(int Min = int.MinValue, int Max = int.MaxValue)`: Permite leer un número entero ingresado por el usuario con validación de rango.
+
+## Código en PascalCase
+
+```csharp
+using System;
 using System.Collections.Generic;
 
 class Program
@@ -98,7 +124,6 @@ class Program
         } while (Opcion != 0);
     }
 
-    // ✅ Función para mostrar pila
     static void MostrarPila(Stack<int> Pila)
     {
         if (Pila.Count == 0)
@@ -115,7 +140,6 @@ class Program
         Console.WriteLine("-------");
     }
 
-    // ✅ Leer entero con validación y rango
     static int LeerEntero(int Min = int.MinValue, int Max = int.MaxValue)
     {
         int Numero;
@@ -129,4 +153,3 @@ class Program
         }
     }
 }
-
