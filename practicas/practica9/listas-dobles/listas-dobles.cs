@@ -140,7 +140,7 @@ public class ListasDobles
         }
 
         NodoDoble? actual = cabeza;
-        int indice = 0;
+        int indice = 1;
 
         while (actual != null && indice < posicion)
         {
