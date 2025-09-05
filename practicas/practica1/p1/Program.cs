@@ -2,16 +2,13 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
+        Console.WriteLine("Contar del 1 al 10 (for)");
+
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine(i);
         }
-
-
-        Console.WriteLine("Fin del programa");
-        Console.ReadLine();
     }
-
 }
