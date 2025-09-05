@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "usernamehw.errorlens",
+        "jmrog.vscode-nuget-package-manager",
+        "yzhang.markdown-all-in-one",
+        "gruntfuggly.todo-tree"
+    ]
+}
