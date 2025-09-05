@@ -21,4 +21,3 @@ Está dirigido a estudiantes, docentes y personas que están comenzando a progra
 - Desarrollar habilidades para generar secuencias numéricas y automatizar tareas repetitivas.
 - Introducir buenas prácticas de codificación y documentación desde el inicio.
 
-
