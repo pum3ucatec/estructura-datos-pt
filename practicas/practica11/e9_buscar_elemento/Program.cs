@@ -1,0 +1,34 @@
+﻿using System;
+class ejercicio_9
+{
+    public static bool buscar_elemento(int[] arr, int n, int valor)
+    {
+        if (n == 0) 
+            return false;
+        if (arr[n - 1] == valor) 
+            return true;
+        return buscar_elemento(arr, n - 1, valor);
+    }
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("=== Buscar Elemento ===");
+
+        Console.Write("Ingresa la cantidad de elementos: ");
+        int n = int.Parse(Console.ReadLine());
+
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.Write("Ingresa el valor a buscar: ");
+        int valor = int.Parse(Console.ReadLine());
+
+        bool encontrado = buscar_elemento(arr, n, valor);
+
+        Console.WriteLine(encontrado ? "Elemento encontrado." : "Elemento no encontrado.");
+    }
+}
