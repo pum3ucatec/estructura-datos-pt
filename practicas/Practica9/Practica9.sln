@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practica9", "Practica9", "{D22EEE29-C29A-A6EE-4D8F-CA8E9A85F088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListasDobles", "Practica9\ListasDobles\ListasDobles.csproj", "{6B53C374-E8A0-01D6-991B-C623F055C006}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B53C374-E8A0-01D6-991B-C623F055C006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B53C374-E8A0-01D6-991B-C623F055C006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B53C374-E8A0-01D6-991B-C623F055C006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B53C374-E8A0-01D6-991B-C623F055C006}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B53C374-E8A0-01D6-991B-C623F055C006} = {D22EEE29-C29A-A6EE-4D8F-CA8E9A85F088}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2F89B1B-0331-4FF8-932E-F4BF53667F75}
+	EndGlobalSection
+EndGlobal
