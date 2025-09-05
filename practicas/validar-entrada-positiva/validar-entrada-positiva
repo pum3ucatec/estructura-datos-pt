@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int positivo;
+        do
+        {
+            Console.Write("Ingrese un número positivo: ");
+            positivo = int.Parse(Console.ReadLine());
+        } while (positivo <= 0);
+
+        Console.WriteLine("Número válido ingresado: " + positivo);
+    }
+}

@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese un número para verificar si es primo: ");
+        int p = int.Parse(Console.ReadLine());
+        bool esPrimo = true;
+
+        if (p <= 1) esPrimo = false;
+        for (int i = 2; i < p; i++)
+        {
+            if (p % i == 0)
+            {
+                esPrimo = false;
+                break;
+            }
+        }
+
+        Console.WriteLine(esPrimo ? "Es primo" : "No es primo");
+    }
+}

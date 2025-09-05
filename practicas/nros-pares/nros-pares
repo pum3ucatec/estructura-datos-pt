@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int pares = 2, count = 0;
+        while (count < 10)
+        {
+            Console.WriteLine(pares);
+            pares += 2;
+            count++;
+        }
+    }
+}
