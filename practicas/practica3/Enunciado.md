@@ -298,4 +298,3 @@ Columna 2: 15
 Columna 3: 18
 
 ```
-
