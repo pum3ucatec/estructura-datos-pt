@@ -1,0 +1,15 @@
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\bin\Debug\net9.0\ej_9.exe
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\bin\Debug\net9.0\ej_9.deps.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\bin\Debug\net9.0\ej_9.runtimeconfig.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\bin\Debug\net9.0\ej_9.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\bin\Debug\net9.0\ej_9.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.AssemblyInfoInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.AssemblyInfo.cs
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.sourcelink.json
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\refint\ej_9.dll
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.pdb
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ej_9.genruntimeconfig.cache
+C:\Users\Laboratorio3\ucatec\estructura-datos-pt\Practicas\practica3\ej_9\obj\Debug\net9.0\ref\ej_9.dll
