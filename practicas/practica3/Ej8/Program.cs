@@ -5,18 +5,17 @@ class Program
 {
     static void Main()
     {
-        
-        int[] arreglo = { 1, 2, 3, 4, 5 };
+        int[] Arreglo = { 1, 2, 3, 4, 5 };
 
-        int[] invertido = new int[arreglo.Length];
+        int[] Invertido = new int[Arreglo.Length];
 
-        for (int i = 0; i < arreglo.Length; i++)
+        for (int i = 0; i < Arreglo.Length; i++)
         {
-            invertido[i] = arreglo[arreglo.Length - 1 - i];
+            Invertido[i] = Arreglo[Arreglo.Length - 1 - i];
         }
 
-        Console.WriteLine("Arreglo original: [" + string.Join(", ", arreglo) + "]");
-        Console.WriteLine("Arreglo invertido: [" + string.Join(", ", invertido) + "]");
+        Console.WriteLine("Arreglo original: [" + string.Join(", ", Arreglo) + "]");
+        Console.WriteLine("Arreglo invertido: [" + string.Join(", ", Invertido) + "]");
     }
 }
 

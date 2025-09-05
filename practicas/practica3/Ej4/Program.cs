@@ -5,20 +5,19 @@ class Program
 {
     static void Main()
     {
+        double[] Calificaciones = new double[5];
+        double Suma = 0;
 
-        double[] calificaciones = new double[5];
-        double suma = 0;
-
-        for (int i = 0; i < calificaciones.Length; i++)
+        for (int I = 0; I < Calificaciones.Length; I++)
         {
-            Console.Write("Ingresa la calificación #" + (i + 1) + ": ");
-            calificaciones[i] = Convert.ToDouble(Console.ReadLine());
-            suma += calificaciones[i];
+            Console.Write("Ingresa La Calificacion #" + (I + 1) + ": ");
+            Calificaciones[I] = Convert.ToDouble(Console.ReadLine());
+            Suma += Calificaciones[I];
         }
         
-        double promedio = suma / calificaciones.Length;
+        double Promedio = Suma / Calificaciones.Length;
 
-        Console.WriteLine("El promedio de las calificaciones es: " + promedio);
+        Console.WriteLine("El Promedio De Las Calificaciones Es: " + Promedio);
     }
 }
 

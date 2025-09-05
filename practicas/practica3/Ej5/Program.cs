@@ -1,32 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
+        int[] Numeros = new int[8];
 
-        int[] numeros = new int[8];
-
-        for (int i = 0; i < numeros.Length; i++)
+        for (int i = 0; i < Numeros.Length; i++)
         {
             Console.Write("Ingresa el número #" + (i + 1) + ": ");
-            numeros[i] = Convert.ToInt32(Console.ReadLine());
+            Numeros[i] = Convert.ToInt32(Console.ReadLine());
         }
 
-        int mayor = numeros[0];
-        int menor = numeros[0];
+        int Mayor = Numeros[0];
+        int Menor = Numeros[0];
 
-        for (int i = 1; i < numeros.Length; i++)
+        for (int i = 1; i < Numeros.Length; i++)
         {
-            if (numeros[i] > mayor)
-                mayor = numeros[i];
-            if (numeros[i] < menor)
-                menor = numeros[i];
+            if (Numeros[i] > Mayor)
+                Mayor = Numeros[i];
+            if (Numeros[i] < Menor)
+                Menor = Numeros[i];
         }
 
-        Console.WriteLine("\nEl número mayor es: " + mayor);
-        Console.WriteLine("El número menor es: " + menor);
+        Console.WriteLine("\nEl número mayor es: " + Mayor);
+        Console.WriteLine("El número menor es: " + Menor);
     }
 }
+
 

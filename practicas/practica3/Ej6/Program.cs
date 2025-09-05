@@ -5,32 +5,32 @@ class Program
 {
     static void Main()
     {
-        int[] numeros = new int[10];
+        int[] Numeros = new int[10];
 
-        for (int i = 0; i < numeros.Length; i++)
+        for (int i = 0; i < Numeros.Length; i++)
         {
             Console.Write("Ingresa el número #" + (i + 1) + ": ");
-            numeros[i] = Convert.ToInt32(Console.ReadLine());
+            Numeros[i] = Convert.ToInt32(Console.ReadLine());
         }
 
         Console.Write("\nIngresa el número que deseas buscar: ");
-        int buscado = Convert.ToInt32(Console.ReadLine());
+        int Buscado = Convert.ToInt32(Console.ReadLine());
 
-        bool encontrado = false;
+        bool Encontrado = false;
 
-        for (int i = 0; i < numeros.Length; i++)
+        for (int i = 0; i < Numeros.Length; i++)
         {
-            if (numeros[i] == buscado)
+            if (Numeros[i] == Buscado)
             {
-                Console.WriteLine("El número " + buscado + " se encuentra en la posición: " + i);
-                encontrado = true;
+                Console.WriteLine("El número " + Buscado + " se encuentra en la posición: " + i);
+                Encontrado = true;
                 break;
             }
         }
 
-        if (!encontrado)
+        if (!Encontrado)
         {
-            Console.WriteLine("El número " + buscado + " no se encuentra en el arreglo.");
+            Console.WriteLine("El número " + Buscado + " no se encuentra en el arreglo.");
         }
     }
 }
