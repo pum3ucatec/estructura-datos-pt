@@ -1,0 +1,65 @@
+### PRACTICA 7: Implementacion de Cola Nodo
+
+## Descripción
+
+En este documento se explicará el sarrollado en la **Práctica 7** de la materia **Estructura de Datos**.
+El tema principal es la implementación de una **cola dinámica con nodos** en C#, en donde se pueden insertar, eliminar y buscar elementos dentro de una lista enlazada simple.
+
+Este proyecto contiene **3 archivos principales**:
+
+1. **Nodo.cs** → Clase que representa un nodo individual con el campo `name` y el puntero `next`.
+2. **Cola.cs** → Implementa la lógica de la cola usando nodos dinámicos, con métodos para insertar, eliminar, mostrar, buscar, etc.
+3. **Program.cs** → Contiene el menú interactivo que permite al usuario probar las distintas operaciones sobre la cola.
+
+---
+
+* **Ejecución:**
+
+1. Entramos a la carpeta de la práctica en la terminal:
+   ![Ruta](CarEjec.png)
+2. Ejecutamos el siguiente comando:
+
+   <pre>
+   dotnet run</pre>
+
+---
+
+**Estilo de nombrado:**
+
+* **Clases** → PascalCase (`Cola`, `Nodo`, `Program`)
+* **Variables** → snake_case (`front`, `rear`, `count`)
+* **Métodos** → PascalCase (`Enqueue`, `Dequeue`, `Contains`)
+
+---
+
+## 1.1. Cola dinámica con nodos
+
+El programa implementa una **cola dinámica** con las siguientes funcionalidades que se manejan desde un menú principal.
+
+### **Flujo del programa:**
+
+1. El usuario selecciona una opción del menú.
+2. Dependiendo de la opción:
+
+   * Si es `Enqueue`, se crea un nuevo `Nodo` con el nombre dado y se añade al final de la cola.
+   * Si es `Dequeue`, se elimina el nodo al frente (`front`) y se ajusta el puntero al siguiente.
+   * En `Mostrar`, se recorre la lista enlazada desde `front` hasta `rear` imprimiendo nombres.
+   * En `Contains` y `Buscar posición`, se recorre nodo por nodo para verificar la existencia de un nombre.
+   * En `Clear`, simplemente se reinician los punteros `front`, `rear` y el contador.
+3. El ciclo se repite hasta que el usuario ingresa la opción **0 (Salir)**.
+
+---
+
+### **Métodos usados en la clase Cola:**
+
+* `Enqueue(string name)` → Inserta al final de la cola.
+* `Dequeue()` → Elimina el nodo en la cabeza de la cola.
+* `Peek()` → Devuelve el valor del primer nodo.
+* `Count()` → Devuelve el número de elementos.
+* `IsEmpty()` → Retorna `true` si la cola está vacía.
+* `Clear()` → Vacía la cola.
+* `Contains(string name)` → Verifica si un nombre está en la cola.
+* `InsertMultiple(string input)` → Inserta varios elementos separados por coma.
+* `BuscarPosicion(string name)` → Devuelve la posición de un nombre.
+* `EliminarPosicion(int pos)` → Elimina un nodo en una posición específica.
+* `Mostrar()` → Recorre e imprime todos los elementos.

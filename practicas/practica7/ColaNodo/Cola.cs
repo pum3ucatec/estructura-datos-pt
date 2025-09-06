@@ -1,34 +1,34 @@
 public class Cola
 {
-    public Nodo Front { get; private set; }
+    public Nodo front { get; private set; }
 
-    public Nodo Rear { get; private set; }
+    public Nodo rear { get; private set; }
 
     public Cola()
     {
-        this.Front = null;
-        this.Rear = null;
+        this.front = null;
+        this.rear = null;
     }
 
     public void Enqueue(string name)
     {
         Nodo nodo = new Nodo(name);
 
-        if (this.Front == null)
+        if (this.front == null)
         {
-            this.Front = nodo;
-            this.Rear = nodo;
+            this.front = nodo;
+            this.rear = nodo;
         }
         else
         {
-            this.Rear.Next = nodo;
-            this.Rear = nodo;
+            this.rear.Next = nodo;
+            this.rear = nodo;
         }
     }
 
     public void View()
     {
-        Nodo current = this.Front;
+        Nodo current = this.front;
 
         while (current != null)
         {
