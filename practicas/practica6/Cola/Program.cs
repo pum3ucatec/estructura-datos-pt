@@ -6,7 +6,7 @@
         int n = int.Parse(Console.ReadLine());
         MyQueue cola = new MyQueue(n);
 
-        int opcion;
+        int op;
         do
         {
             Console.WriteLine("\n--- MENÚ ---");
@@ -21,9 +21,9 @@
             Console.WriteLine("9. Ver si está llena");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
-            opcion = int.Parse(Console.ReadLine());
+            op = int.Parse(Console.ReadLine());
 
-            switch (opcion)
+            switch (op)
             {
                 case 1:
                     cola.Mostrar();
@@ -44,29 +44,29 @@
                         Console.WriteLine("Elemento al frente: " + frente);
                     break;
                 case 5:
-                    Console.WriteLine("Número de elementos (Count): " + cola.GetCount());
+                    Console.WriteLine("Número de elementos: " + cola.GetCount());
                     break;
                 case 6:
-                    Console.WriteLine("Tamaño máximo (Size): " + cola.GetSize());
+                    Console.WriteLine("Tamaño máximo: " + cola.GetSize());
                     break;
                 case 7:
                     Console.Write("Ingrese un carácter a buscar: ");
                     char buscar = Console.ReadLine()[0];
-                    Console.WriteLine(cola.Contains(buscar) ? "El elemento está en la cola." : "El elemento NO está en la cola.");
+                    Console.WriteLine(cola.Contains(buscar) ? "El elemento está en la cola." : "El elemento no está en la cola.");
                     break;
                 case 8:
-                    Console.WriteLine(cola.IsEmpty() ? "La cola está vacía." : "La cola NO está vacía.");
+                    Console.WriteLine(cola.IsEmpty() ? "La cola está vacía." : "La cola no está vacía.");
                     break;
                 case 9:
-                    Console.WriteLine(cola.IsFull() ? "La cola está llena." : "La cola NO está llena.");
+                    Console.WriteLine(cola.IsFull() ? "La cola está llena." : "La cola no está llena.");
                     break;
                 case 0:
-                    Console.WriteLine("Saliendo...");
+                    Console.WriteLine("Chau, adiosito");
                     break;
                 default:
-                    Console.WriteLine("Opción no válida.");
+                    Console.WriteLine("Opción no válida!!");
                     break;
             }
-        } while (opcion != 0);
+        } while (op != 0);
     }
 }

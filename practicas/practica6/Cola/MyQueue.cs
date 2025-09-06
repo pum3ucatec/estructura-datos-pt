@@ -2,19 +2,19 @@ using System;
 
 public class MyQueue
 {
-    private int Size;
-    private int Front;
-    private int Rear;
-    private int Count;
-    private char[] Elements;
+    private int size;
+    private int front;
+    private int rear;
+    private int count;
+    private char[] elements;
 
-    public MyQueue(int N) //Constructor
+    public MyQueue(int n)
     {
-        Size = N;
-        Elements = new char[Size];
-        Front = 0;
-        Rear = -1;
-        Count = 0;
+        size = n;
+        elements = new char[size];
+        front = 0;
+        rear = -1;
+        count = 0;
     }
     
     public void Mostrar() // 1. Mostrar
@@ -25,10 +25,10 @@ public class MyQueue
             return;
         }
         Console.Write("Cola: ");
-        for (int i = 0; i < Count; i++)
+        for (int i = 0; i < count; i++)
         {
-            int index = (Front + i) % Size;
-            Console.Write(Elements[index] + " ");
+            int index = (front + i) % size;
+            Console.Write(elements[index] + " ");
         }
         Console.WriteLine();
     }
@@ -40,9 +40,9 @@ public class MyQueue
             Console.WriteLine("La cola está llena.");
             return;
         }
-        Rear = (Rear + 1) % Size;
-        Elements[Rear] = item;
-        Count++;
+        rear = (rear + 1) % size;
+        elements[rear] = item;
+        count++;
     }
 
     public char Dequeue() // 3. Dequeue
@@ -52,9 +52,9 @@ public class MyQueue
             Console.WriteLine("La cola está vacía.");
             return '\0';
         }
-        char value = Elements[Front];
-        Front = (Front + 1) % Size;
-        Count--;
+        char value = elements[front];
+        front = (front + 1) % size;
+        count--;
         return value;
     }
 
@@ -65,36 +65,36 @@ public class MyQueue
             Console.WriteLine("La cola está vacía.");
             return '\0';
         }
-        return Elements[Front];
+        return elements[front];
     }
 
-    public int GetCount() // 5. Count
+    public int GetCount() // 5. count
     {
-        return Count;
+        return count;
     }
 
-    public int GetSize() // 6. Size
+    public int GetSize() // 6. size
     {
-        return Size;
+        return size;
     }
 
     public bool Contains(char item) // 7. Contains
     {
-        for (int i = 0; i < Count; i++)
+        for (int i = 0; i < count; i++)
         {
-            int index = (Front + i) % Size;
-            if (Elements[index] == item) return true;
+            int index = (front + i) % size;
+            if (elements[index] == item) return true;
         }
         return false;
     }
 
     public bool IsEmpty() // 8. IsEmpty
     {
-        return Count == 0;
+        return count == 0;
     }
 
     public bool IsFull() // 9. IsFull
     {
-        return Count == Size;
+        return count == size;
     }
 }
