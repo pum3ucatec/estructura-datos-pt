@@ -2,88 +2,88 @@
 
 public class Cola
 {
-    private int[] elementos;
-    private int frente;
-    private int fin;
-    private int count;
-    private int capacidad;
+    private int[] Elementos;
+    private int Frente;
+    private int Fin;
+    private int CountInterno;
+    private int Capacidad;
 
-    public Cola(int size)
+    public Cola(int Size)
     {
-        capacidad = size;
-        elementos = new int[capacidad];
-        frente = 0;
-        fin = -1;
-        count = 0;
+        Capacidad = Size;
+        Elementos = new int[Capacidad];
+        Frente = 0;
+        Fin = -1;
+        CountInterno = 0;
     }
 
-    public void Enqueue(int valor)
+    public void Enqueue(int Valor)
     {
         if (IsFull())
         {
-            Console.WriteLine("❌ La cola está llena. No se puede insertar.");
+            Console.WriteLine("❌ La Cola Esta Llena. No Se Puede Insertar.");
             return;
         }
-        fin = (fin + 1) % capacidad;
-        elementos[fin] = valor;
-        count++;
-        Console.WriteLine($"✔ Se insertó: {valor}");
+        Fin = (Fin + 1) % Capacidad;
+        Elementos[Fin] = Valor;
+        CountInterno++;
+        Console.WriteLine($"✔ Se Inserto: {Valor}");
     }
 
     public int Dequeue()
     {
         if (IsEmpty())
         {
-            Console.WriteLine("❌ La cola está vacía. No se puede eliminar.");
+            Console.WriteLine("❌ La Cola Esta Vacia. No Se Puede Eliminar.");
             return -1;
         }
-        int valor = elementos[frente];
-        frente = (frente + 1) % capacidad;
-        count--;
-        Console.WriteLine($"✔ Se eliminó: {valor}");
-        return valor;
+        int Valor = Elementos[Frente];
+        Frente = (Frente + 1) % Capacidad;
+        CountInterno--;
+        Console.WriteLine($"✔ Se Elimino: {Valor}");
+        return Valor;
     }
 
     public int Peek()
     {
         if (IsEmpty())
         {
-            Console.WriteLine("❌ La cola está vacía.");
+            Console.WriteLine("❌ La Cola Esta Vacia.");
             return -1;
         }
-        return elementos[frente];
+        return Elementos[Frente];
     }
 
-    public int Count() => count;
+    public int Count() => CountInterno;
 
-    public int Size() => capacidad;
+    public int Size() => Capacidad;
 
-    public bool Contains(int valor)
+    public bool Contains(int Valor)
     {
-        for (int i = 0; i < count; i++)
+        for (int I = 0; I < CountInterno; I++)
         {
-            int index = (frente + i) % capacidad;
-            if (elementos[index] == valor) return true;
+            int Index = (Frente + I) % Capacidad;
+            if (Elementos[Index] == Valor) return true;
         }
         return false;
     }
 
-    public bool IsEmpty() => count == 0;
+    public bool IsEmpty() => CountInterno == 0;
 
-    public bool IsFull() => count == capacidad;
+    public bool IsFull() => CountInterno == Capacidad;
 
     public void Display()
     {
         if (IsEmpty())
         {
-            Console.WriteLine("❌ La cola está vacía.");
+            Console.WriteLine("❌ La Cola Esta Vacia.");
             return;
         }
         Console.Write("Cola: ");
-        for (int i = 0; i < count; i++)
+        for (int I = 0; I < CountInterno; I++)
         {
-            int index = (frente + i) % capacidad;
-            Console.Write(elementos[index] + " ");
+            int Index = (Frente + I) % Capacidad;
+            Console.Write(Elementos[Index] + " ");
         }
         Console.WriteLine();
     }
@@ -91,15 +91,15 @@ public class Cola
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[] Args)
     {
-        int size = LeerEntero("Ingrese la capacidad de la cola (entero positivo): ", 1);
-        Cola cola = new Cola(size);
+        int Size = LeerEntero("Ingrese La Capacidad De La Cola (Entero Positivo): ", 1);
+        Cola Cola = new Cola(Size);
 
-        int opcion;
+        int Opcion;
         do
         {
-            Console.WriteLine("\n--- MENÚ DE OPERACIONES ---");
+            Console.WriteLine("\n--- Menu De Operaciones ---");
             Console.WriteLine("1. Enqueue (Insertar)");
             Console.WriteLine("2. Dequeue (Eliminar)");
             Console.WriteLine("3. Peek (Mostrar Frente)");
@@ -107,74 +107,75 @@ class Program
             Console.WriteLine("5. Count (Cantidad)");
             Console.WriteLine("6. Size (Capacidad)");
             Console.WriteLine("7. Contains (Buscar)");
-            Console.WriteLine("8. ¿Está Vacía?");
-            Console.WriteLine("9. ¿Está Llena?");
+            Console.WriteLine("8. Esta Vacia?");
+            Console.WriteLine("9. Esta Llena?");
             Console.WriteLine("0. Salir");
 
-            opcion = LeerEntero("Seleccione una opción: ", 0, 9);
+            Opcion = LeerEntero("Seleccione Una Opcion: ", 0, 9);
 
-            switch (opcion)
+            switch (Opcion)
             {
                 case 1:
-                    int valor = LeerEntero("Ingrese un valor: ");
-                    cola.Enqueue(valor);
+                    int Valor = LeerEntero("Ingrese Un Valor: ");
+                    Cola.Enqueue(Valor);
                     break;
 
                 case 2:
-                    cola.Dequeue();
+                    Cola.Dequeue();
                     break;
 
                 case 3:
-                    Console.WriteLine($"Frente: {cola.Peek()}");
+                    Console.WriteLine($"Frente: {Cola.Peek()}");
                     break;
 
                 case 4:
-                    cola.Display();
+                    Cola.Display();
                     break;
 
                 case 5:
-                    Console.WriteLine($"Elementos en la cola: {cola.Count()}");
+                    Console.WriteLine($"Elementos En La Cola: {Cola.Count()}");
                     break;
 
                 case 6:
-                    Console.WriteLine($"Capacidad total: {cola.Size()}");
+                    Console.WriteLine($"Capacidad Total: {Cola.Size()}");
                     break;
 
                 case 7:
-                    int buscar = LeerEntero("Ingrese un valor a buscar: ");
-                    Console.WriteLine(cola.Contains(buscar) ? "✔ Existe en la cola" : "❌ No existe en la cola");
+                    int Buscar = LeerEntero("Ingrese Un Valor A Buscar: ");
+                    Console.WriteLine(Cola.Contains(Buscar) ? "✔ Existe En La Cola" : "❌ No Existe En La Cola");
                     break;
 
                 case 8:
-                    Console.WriteLine(cola.IsEmpty() ? "✔ La cola está vacía" : "❌ La cola no está vacía");
+                    Console.WriteLine(Cola.IsEmpty() ? "✔ La Cola Esta Vacia" : "❌ La Cola No Esta Vacia");
                     break;
 
                 case 9:
-                    Console.WriteLine(cola.IsFull() ? "✔ La cola está llena" : "❌ La cola no está llena");
+                    Console.WriteLine(Cola.IsFull() ? "✔ La Cola Esta Llena" : "❌ La Cola No Esta Llena");
                     break;
 
                 case 0:
-                    Console.WriteLine("Saliendo del programa...");
+                    Console.WriteLine("Saliendo Del Programa...");
                     break;
             }
 
-        } while (opcion != 0);
+        } while (Opcion != 0);
     }
 
-    // Método seguro para leer enteros
-    static int LeerEntero(string mensaje, int minimo = int.MinValue, int maximo = int.MaxValue)
+    // Metodo Seguro Para Leer Enteros
+    static int LeerEntero(string Mensaje, int Minimo = int.MinValue, int Maximo = int.MaxValue)
     {
-        int numero;
+        int Numero;
         while (true)
         {
-            Console.Write(mensaje);
-            string? entrada = Console.ReadLine();
+            Console.Write(Mensaje);
+            string? Entrada = Console.ReadLine();
 
-            if (int.TryParse(entrada, out numero) && numero >= minimo && numero <= maximo)
-                return numero;
+            if (int.TryParse(Entrada, out Numero) && Numero >= Minimo && Numero <= Maximo)
+                return Numero;
 
-            Console.WriteLine("❌ Entrada inválida. Intente de nuevo.");
+            Console.WriteLine("❌ Entrada Invalida. Intente De Nuevo.");
         }
     }
 }
+
 
