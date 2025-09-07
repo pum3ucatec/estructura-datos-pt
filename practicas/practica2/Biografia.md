@@ -1,4 +1,3 @@
-<!--Encabezados-->
 # Como descargar e instalar git-VScode-Dotnet
 
 # Que es Git?:
