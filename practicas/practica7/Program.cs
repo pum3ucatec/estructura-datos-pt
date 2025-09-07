@@ -4,11 +4,11 @@
 class Nodo
 {
     public string Valor { get; set; }
-    public Nodo? Siguiente { get; set; }   // Puede ser null
+    public Nodo? Siguiente { get; set; }   // Puede Ser Null
 
-    public Nodo(string valor)
+    public Nodo(string Valor)
     {
-        Valor = valor;
+        this.Valor = Valor;
         Siguiente = null;
     }
 }
@@ -16,29 +16,29 @@ class Nodo
 // Clase Cola con nodos
 class Cola
 {
-    private Nodo? frente;   // Puede ser null
-    private Nodo? final;    // Puede ser null
+    private Nodo? Frente;   // Puede Ser Null
+    private Nodo? Final;    // Puede Ser Null
 
     public Cola()
     {
-        frente = null;
-        final = null;
+        Frente = null;
+        Final = null;
     }
 
     // Insertar (Enqueue)
-    public void Enqueue(string valor)
+    public void Enqueue(string Valor)
     {
-        Nodo nuevo = new Nodo(valor);
+        Nodo Nuevo = new Nodo(Valor);
 
         if (IsEmpty())
         {
-            frente = nuevo;
-            final = nuevo;
+            Frente = Nuevo;
+            Final = Nuevo;
         }
         else
         {
-            final!.Siguiente = nuevo; // final no es null aquí
-            final = nuevo;
+            Final!.Siguiente = Nuevo; // Final No Es Null Aqui
+            Final = Nuevo;
         }
     }
 
@@ -46,224 +46,224 @@ class Cola
     public string Dequeue()
     {
         if (IsEmpty())
-            return "La cola está vacía.";
+            return "La Cola Esta Vacia.";
 
-        string valor = frente!.Valor;  // frente no es null aquí
-        frente = frente.Siguiente;
+        string Valor = Frente!.Valor;  // Frente No Es Null Aqui
+        Frente = Frente.Siguiente;
 
-        if (frente == null) // Si la cola quedó vacía
-            final = null;
+        if (Frente == null) // Si La Cola Quedo Vacia
+            Final = null;
 
-        return valor;
+        return Valor;
     }
 
-    // Ver frente (Peek)
+    // Ver Frente (Peek)
     public string Peek()
     {
         if (IsEmpty())
-            return "La cola está vacía.";
+            return "La Cola Esta Vacia.";
 
-        return frente!.Valor;  // frente no es null aquí
+        return Frente!.Valor;  // Frente No Es Null Aqui
     }
 
-    // Verificar si está vacía
+    // Verificar Si Esta Vacia
     public bool IsEmpty()
     {
-        return frente == null;
+        return Frente == null;
     }
 
-    // Mostrar todos los elementos
+    // Mostrar Todos Los Elementos
     public void View()
     {
         if (IsEmpty())
         {
-            Console.WriteLine("La cola está vacía.");
+            Console.WriteLine("La Cola Esta Vacia.");
             return;
         }
 
-        Nodo? actual = frente;
-        Console.WriteLine("Elementos en la cola:");
-        while (actual != null)
+        Nodo? Actual = Frente;
+        Console.WriteLine("Elementos En La Cola:");
+        while (Actual != null)
         {
-            Console.WriteLine(" - " + actual.Valor);
-            actual = actual.Siguiente;
+            Console.WriteLine(" - " + Actual.Valor);
+            Actual = Actual.Siguiente;
         }
     }
 
-    // Contar elementos
+    // Contar Elementos
     public int Count()
     {
-        int contador = 0;
-        Nodo? actual = frente;
-        while (actual != null)
+        int Contador = 0;
+        Nodo? Actual = Frente;
+        while (Actual != null)
         {
-            contador++;
-            actual = actual.Siguiente;
+            Contador++;
+            Actual = Actual.Siguiente;
         }
-        return contador;
+        return Contador;
     }
 
-    // Vaciar cola
+    // Vaciar Cola
     public void Clear()
     {
-        frente = null;
-        final = null;
+        Frente = null;
+        Final = null;
     }
 
-    // Buscar un elemento
-    public bool Search(string valor)
+    // Buscar Un Elemento
+    public bool Search(string Valor)
     {
-        Nodo? actual = frente;
-        while (actual != null)
+        Nodo? Actual = Frente;
+        while (Actual != null)
         {
-            if (actual.Valor.Equals(valor, StringComparison.OrdinalIgnoreCase))
+            if (Actual.Valor.Equals(Valor, StringComparison.OrdinalIgnoreCase))
                 return true;
-            actual = actual.Siguiente;
+            Actual = Actual.Siguiente;
         }
         return false;
     }
 
-    // Eliminar en cualquier posición (0 = frente)
-    public bool RemoveAt(int posicion)
+    // Eliminar En Cualquier Posicion (0 = Frente)
+    public bool RemoveAt(int Posicion)
     {
-        if (IsEmpty() || posicion < 0)
+        if (IsEmpty() || Posicion < 0)
             return false;
 
-        if (posicion == 0)
+        if (Posicion == 0)
         {
             Dequeue();
             return true;
         }
 
-        Nodo? actual = frente;
-        Nodo? anterior = null;
-        int index = 0;
+        Nodo? Actual = Frente;
+        Nodo? Anterior = null;
+        int Index = 0;
 
-        while (actual != null && index < posicion)
+        while (Actual != null && Index < Posicion)
         {
-            anterior = actual;
-            actual = actual.Siguiente;
-            index++;
+            Anterior = Actual;
+            Actual = Actual.Siguiente;
+            Index++;
         }
 
-        if (actual == null) // No se encontró la posición
+        if (Actual == null) // No Se Encontro La Posicion
             return false;
 
-        anterior!.Siguiente = actual.Siguiente;
+        Anterior!.Siguiente = Actual.Siguiente;
 
-        if (actual == final)
-            final = anterior;
+        if (Actual == Final)
+            Final = Anterior;
 
         return true;
     }
 }
 
-// Clase Principal con el menú
+// Clase Principal Con El Menu
 class Principal
 {
-    static void Main(string[] args)
+    static void Main(string[] Args)
     {
-        Cola cola = new Cola();
-        int opcion;
+        Cola Cola = new Cola();
+        int Opcion;
 
         do
         {
-            Console.WriteLine("\n===== MENÚ COLA con NODOS =====");
+            Console.WriteLine("\n===== Menu Cola Con Nodos =====");
             Console.WriteLine("1. Mostrar Cola");
-            Console.WriteLine("2. Insertar un valor a la cola");
-            Console.WriteLine("3. Eliminar un valor de la cola");
-            Console.WriteLine("4. Ver frente de la cola");
-            Console.WriteLine("5. Verificar si está vacía");
-            Console.WriteLine("6. Contar elementos");
-            Console.WriteLine("7. Vaciar cola");
-            Console.WriteLine("8. Buscar elemento");
-            Console.WriteLine("9. Eliminar en una posición específica");
+            Console.WriteLine("2. Insertar Un Valor A La Cola");
+            Console.WriteLine("3. Eliminar Un Valor De La Cola");
+            Console.WriteLine("4. Ver Frente De La Cola");
+            Console.WriteLine("5. Verificar Si Esta Vacia");
+            Console.WriteLine("6. Contar Elementos");
+            Console.WriteLine("7. Vaciar Cola");
+            Console.WriteLine("8. Buscar Elemento");
+            Console.WriteLine("9. Eliminar En Una Posicion Especifica");
             Console.WriteLine("0. Salir");
-            Console.Write("Seleccione una opción: ");
+            Console.Write("Seleccione Una Opcion: ");
 
-            if (!int.TryParse(Console.ReadLine(), out opcion))
+            if (!int.TryParse(Console.ReadLine(), out Opcion))
             {
-                Console.WriteLine("Ingrese un número válido.");
+                Console.WriteLine("Ingrese Un Numero Valido.");
                 continue;
             }
 
-            switch (opcion)
+            switch (Opcion)
             {
                 case 1:
-                    cola.View();
+                    Cola.View();
                     break;
 
                 case 2:
-                    Console.Write("Ingrese el nombre a insertar: ");
-                    string valor = Console.ReadLine()!;
-                    if (!string.IsNullOrEmpty(valor))
+                    Console.Write("Ingrese El Nombre A Insertar: ");
+                    string Valor = Console.ReadLine()!;
+                    if (!string.IsNullOrEmpty(Valor))
                     {
-                        cola.Enqueue(valor);
-                        Console.WriteLine($"Elemento '{valor}' insertado.");
+                        Cola.Enqueue(Valor);
+                        Console.WriteLine($"Elemento '{Valor}' Insertado.");
                     }
                     else
                     {
-                        Console.WriteLine("Valor inválido.");
+                        Console.WriteLine("Valor Invalido.");
                     }
                     break;
 
                 case 3:
-                    if (!cola.IsEmpty())
-                        Console.WriteLine("Elemento eliminado: " + cola.Dequeue());
+                    if (!Cola.IsEmpty())
+                        Console.WriteLine("Elemento Eliminado: " + Cola.Dequeue());
                     else
-                        Console.WriteLine("La cola está vacía, no se puede eliminar.");
+                        Console.WriteLine("La Cola Esta Vacia, No Se Puede Eliminar.");
                     break;
 
                 case 4:
-                    Console.WriteLine("Frente de la cola: " + cola.Peek());
+                    Console.WriteLine("Frente De La Cola: " + Cola.Peek());
                     break;
 
                 case 5:
-                    Console.WriteLine(cola.IsEmpty() ? "La cola está vacía." : "La cola no está vacía.");
+                    Console.WriteLine(Cola.IsEmpty() ? "La Cola Esta Vacia." : "La Cola No Esta Vacia.");
                     break;
 
                 case 6:
-                    Console.WriteLine("Cantidad de elementos en la cola: " + cola.Count());
+                    Console.WriteLine("Cantidad De Elementos En La Cola: " + Cola.Count());
                     break;
 
                 case 7:
-                    cola.Clear();
-                    Console.WriteLine("Cola vaciada correctamente.");
+                    Cola.Clear();
+                    Console.WriteLine("Cola Vaciada Correctamente.");
                     break;
 
                 case 8:
-                    Console.Write("Ingrese el valor a buscar: ");
-                    string buscar = Console.ReadLine()!;
-                    if (cola.Search(buscar))
-                        Console.WriteLine($"El elemento '{buscar}' SÍ está en la cola.");
+                    Console.Write("Ingrese El Valor A Buscar: ");
+                    string Buscar = Console.ReadLine()!;
+                    if (Cola.Search(Buscar))
+                        Console.WriteLine($"El Elemento '{Buscar}' Si Esta En La Cola.");
                     else
-                        Console.WriteLine($"El elemento '{buscar}' NO se encuentra en la cola.");
+                        Console.WriteLine($"El Elemento '{Buscar}' No Se Encuentra En La Cola.");
                     break;
 
                 case 9:
-                    Console.Write("Ingrese la posición a eliminar (0 = frente): ");
-                    if (int.TryParse(Console.ReadLine(), out int pos))
+                    Console.Write("Ingrese La Posicion A Eliminar (0 = Frente): ");
+                    if (int.TryParse(Console.ReadLine(), out int Pos))
                     {
-                        if (cola.RemoveAt(pos))
-                            Console.WriteLine($"Elemento en la posición {pos} eliminado correctamente.");
+                        if (Cola.RemoveAt(Pos))
+                            Console.WriteLine($"Elemento En La Posicion {Pos} Eliminado Correctamente.");
                         else
-                            Console.WriteLine("No se pudo eliminar: posición inválida.");
+                            Console.WriteLine("No Se Pudo Eliminar: Posicion Invalida.");
                     }
                     else
                     {
-                        Console.WriteLine("Debe ingresar un número válido.");
+                        Console.WriteLine("Debe Ingresar Un Numero Valido.");
                     }
                     break;
 
                 case 0:
-                    Console.WriteLine("Saliendo del programa...");
+                    Console.WriteLine("Saliendo Del Programa...");
                     break;
 
                 default:
-                    Console.WriteLine("Opción inválida, intente nuevamente.");
+                    Console.WriteLine("Opcion Invalida, Intente Nuevamente.");
                     break;
             }
 
-        } while (opcion != 0);
+        } while (Opcion != 0);
     }
 }
