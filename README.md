@@ -25,32 +25,29 @@ Valor: guarda el número del nodo.
 Siguiente: referencia al siguiente nodo en la pila.
 
 El constructor inicializa el nodo con el valor y deja Siguiente en null.
-
+```
 🧩 Clase Pila
 Contiene toda la lógica de la pila.
 
-csharp
-Copiar código
+```csharp
 class Pila
 {
     private Nodo cima;   // Apunta al último elemento insertado
     private int tamaño;  // Cantidad de elementos
+
 🔹 Constructor
 Inicializa la pila vacía:
 
-csharp
-Copiar código
 public Pila()
 {
     cima = null;
     tamaño = 0;
 }
+
 🔹 Push(int valor)
 Agrega un elemento en la cima de la pila.
 El nuevo nodo se enlaza con la pila existente.
 
-csharp
-Copiar código
 public void Push(int valor)
 {
     Nodo nuevoNodo = new Nodo(valor);
@@ -58,12 +55,11 @@ public void Push(int valor)
     cima = nuevoNodo;
     tamaño++;
 }
+
 🔹 Pop()
 Elimina y devuelve el elemento en la cima.
 Si la pila está vacía, devuelve -1.
 
-csharp
-Copiar código
 public int Pop()
 {
     if (IsEmpty())
@@ -77,11 +73,10 @@ public int Pop()
     tamaño--;
     return valorEliminado;
 }
+
 🔹 Peek()
 Muestra el valor de la cima sin eliminarlo.
 
-csharp
-Copiar código
 public int Peek()
 {
     if (IsEmpty()) return -1;
@@ -90,17 +85,14 @@ public int Peek()
 🔹 IsEmpty()
 Verifica si la pila no contiene elementos.
 
-csharp
-Copiar código
 public bool IsEmpty()
 {
     return cima == null;
 }
+
 🔹 Mostrar()
 Recorre la pila desde la cima hasta el fondo e imprime sus valores.
 
-csharp
-Copiar código
 public void Mostrar()
 {
     if (IsEmpty())
@@ -116,34 +108,33 @@ public void Mostrar()
         actual = actual.Siguiente;
     }
 }
+
 🔹 Propiedad Tamaño
 Devuelve la cantidad de elementos de la pila.
 
-csharp
-Copiar código
 public int Tamaño
 {
     get { return tamaño; }
 }
+```
 🧩 Clase Principal
 Contiene el método Main con un menú interactivo para probar la pila.
 
-Opciones disponibles:
++ Opciones disponibles:
 
-Mostrar pila
++ Mostrar pila
 
-Insertar elemento (Push)
++ Insertar elemento (Push)
 
-Eliminar elemento (Pop)
++ Eliminar elemento (Pop)
 
-Ver cima (Peek)
++ Ver cima (Peek)
 
-Verificar si está vacía
++ Verificar si está vacía
 
-Salir del programa
++ Salir del programa
 
-csharp
-Copiar código
+```csharp
 class Principal
 {
     static void Main(string[] args)
@@ -166,6 +157,7 @@ class Principal
         } while (opcion != 0);
     }
 }
+```
 ⚙️ Funcionamiento General
 La pila comienza vacía.
 
