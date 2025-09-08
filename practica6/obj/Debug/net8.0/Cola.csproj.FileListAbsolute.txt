@@ -1,0 +1,15 @@
+C:\Users\jhefe\estructura-datos-pt\practica6\bin\Debug\net8.0\Cola.exe
+C:\Users\jhefe\estructura-datos-pt\practica6\bin\Debug\net8.0\Cola.deps.json
+C:\Users\jhefe\estructura-datos-pt\practica6\bin\Debug\net8.0\Cola.runtimeconfig.json
+C:\Users\jhefe\estructura-datos-pt\practica6\bin\Debug\net8.0\Cola.dll
+C:\Users\jhefe\estructura-datos-pt\practica6\bin\Debug\net8.0\Cola.pdb
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.AssemblyInfoInputs.cache
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.AssemblyInfo.cs
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.csproj.CoreCompileInputs.cache
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.sourcelink.json
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.dll
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\refint\Cola.dll
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.pdb
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\Cola.genruntimeconfig.cache
+C:\Users\jhefe\estructura-datos-pt\practica6\obj\Debug\net8.0\ref\Cola.dll
