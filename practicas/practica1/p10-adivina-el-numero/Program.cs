@@ -4,12 +4,12 @@ class Program
     static void Main(string[] args)
     {
         Random random = new Random();
-        int num_adivinar = random.Next(1, 101);
+        int numAdivinar = random.Next(1, 101);
         int numero = 0;
 
         Console.WriteLine("Adivina el numero entre 1 y 100:");
 
-        while (num_adivinar != numero)
+        while (numAdivinar != numero)
         {
             Console.Write("Introduce un numero: ");
             numero = Convert.ToInt32(Console.ReadLine());
@@ -20,11 +20,11 @@ class Program
             }
             else
             {
-                if (numero < num_adivinar)
+                if (numero < numAdivinar)
                 {
                     Console.WriteLine("Demasiado bajo. Intenta de nuevo.");
                 }
-                else if (numero > num_adivinar)
+                else if (numero > numAdivinar)
                 {
                     Console.WriteLine("Demasiado alto. Intenta de nuevo.");
                 }
