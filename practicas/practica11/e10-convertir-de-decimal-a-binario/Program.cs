@@ -1,15 +1,12 @@
 ﻿using System;
 
-class DecimalABinario
+class Ejercicio10
 {
-    // Función recursiva para convertir la parte entera a binario
     public static string DecimalBinario(int n)
     {
         if (n == 0) return "0";  // caso base
         if (n == 1) return "1";  // caso base
-
-        // llamada recursiva: dividir entre 2 y concatenar el residuo
-        return DecimalBinario(n / 2) + (n % 2);
+        return DecimalBinario(n / 2) + (n % 2); // llamada recursiva
     }
 
     static void Main(string[] args)

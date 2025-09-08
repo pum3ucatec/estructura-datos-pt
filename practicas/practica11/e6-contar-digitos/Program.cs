@@ -3,9 +3,9 @@ class Ejercicio6
 {
     public static int ContarDigitos(int n)
     {
-        if (n < 10) 
+        if (n < 10) // caso base
             return 1;
-        return 1 + ContarDigitos(n / 10);
+        return 1 + ContarDigitos(n / 10); // llamada recursiva
     }
 
     static void Main(string[] args)

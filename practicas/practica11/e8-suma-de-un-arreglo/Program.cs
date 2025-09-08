@@ -4,9 +4,9 @@ class Ejercicio8
 {
     public static int SumaArreglo(int[] arr, int n)
     {
-        if (n == 0) 
+        if (n == 0)  // caso base
             return 0;
-        return arr[n - 1] + SumaArreglo(arr, n - 1);
+        return arr[n - 1] + SumaArreglo(arr, n - 1); // llamada recursiva
     }
 
     static void Main(string[] args)

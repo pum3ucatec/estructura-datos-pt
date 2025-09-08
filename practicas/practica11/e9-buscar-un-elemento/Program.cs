@@ -2,12 +2,13 @@
 class Ejercicio9
 {
     public static bool BuscarElemento(int[] arr, int n, int valor)
-    {
-        if (n == 0) 
+    {   
+        // caso base
+        if (n == 0)
             return false;
         if (arr[n - 1] == valor) 
             return true;
-        return BuscarElemento(arr, n - 1, valor);
+        return BuscarElemento(arr, n - 1, valor); // llamada recursiva
     }
 
     static void Main(string[] args)

@@ -12,10 +12,10 @@ class Ejercicio3
 
     public static void MostrarFibonacci(int n, int i = 0)
     {
-        if (i > n) return; // Caso base: ya mostramos todos
+        if (i > n) return; // Caso base
 
         Console.Write(Fibonacci(i) + " ");
-        MostrarFibonacci(n, i + 1); // Llamada recursiva al siguiente
+        MostrarFibonacci(n, i + 1); // Llamada recursiva 
     }
 
     static void Main(string[] args)

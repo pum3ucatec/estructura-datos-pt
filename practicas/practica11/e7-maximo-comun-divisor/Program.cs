@@ -4,9 +4,9 @@ class Ejercicio7
 {
     public static int MinimoComunDivisor(int a, int b)
     {
-        if (b == 0)
+        if (b == 0) // caso base
             return a;
-        return MinimoComunDivisor(b, a % b);
+        return MinimoComunDivisor(b, a % b); // llamadaa recursiva
     }
 
     static void Main(string[] args)

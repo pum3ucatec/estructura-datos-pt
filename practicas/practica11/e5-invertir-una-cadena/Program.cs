@@ -3,9 +3,9 @@ class Ejercicio5
 {
     public static string Invertir(string cadena)
     {
-        if (cadena.Length <= 1)
+        if (cadena.Length <= 1) // caso base
             return cadena;
-        return Invertir(cadena.Substring(1)) + cadena[0];
+        return Invertir(cadena.Substring(1)) + cadena[0]; // llamada recursiva
     }
 
     static void Main(string[] args)

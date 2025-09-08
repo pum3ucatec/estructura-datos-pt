@@ -4,7 +4,7 @@ class Ejercicio4
 {
     public static double Potencia(int baseNum, int exp)
     {
-        if (exp == 0) return 1;
+        if (exp == 0) return 1; // caso base
 
         if (exp > 0)
         {
