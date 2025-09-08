@@ -1,0 +1,24 @@
+﻿        int[] inverso = new int[arreglo.Length]; 
+
+   
+        for (int i = 0; i < arreglo.Length; i++)
+        {
+            inverso[i] = arreglo[arreglo.Length - 1 - i];
+        }
+
+
+        Console.WriteLine("Arreglo original:");
+        for (int i = 0; i < arreglo.Length; i++)
+        {
+            Console.Write(arreglo[i] + " ");
+        }
+
+
+        Console.WriteLine("\n\nArreglo en orden inverso:");
+        for (int i = 0; i < inverso.Length; i++)
+        {
+            Console.Write(inverso[i] + " ");
+
+        }
+            
+            

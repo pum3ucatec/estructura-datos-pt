@@ -1,0 +1,65 @@
+using System;
+
+class EspiralMatriz
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingresa el número de filas de la matriz:");
+        int filas = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Ingresa el número de columnas de la matriz:");
+        int columnas = int.Parse(Console.ReadLine());
+
+        int[,] matriz = new int[filas, columnas];
+
+        Console.WriteLine("Ingresa los elementos de la matriz (separados por espacios):");
+        for (int i = 0; i < filas; i++)
+        {
+            string[] elementos = Console.ReadLine().Split(' ');
+            for (int j = 0; j < columnas; j++)
+            {
+                matriz[i, j] = int.Parse(elementos[j]);
+            }
+        }
+
+        var resultado = RecorrerEnEspiral(matriz);
+        Console.WriteLine($"Elementos en espiral: [{string.Join(", ", resultado)}]");
+    }
+
+    static int[] RecorrerEnEspiral(int[,] matriz)
+    {
+        int filas = matriz.GetLength(0);
+        int columnas = matriz.GetLength(1);
+        int[] espiral = new int[filas * columnas];
+        int indice = 0;
+
+        int arriba = 0, abajo = filas - 1, izquierda = 0, derecha = columnas - 1;
+
+        while (arriba <= abajo && izquierda <= derecha)
+        {
+            for (int i = izquierda; i <= derecha; i++)
+                espiral[indice++] = matriz[arriba, i];
+            arriba++;
+
+            for (int i = arriba; i <= abajo; i++)
+                espiral[indice++] = matriz[i, derecha];
+            derecha--;
+
+            if (arriba <= abajo)
+            {
+                for (int i = derecha; i >= izquierda; i--)
+                    espiral[indice++] = matriz[abajo, i];
+                abajo--;
+            }
+
+            if (izquierda <= derecha)
+            {
+                for (int i = abajo; i >= arriba; i--)
+                    espiral[indice++] = matriz[i, izquierda];
+                izquierda++;
+            }
+        }
+
+        return espiral;
+    }
+}

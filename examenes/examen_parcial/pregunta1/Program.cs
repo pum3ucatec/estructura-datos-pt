@@ -1,0 +1,35 @@
+﻿using System;
+using System.Linq;
+
+class Buscador
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingresa los números separados por comas (ej: 1,2,4,5,6):");
+        string entrada = Console.ReadLine();
+        
+        int[] secuencia = entrada.Split(',')
+            .Select(x => int.Parse(x.Trim()))
+            .ToArray();
+        
+        int resultado = ObtenerFaltante(secuencia);
+        Console.WriteLine($"El número que falta es: {resultado}");
+    }
+
+    static int ObtenerFaltante(int[] arr)
+    {
+        int xorTotal = 0;
+        int xorArray = 0;
+        
+        for (int i = 0; i < arr.Length; i++)
+        {
+            xorTotal ^= (i + 1);
+            xorArray ^= arr[i];
+        }
+        
+        xorTotal ^= (arr.Length + 1);
+        
+        return xorTotal ^ xorArray;
+    }
+}
+
