@@ -401,4 +401,3 @@ Suma de columnas:
 `Columna 1: 12`
 `Columna 2: 15`
 `Columna 3: 18`
-
