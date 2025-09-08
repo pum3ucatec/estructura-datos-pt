@@ -1,17 +1,21 @@
 ﻿using System;
 
-class Program
+namespace Practica1
 {
-    static void Main(string[] args)
+    class Program
     {
-        for (int i = 1; i <= 10; i++)
+        static void Main(string[] args)
         {
-            Console.WriteLine(i);
+            // Ejercicio 1
+            Console.WriteLine("Ejercicio 1");
+            for (int i = 1; i <= 10; i++)
+            { 
+                Console.WriteLine(i);
+
+            }
+            
+            
         }
-
-
-        Console.WriteLine("Fin del programa");
-        Console.ReadLine();
     }
-
 }
+
