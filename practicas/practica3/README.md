@@ -11,7 +11,6 @@
   * [1.8. Ejercicio 8: Número binario](#18-ejercicio-8-número-binario)
   * [1.9. Ejercicio 9: Palíndromo](#19-ejercicio-9-palíndromo)
   * [1.10. Ejercicio 10: Torres de Hanoi](#110-ejercicio-10-torres-de-hanoi)
-
 ---
 
 # 1. Descripcion
