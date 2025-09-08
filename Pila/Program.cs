@@ -7,12 +7,13 @@
 
         do
         {
-            Console.WriteLine("\n===== MENÚ PILA =====");
+            Console.WriteLine("\n***** MENÚ *****");
             Console.WriteLine("1. Mostrar pila");
             Console.WriteLine("2. Insertar (Push)");
             Console.WriteLine("3. Eliminar (Pop)");
             Console.WriteLine("4. Ver cima (Peek)");
             Console.WriteLine("5. Verificar si está vacía");
+            Console.WriteLine("6. Borrar todos los elementos (Clear)");  
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             
@@ -48,6 +49,9 @@
                     break;
                 case 5:
                     Console.WriteLine(pila.IsEmpty() ? "La pila está vacía." : "La pila NO está vacía.");
+                    break;
+                case 6:
+                    pila.Clear();  // Llamada al método Clear
                     break;
                 case 0:
                     Console.WriteLine("Saliendo del programa...");

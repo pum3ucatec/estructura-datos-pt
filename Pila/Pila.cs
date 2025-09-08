@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-// Clase que implementa la estructura de Pila
 class Pila
 {
     private List<int> elementos = new List<int>();
@@ -64,5 +60,12 @@ class Pila
     public bool IsEmpty()
     {
         return elementos.Count == 0;
+    }
+
+    // Borrar todos los elementos de la pila
+    public void Clear()
+    {
+        elementos.Clear();
+        Console.WriteLine("Se borraron todos los elementos de la pila.");
     }
 }
