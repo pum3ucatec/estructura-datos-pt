@@ -1,0 +1,27 @@
+using System; // Menu con do_while
+int opcion;
+
+do
+{
+    Console.WriteLine("1. Saludar");
+    Console.WriteLine("2. Sumar 2 + 2");
+    Console.WriteLine("3. Salir");
+    Console.Write("Elige una opción: ");
+    opcion = int.Parse(Console.ReadLine());
+
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine("¡Hola, viajero del código!");
+            break;
+        case 2:
+            Console.WriteLine($"2 + 2 = {2 + 2}");
+            break;
+        case 3:
+            Console.WriteLine("Saliendo del ritual...");
+            break;
+        default:
+            Console.WriteLine("Opción no válida.");
+            break;
+    }
+} while (opcion != 3);

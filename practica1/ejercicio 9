@@ -1,0 +1,10 @@
+using System; // Mostrar los primeros 10 numeros pares 
+int contador = 0;
+int numero = 2;
+
+while (contador < 10)
+{
+    Console.WriteLine(numero);
+    numero += 2;
+    contador++;
+}

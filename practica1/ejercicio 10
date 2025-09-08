@@ -1,0 +1,17 @@
+using System; // adivina el numero(juego)
+Random rnd = new Random();
+int secreto = rnd.Next(1, 51);
+int intento;
+
+do
+{
+    Console.Write("Adivina el número (1-50): ");
+    intento = int.Parse(Console.ReadLine());
+
+    if (intento < secreto)
+        Console.WriteLine("Demasiado bajo.");
+    else if (intento > secreto)
+        Console.WriteLine("Demasiado alto.");
+    else
+        Console.WriteLine("¡Correcto! Has revelado el número secreto.");
+} while (intento != secreto);

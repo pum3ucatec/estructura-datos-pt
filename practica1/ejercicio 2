@@ -1,0 +1,13 @@
+using System; //sumar numeros del 1 al N
+Console.WriteLine("Ingresa un número N: ");
+int N = int.Parse(Console.ReadLine());
+int suma = 0;
+int contador = 1;
+
+while (contador <= N)
+{
+    suma += contador;
+    contador++;
+}
+
+Console.WriteLine($"La suma del 1 al {N} es: {suma}");

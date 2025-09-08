@@ -1,0 +1,10 @@
+using System; // Validar la entrada con do-while
+int numero;
+
+do
+{
+    Console.Write("Ingresa un número positivo: ");
+    numero = int.Parse(Console.ReadLine());
+} while (numero <= 0);
+
+Console.WriteLine($"Número aceptado: {numero}");
