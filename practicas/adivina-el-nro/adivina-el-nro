@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Random rnd = new Random();
+        int secreto = rnd.Next(1, 51), intento;
+
+        do
+        {
+            Console.Write("Adivina el número (1-50): ");
+            intento = int.Parse(Console.ReadLine());
+
+            if (intento < secreto) Console.WriteLine("Es mayor");
+            else if (intento > secreto) Console.WriteLine("Es menor");
+
+        } while (intento != secreto);
+
+        Console.WriteLine("¡Acertaste!");
+    }
+}
