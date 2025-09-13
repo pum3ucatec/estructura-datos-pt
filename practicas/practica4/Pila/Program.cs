@@ -13,6 +13,8 @@
             Console.WriteLine("3. Eliminar (Pop)");
             Console.WriteLine("4. Ver cima (Peek)");
             Console.WriteLine("5. Verificar si está vacía");
+            Console.WriteLine("6. Eleminar todos los elementos (Clear)");
+            Console.WriteLine("7. Añadir 'n' elementos");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             
@@ -25,13 +27,13 @@
             switch (opcion)
             {
                 case 1:
-                    pila.Mostrar();
+                    pila.mostrar();
                     break;
                 case 2:
                     Console.Write("Ingrese el número a insertar: ");
                     if (int.TryParse(Console.ReadLine(), out int valor))
                     {
-                        pila.Push(valor);
+                        pila.push(valor);
                     }
                     else
                     {
@@ -39,15 +41,29 @@
                     }
                     break;
                 case 3:
-                    pila.Pop();
+                    pila.pop();
                     break;
                 case 4:
-                    int cima = pila.Peek();
+                    int cima = pila.peek();
                     if (cima != -1)
                         Console.WriteLine($"Elemento en la cima: {cima}");
                     break;
                 case 5:
-                    Console.WriteLine(pila.IsEmpty() ? "La pila está vacía." : "La pila NO está vacía.");
+                    Console.WriteLine(pila.isEmpty() ? "La pila está vacía." : "La pila NO está vacía.");
+                    break;
+                 case 6:
+                    Console.WriteLine(pila.eliminar() ? "La pila está vacía." : "La pila NO está vacía.");
+                    break;
+                 case 7:
+                    Console.Write("Ingrese el número a insertar: ");
+                    if (int.TryParse(Console.ReadLine(), out int valor))
+                    {
+                        pila.pushN(valor);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Valor inválido.");
+                    }
                     break;
                 case 0:
                     Console.WriteLine("Saliendo del programa...");
